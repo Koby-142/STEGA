@@ -1,0 +1,22 @@
+{
+    "short_name": "Stega",
+    "name": "Stega",
+    "icons": [
+        {
+            "src": "Branding/decklogo192px.png",
+            "type": "image/png",
+            "sizes": "192x192"
+    }
+        , {
+            "src": "Branding/decklogo512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+    }
+  ],
+    "start_url": "index.html",
+    "background_color": "#1B1B1B",
+    "display": "fullscreen",
+    "scope": "/index.html",
+    "theme_color": "#1B1B1B",	
+    "orientation": "landscape-primary"
+}

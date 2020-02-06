@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Stega</title> 
+       <link rel="stylesheet" href="main.css">
+       <link rel="manifest" href="manifest.json">
+       <link rel="stylesheet" href="/vivify.min.css">
+       <meta name="apple-mobile-web-app-capable" content="yes">
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <script >
+
+if ("serviceWorker" in navigator) {
+  if (navigator.serviceWorker.controller) {
+    console.log("[PWA Builder] active service worker found, no need to register");
+  } else {
+    // Register the service worker
+    navigator.serviceWorker
+      .register("pwabuilder-sw.js", {
+        scope: "/index.html"
+      })
+      .then(function (reg) {
+        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+      });
+  }
+}
+
+</script>
+       <link rel="apple-touch-icon" href="/Branding/deck logo.png">
+   
+
+ 
+       <script type="text/javascript">
+           $(document).ready(function () {
+               $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/deck/easy', function (data) {
+                   var template = Handlebars.compile($('#item-template').html())
+                   $('#items').html(template(data.easy))
+               })
+           })
+       </script>
+   
+       <script id="item-template" type="text/x-handlebars-template">
+        <div class="difficulty-container">
+          <h3 class="difficulty">Easy</h3>
+        </div>
+        <div  class="deck-scroll ad vivify fadeIn delay-{{id}}00">
+          <img loading="lazy" alt="Loading Deck..." src="https://i.pcmag.com/imagery/reviews/05xwFbRxmnrvbWMjdC9Myo5-5.fit_scale.size_2698x1517.jpg">
+          <h2>Fire TV Stick (AD)</h2>
+          <div class="deck-btn-container">
+           <a target="_blank" href="https://www.amazon.com/gp/product/B0791TX5P5/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0791TX5P5&linkCode=as2&tag=jacobybroadna-20&linkId=68532788209d72deb2e84d491b2e722a"><button
+  
+           >BUY</button></a> 
+          </div>
+        </div>
+           {{#each this}}
+           <div class="deck-scroll vivify fadeIn delay-{{id}}00">
+            <img loading="lazy" alt="Loading Deck..." src="{{image}}">
+            <h2>{{name}}</h2>
+            <div class="deck-btn-container">
+             <a href="#chd"><button onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
+             document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
+             document.getElementById('cntd').style.display = 'block'"
+   
+             >PLAY</button></a> 
+            </div>
+          </div>
+       {{/each}}
+       <div style="padding-right: 15px;" class="ad deck-scroll vivify fadeIn delay-{{id}}00">
+        <img loading="lazy" alt="Loading Deck..." src="https://i.ya-webdesign.com/images/airpods-png-transparent-8.jpg">
+        <h2>Airpods (AD)</h2>
+        <div class="deck-btn-container">
+         <a href="https://amzn.to/3bdZRD6"><button
+
+         >BUY</button></a> 
+        </div>
+      </div>
+   </script>
+
+   <script type="text/javascript">
+    $(document).ready(function () {
+        $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/deck/medium', function (data) {
+            var template = Handlebars.compile($('#item-template2').html())
+            $('#items2').html(template(data.medium))
+        })
+    })
+</script>
+
+<script id="item-template2" type="text/x-handlebars-template">
+ <div class="difficulty-container">
+   <h3 class="difficulty">Med.</h3>
+ </div>
+
+    {{#each this}}
+    <div class="deck-scroll vivify fadeIn delay-{{id}}00">
+     <img loading="lazy" src="{{image}}">
+     <h2>{{name}}</h2>
+     <div class="deck-btn-container">
+      <a href="#chd"><button onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
+      document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
+      document.getElementById('cntd').style.display = 'block'"
+
+      >PLAY</button></a> 
+     </div>
+   </div>
+{{/each}}
+<script type="text/javascript">
+  $(document).ready(function () {
+      $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/deck/hard', function (data) {
+          var template = Handlebars.compile($('#item-template3').html())
+          $('#items3').html(template(data.hard))
+      })
+  })
+</script>
+
+<script id="item-template3" type="text/x-handlebars-template">
+<div class="difficulty-container">
+ <h3 class="difficulty">Hard</h3>
+</div>
+
+  {{#each this}}
+  <div class="deck-scroll vivify fadeIn delay-{{id}}00">
+   <img loading="lazy" src="{{image}}">
+   <h2>{{name}}</h2>
+   
+   <div class="deck-btn-container">
+    <a href="#chd"><button onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
+    document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
+    document.getElementById('cntd').style.display = 'block'"
+
+    >PLAY</button></a> 
+   </div>
+ </div>
+{{/each}}
+
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+      $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/deck/featured', function (data) {
+          var template = Handlebars.compile($('#item-template4').html())
+          $('#items4').html(template(data.featured))
+      })
+  })
+</script>
+
+<script id="item-template4" type="text/x-handlebars-template">
+<div class="difficulty-container">
+ <h3 class="difficulty">Plus</h3>
+</div>
+
+  {{#each this}}
+  <div class="deck-scroll vivify fadeIn delay-{{id}}00">
+   <img loading="lazy" src="{{image}}">
+   <h2>{{name}}</h2>
+   
+   <div class="deck-btn-container">
+    <a href="#chd"><button onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
+    document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
+    document.getElementById('cntd').style.display = 'block'"
+
+    >PLAY</button></a> 
+   </div>
+ </div>
+{{/each}}
+
+</script>
+</script>
+
+   <script type="text/javascript">
+    $(document).ready(function () {
+        $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/deck/all', function (data) {
+            var template = Handlebars.compile($('#item-template9').html())
+            $('#search').html(template(data.all))
+        })
+    })
+</script>
+
+<script id="item-template9" type="text/x-handlebars-template">
+
+    {{#each this}}
+<li>
+  <a onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
+  document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
+  document.getElementById('cntd').style.display = 'block'" href="#chd" class="search-result-container">
+    <img src="{{image}}">
+    <div class="search-text">
+      <h3>{{name}}</h3>
+      
+ 
+    </div>
+
+
+
+  </a>
+</li>
+{{/each}}
+
+</script>
+ 
+    </head>
+    <body class="dark-html">
+      <div class="home-screen">
+        <nav>
+          <div class="logo-container">
+            <img class="vivify fadeIn delay-200" src="Branding/stega full length.svg">
+            <div class="menu-btn">
+              <a href="">
+                <button class="menu-btn-r">Create Deck</button>
+              </a>
+              <a href="">
+                <button style="" class="menu-btn-r exr">Enter Deck Pin</button>
+              </a>
+            </div>
+            </div>
+
+            <a href="#settings">
+<div class="settings-icon">
+  <i class="material-icons">settings</i>
+</div>
+</a>
+            <section style="display:none" class="search" id="main-search">
+              <div class="search-wrapper">
+                  <div class="search-input-container"> <input autocomplete="off" 
+                          class="search-input" type="search" id="mySearch" onkeyup="myFunction()" onload="myFunction()"
+                          placeholder="&emsp; Search Stega.." title="Click To Search For Jobs"><i
+                          onclick="search()" class="material-icons search-icon">search</i></div>
+              </div>
+
+      
+              <ul id="myMenu" style="display: none;" class="result-list vivify fadeIn  "
+                  style="padding-left-start {0px;}">
+                
+             
+                <div id="search"></div>
+              </ul>
+      </section>
+          
+              <script>
+                  function myFunction() {
+                      var e, s, t;
+                      for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu")
+                          .getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0]
+                          .innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "block" : s[t].style.display = "none"
+                  }
+              </script>
+      
+      
+              <script>
+                  $('.search-input').keyup(function (e) {
+                      if (e.keyCode === 13) {
+                          document.getElementsByClassName("result-list")[0].style.display = "block";
+                      }
+                  });
+              </script>
+        </nav>
+        
+         
+          <div style="margin-top:70px;" id="items" class="scroll-container">
+
+
+
+          </div>
+          <div id="items2" class="scroll-container">
+
+
+
+          </div>
+          <div id="items4" class="scroll-container">
+
+
+
+          </div>
+          <div class="ad-container" style="display: none;">  
+            <h3>Advertisement</h3>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Deal Fuze 1App -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-2337057488348896"
+                 data-ad-slot="9422053163"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+          <div id="items3"  class="scroll-container">
+
+
+
+          </div>
+      
+
+      </div>
+    
+      <div  class="charades-container" id="chd">
+        <div class="charades-view">
+          <div class="time-container">
+            <h2 id="time_div"></h2>
+          </div>
+          <audio id="gamemusic" src="/Sound Effects/Ketsa_-_09_-_Life_Illusion.mp3" ></audio>
+          <audio id="speedup" src="/Sound Effects/speedup.mp3" ></audio>
+            <div class="slideshow-container">
+                <img id="imgview" class="ch-view-image" src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-652ovhkibhg82kh6on274ihkn1-20171208011414.Medi.jpeg">
+            
+
+    <div class="myDeck">
+      <button class="prev charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById('I1').style.color = 'red';"></button>
+    <button class="next charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);up();"></button>
+   <div class="block-container vivify popIn">
+     <h1 id="m1">{{d1}}</h1>
+   </div>
+    </div>
+
+    <div class="myDeck">
+      <button class="prev charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById('I2').style.color = 'red';"></button>
+    <button class="next charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);up();"></button>
+   <div class="block-container vivify popIn">
+     <h1 id="m2">{{d2}}</h1>
+   </div>
+    </div>
+
+    <div class="myDeck">
+      <button class="prev charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById('I3').style.color = 'red';"></button>
+    <button class="next charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);up();"></button>
+   <div class="block-container vivify popIn">
+     <h1 id="m3">{{d3}}</h1>
+   </div>
+    </div>
+
+    <div class="myDeck">
+      <button class="prev charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById('I4').style.color = 'red';"></button>
+    <button class="next charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);up();"></button>
+   <div class="block-container vivify popIn">
+     <h1 id="m4">IRONMAN</h1>
+   </div>
+    </div>
+
+    <div class="myDeck">
+      <button class="prev charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById('I5').style.color = 'red';"></button>
+    <button class="next charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);up();"></button>
+   <div class="block-container vivify popIn">
+     <h1 id="m5">IRONMAN</h1>
+   </div>
+    </div>
+
+
+    <div class="myDeck">
+      <button class="prev charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById('I6').style.color = 'red';"></button>
+    <button class="next charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);up();"></button>
+   <div class="block-container vivify popIn">
+     <h1 id="m6">IRONMAN</h1>
+   </div>
+    </div>
+
+    <div class="myDeck">
+      <button class="prev charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById('I7').style.color = 'red';"></button>
+    <button class="next charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);up();"></button>
+   <div class="block-container vivify popIn">
+     <h1 id="m7">IRONMAN</h1>
+   </div>
+    </div>
+
+    <div class="myDeck" style="padding-bottom: 50px;">
+      <button class="prev charades-btn" ondblclick="window.navigator.vibrate(50);down();document.getElementById('I8').style.color = 'red'; window.navigator.vibrate(600);
+      console.log('Time Complete');
+      document.getElementById('timeUp').style.display='block';
+      document.getElementById('end').style.display='block';
+      document.getElementById('gamemusic').pause()"></button>
+    <button class="next charades-btn" ondblclick="window.navigator.vibrate(50);up();window.navigator.vibrate(600);
+    console.log('Time Complete');
+    document.getElementById('timeUp').style.display='block';
+    document.getElementById('end').style.display='block';
+    document.getElementById('gamemusic').pause()"></button>
+   <div class="block-container vivify popIn">
+     <h1 id="m8">IRONMAN</h1>
+   </div>
+    </div>
+           
+              </div>
+             
+              <div id="timeUp" class="times-up vivify fadeInBottom duration-400">
+                <div class="vivify fadeOut delay-2000 duration-100">
+                <h1 class="vivify fadeInBottom duration-400">TIMES UP!</h1>
+              </div>
+              </div>
+          
+             <audio volume="1" id="skip" src="/Sound Effects/downward.wav"></audio>
+             <audio volume="1" id="correct" src="/Sound Effects/upwards.wav"></audio>
+             <script src="countdown.js">
+            </script>
+            <script id="time" src="timing.js" >
+       
+            </script>
+           
+            <script>
+              function touchHandler(event){
+    if(event.touches.length > 1){
+        //the event is multi-touch
+        //you can then prevent the behavior
+        event.preventDefault()
+    }
+}
+            function down(){
+              document.getElementById("skip").play();
+              document.getElementById("skip").currentTime = 0;
+            }
+
+            function up(){
+              document.getElementById("correct").play();
+              document.getElementById("correct").currentTime = 0;
+            }
+            </script>
+              <script>
+              var slideIndex = [1,1];
+              var slideId = ["myDeck"]
+              showSlides(1, 0);
+              showSlides(1, 1);
+              
+              function plusSlides(n, no) {
+                showSlides(slideIndex[no] += n, no);
+              }
+              
+              function showSlides(n, no) {
+                var i;
+                var x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) {slideIndex[no] = 1}    
+                if (n < 1) {slideIndex[no] = x.length}
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
+                }
+                x[slideIndex[no]-1].style.display = "block";  
+              }
+              </script>
+        </div>
+<audio src="/Sound Effects/endgame.mp3" id="endgame"></audio>
+        <audio volume="0.1" id="correct" src="/Sound Effects/upwards.wav"></audio>
+        <div class="end-screen vivify fadeIn popIn duration-100" id="end" style="animation-delay: 1950ms;">
+<div class="left-group vivify fadeInBottom " style="animation-delay: 1900ms;">
+  <div class="complete-image ">  <img src="/Branding/deck complete.svg"></div>
+
+  <div class="left-group-btn-container">
+    <a href=""><button>New Game</button></a>
+  </div>
+
+  <a href="https://www.amazon.com/gp/product/B084DDDNRP/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B084DDDNRP&linkCode=as2&tag=jacobybroadna-20&linkId=fe7f1aac547b0d415d5a0d7dd09385d3" target="_blank">
+<div class="mini-ad">
+  <h3>Get Nintendo Switch (AD)</h3>
+  <img src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B084DDDNRP&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=jacobybroadna-20">
+</div>
+</a>
+</div>
+<div class="results">
+  <div  class="result-text">
+<h2 id="I1" class="vivify fadeIn" style="animation-delay: 2000ms;">Salmon</h2>
+<h2 class="vivify fadeIn" style="animation-delay: 2100ms;" id="I2">Catfish</h2>
+
+<h2 class="vivify fadeIn" style="animation-delay: 2200ms;" id="I3">Puffer Fish</h2>
+<h2 class="vivify fadeIn" style="animation-delay: 2300ms;" id="I4">Sword Fish</h2>
+
+<h2 class="vivify fadeIn" style="animation-delay: 2150ms;" id="I5">Salmon</h2>
+<h2 class="vivify fadeIn" style="animation-delay: 2150ms;" id="I6">Catfish</h2>
+
+<h2 class="vivify fadeIn" style="animation-delay: 2250ms;" id="I7">Puffer Fish</h2>
+<h2 class="vivify fadeIn" style="animation-delay: 2250ms;" id="I8">Sword Fish</h2 >
+</div>
+</div>
+        </div>
+      </div>
+      <div class="countdown" id="cntd">
+        <h1 id="countdown_div" class="vivify popIn delay-1000"></h1>
+      </div>
+
+      <div id="settings" class="dark-mode">
+        <a href="#">
+          <div class="settings-icon close">
+            <img src="https://www.materialui.co/materialIcons/navigation/close_black_1024x1024.png">
+          </div>
+        </a>
+        <p style="margin-left: 10px;">Dark Mode</p>
+        <div><a onclick="launch_toast()" class="darkmode F btn blue darken-4">Enable</a></div>
+        <div><a class="normalmode F btn-flat">Disable</a></div>
+        <div class="card-divider" style="display: block; margin-top:10px; "></div>
+        <script>
+            $(document).ready(function ($) {
+                var mode = localStorage.getItem('mode');
+                if (mode)
+                    $('body').addClass(mode);
+                $('accent').addClass(mode);
+                $(".darkmode").click(function () {
+                    $("body").addClass("darkclass");
+                    $("accent").addClass("darkclass");
+                    localStorage.setItem('mode', 'darkclass');
+                });
+                $(".normalmode").click(function () {
+                    $("body").removeClass("darkclass");
+                    $("accent").removeClass("darkclass");
+                    localStorage.setItem('mode', null);
+                });
+            });
+        </script>
+      </div>
+    </body>
+</html>

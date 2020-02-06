@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_13" data-name="Rectangle 13" width="512" height="512" rx="256"/>
+    </clipPath>
+    <clipPath id="clip-decklogo512">
+      <rect width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g id="decklogo512" clip-path="url(#clip-decklogo512)">
+    <rect width="512" height="512" fill="#fff"/>
+    <g id="deck_logo_mini" data-name="deck logo mini" clip-path="url(#clip-path)">
+      <text id="D" transform="translate(111.138 401.582)" font-size="404" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">D</tspan></text>
+    </g>
+  </g>
+</svg>

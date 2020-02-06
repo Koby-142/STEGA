@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="217" height="59" viewBox="0 0 217 59">
+  <defs>
+    <clipPath id="clip-deck_logo">
+      <rect width="217" height="59"/>
+    </clipPath>
+  </defs>
+  <g id="deck_logo" data-name="deck logo" clip-path="url(#clip-deck_logo)">
+    <rect width="217" height="59" fill="rgba(255,255,255,0)"/>
+    <text id="STEGA" transform="translate(34 -2)" font-size="46" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="3.192" y="48">STEGA</tspan></text>
+    <text id="STEGA-2" data-name="STEGA" transform="translate(34 -2)" font-size="46" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="3.192" y="48">STEGA</tspan></text>
+  </g>
+</svg>

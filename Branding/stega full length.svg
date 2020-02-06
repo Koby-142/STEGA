@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="231" viewBox="0 0 1024 231">
+  <defs>
+    <clipPath id="clip-stega_full_length">
+      <rect width="1024" height="231"/>
+    </clipPath>
+  </defs>
+  <g id="stega_full_length" data-name="stega full length" clip-path="url(#clip-stega_full_length)">
+    <rect width="1024" height="231" fill="#fff"/>
+    <g id="Rectangle_22" data-name="Rectangle 22" transform="translate(29 -69)" fill="none" stroke="#fff" stroke-width="10">
+      <rect width="973" height="443" stroke="none"/>
+      <rect x="5" y="5" width="963" height="433" fill="none"/>
+    </g>
+    <text id="STEGA" transform="translate(-36 -95)" font-size="305" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="71.884" y="320">STEGA</tspan></text>
+  </g>
+</svg>

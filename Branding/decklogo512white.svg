@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="clip-decklogo512white">
+      <rect width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g id="decklogo512white" clip-path="url(#clip-decklogo512white)">
+    <text id="SE" transform="translate(-58 -102)" font-size="515" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="540">SE</tspan></text>
+  </g>
+</svg>
