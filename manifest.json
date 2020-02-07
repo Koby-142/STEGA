@@ -16,9 +16,9 @@
     }
   ],
     "start_url": "index.html",
-    "background_color": "#000000",
+    "background_color": "#ffffff",
     "display": "fullscreen",
     "scope": "/index.html",
-    "theme_color": "#000000",	
+    "theme_color": "#ffffff",	
     "orientation": "landscape-primary"
 }
