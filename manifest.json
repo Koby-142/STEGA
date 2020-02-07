@@ -5,18 +5,20 @@
         {
             "src": "Branding/decklogo192px.png",
             "type": "image/png",
-            "sizes": "192x192"
+            "sizes": "192x192",
+            "purpose": "maskable"
     }
         , {
             "src": "Branding/decklogo512.png",
             "type": "image/png",
-            "sizes": "512x512"
+            "sizes": "512x512",
+            "purpose": "maskable"
     }
   ],
     "start_url": "index.html",
-    "background_color": "#1B1B1B",
+    "background_color": "#000000",
     "display": "fullscreen",
     "scope": "/index.html",
-    "theme_color": "#1B1B1B",	
+    "theme_color": "#000000",	
     "orientation": "landscape-primary"
 }
