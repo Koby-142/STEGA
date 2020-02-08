@@ -45,7 +45,7 @@ if ("serviceWorker" in navigator) {
        </script>
    
        <script id="item-template" type="text/x-handlebars-template">
-        <div class="difficulty-container">
+        <div class="difficulty-container" style="">
           <h3 class="difficulty">Easy</h3>
         </div>
         <div  class="deck-scroll ad vivify fadeIn delay-{{id}}00" style="display: none;">
@@ -92,7 +92,7 @@ if ("serviceWorker" in navigator) {
 
 <script id="item-template2" type="text/x-handlebars-template">
  <div class="difficulty-container">
-   <h3 class="difficulty">Med.</h3>
+   <h3 class="difficulty">Medium</h3>
  </div>
 
     {{#each this}}
@@ -528,5 +528,33 @@ if ("serviceWorker" in navigator) {
             });
         </script>
       </div>
+
+      /*-----------------------------Edit----------------------------*/
+<div id="creator" style="display: none;">
+      <div class="creator-container">
+        <form>
+          <div class="title">
+            <input type="text">
+          </div>
+          <div id="img-upload">
+            <textarea>
+
+            </textarea>
+            <script async src="https://imgbb.com/upload.js" data-auto-insert="html-embed-medium"></script>
+          </div>
+          <div class="deck-item-input">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+          </div>
+         
+        </form>
+      </div>
+    </div>
     </body>
 </html>
