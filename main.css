@@ -56,11 +56,12 @@ nav {width: 100%; position: absolute; height:70px;top: 0px;z-index: 550;left: 0p
 
 .pwa-container {position: fixed; top: 0px; left: 0px; width: 100%;height: 100vh;background-color: white;z-index: 1000;}
 
-.top-pwa-container {background-color: black;height: 250px;;width: 100%;}
+.top-pwa-container {height:  250px;;width: 100%;}
 
 .top-pwa-container > p {color: white;font-weight:500;font-size: 18px;text-align: center;margin-top: 15px;}
 
-.top-pwa-container {}
+.top-pwa-container  >img {width: 100%;position: fixed;top: 0px;z-index: -1;filter: brightness(0.5);height: 250px;object-fit: cover;}
+
 
 .pwa-start {margin: auto; width: 90%;}
 
