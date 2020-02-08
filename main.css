@@ -117,7 +117,7 @@ details summary::-webkit-details-marker {
 
 .home-screen {background-color: white;position: absolute; top: 0px; left: 0px; width: 100%;z-index: 150;}
 
-.scroll-container {overflow-x:auto;height:200px;margin-top:20px;overscroll-behavior-x:contain;white-space: nowrap;scroll-snap-type: x mandatory;}
+.scroll-container {overflow-x:auto;height:200px;margin-top:20px;overscroll-behavior-x:contain;white-space: nowrap;scroll-snap-type: x proximity;}
 
 .deck-scroll {width: 340px;;display: inline-block;padding-left: 20px;background-color: white;height: 93.5%;margin-left: -5px;scroll-snap-align: start;}
 
