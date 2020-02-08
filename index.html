@@ -83,7 +83,7 @@ if ("serviceWorker" in navigator) {
             <div class="deck-btn-container">
              <a href="#chd"><button onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
              document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
-             document.getElementById('cntd').style.display = 'block'"
+             document.getElementById('cntd').style.display = 'block';tutorial();"
    
              >PLAY</button></a> 
             </div>
@@ -121,7 +121,7 @@ if ("serviceWorker" in navigator) {
      <div class="deck-btn-container">
       <a href="#chd"><button onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
       document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
-      document.getElementById('cntd').style.display = 'block'"
+      document.getElementById('cntd').style.display = 'block';tutorial();"
 
       >PLAY</button></a> 
      </div>
@@ -149,7 +149,7 @@ if ("serviceWorker" in navigator) {
    <div class="deck-btn-container">
     <a href="#chd"><button onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
     document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
-    document.getElementById('cntd').style.display = 'block'"
+    document.getElementById('cntd').style.display = 'block';tutorial();"
 
     >PLAY</button></a> 
    </div>
@@ -179,7 +179,7 @@ if ("serviceWorker" in navigator) {
    <div class="deck-btn-container">
     <a href="#chd"><button onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
     document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
-    document.getElementById('cntd').style.display = 'block'"
+    document.getElementById('cntd').style.display = 'block';tutorial();"
 
     >PLAY</button></a> 
    </div>
@@ -204,7 +204,7 @@ if ("serviceWorker" in navigator) {
 <li>
   <a onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
   document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
-  document.getElementById('cntd').style.display = 'block'" href="#chd" class="search-result-container">
+  document.getElementById('cntd').style.display = 'block';tutorial();" href="#chd" class="search-result-container">
     <img src="{{image}}">
     <div class="search-text">
       <h3>{{name}}</h3>
@@ -340,7 +340,13 @@ if ("serviceWorker" in navigator) {
       
 
       </div>
-    
+      <audio id="tutorial" src="/Sound Effects/gamestart.m4a"></audio>
+    <script>
+      function tutorial(){
+        document.getElementById("tutorial").play();
+      }
+      
+    </script>
       <div  class="charades-container" id="chd">
         <div class="charades-view">
           <div class="time-container">
