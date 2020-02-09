@@ -274,6 +274,8 @@ body.darkclass .home-screen {background-color: black;}
 
 body.darkclass .difficulty-container {background-color: rgba(0, 0, 0, 0.671);}
 
+body.darkclass .difficulty-container > p {color: rgb(233, 233, 233);}
+
 body.darkclass .difficulty {color: white;}
 
 body.darkclass nav {background-color: black;}
@@ -281,6 +283,10 @@ body.darkclass nav {background-color: black;}
 body.darkclass .menu-btn > a > button {background-color: rgb(17, 17, 17);}
 
 body.darkclass .exr {background-color: transparent !important;color: white;border: none;}
+
+body.darkclass .left-btn {background-color: black;color: white;}
+
+body.darkclass .right-btn {background-color: black;color: white;}
 
 body.darkclass .deck-scroll {background-color: black;}
 
