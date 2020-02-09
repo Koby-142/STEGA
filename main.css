@@ -42,7 +42,7 @@ a {
 
 button:focus {outline: none;}
 
-.logo-container {width: 123px;margin: auto;margin-top: 15px;}
+.logo-container {width: 123px;margin: auto;padding-top: 13px;}
 
 .logo-container > img {width: 123px;margin-left: 10px;;}
 
@@ -50,7 +50,7 @@ button:focus {outline: none;}
 
 #time_div {transition: 25s linear;}
 
-nav {width: 100%; position: absolute;top: 0px;z-index: 550;left: 0px;backdrop-filter: blur(6px);background-color: white;;}
+nav {width: 100%; position: sticky;top: 0px;z-index: 550;left: 0px;backdrop-filter: blur(6px);background-color: white;height:55px;}
 
 @media all and (orientation:portrait) {
     .pwa-container {display: block;opacity: 0px;transition: 0.2s ease;}
@@ -163,7 +163,7 @@ details summary::-webkit-details-marker {
 
 
 
-.large-container {height: 205px;overflow-x: auto; overscroll-behavior-x:container;scroll-snap-type:x mandatory;margin-top: 60px;}
+.large-container {height: 205px;overflow-x: auto; overscroll-behavior-x:container;scroll-snap-type:x mandatory;margin-top: 0px;}
 
 .large-scroll > img {filter: brightness(0.55);}
 
@@ -197,7 +197,7 @@ details summary::-webkit-details-marker {
 
 .settings-icon > img {width: 30px;}
 
-.inline-ad {margin-top: 20px;margin-bottom: 0px;}
+.inline-ad {margin-top: 20px;margin-bottom: 0px;width: 100%;object-fit: scale-down;}
 
 .inline-ad:active {background-color: lightgray;}
 
