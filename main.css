@@ -120,9 +120,9 @@ details summary::-webkit-details-marker {
 
 .home-screen {background-color: white;position: absolute; top: 0px; left: 0px; width: 100%;z-index: 150;}
 
-.scroll-container {overflow-x:scroll;white-space: nowrap;}
+.scroll-container {overflow-x:scroll;white-space: nowrap;height: 177px;}
 
-.group-btns {margin-top: 150px;}
+.group-btns {margin-top: 15px;}
 
 .group-btn-wrapper {margin: auto; width: 220px;margin-bottom: -7px;}
 
@@ -144,9 +144,17 @@ details summary::-webkit-details-marker {
 
 .deck-scroll > img {width: 100%;object-fit: cover;border-radius: 10px;filter: brightness(0.7);height: 105px;background-color: lightgray;}
 
-.deck-scroll > h2 {width: 100%; text-align: center;font-size: 21px;margin-top: -75px;color: white;z-index: 15;position: relative;font-weight:500;}
+.deck-scroll > h2 {width: 100%; text-align: center;font-size: 21px;margin-top: -75px;color: white;z-index: 15;position: relative;font-weight:500;padding-bottom: 0px;}
 
 #chd {position: fixed; top: 0px; left: 0px; width: 100%; height: 100vh ;z-index: 500;display: none;;}
+
+.large-scroll > img {height: 200px;width:297px ;margin-left: 0px;}
+
+.large-scroll {margin-left: 8px;scroll-snap-align: center;width: 297px;}
+
+
+
+.large-container {height: 200px;overflow-x: auto; overscroll-behavior-x:container;scroll-snap-type:x mandatory;margin-top: 100px;}
 
 #chd:target {display: block;}
 

@@ -52,7 +52,32 @@ if ("serviceWorker" in navigator) {
 </script>
        <link rel="apple-touch-icon" href="/Branding/deck logo.png">
    
+       <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/deck/easy', function (data) {
+                var template = Handlebars.compile($('#item-template9').html())
+                $('#hero').html(template(data.easy))
+            })
+        })
+    </script>
 
+    <script id="item-template9" type="text/x-handlebars-template">
+   
+    <div class="mini-u"></div>
+        {{#each this}}
+        <a href="#chd">
+        <div onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
+        document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
+        document.getElementById('cntd').style.display = 'block';tutorial();" class="deck-scroll large-scroll vivify fadeIn delay-{{id}}00">
+         <img loading="lazy" alt="Loading Deck..." src="{{image}}">
+         <h2>{{name}}</h2>
+         <div class="deck-btn-container">
+         </div>
+       </div>
+     </a>
+    {{/each}}
+ 
+</script>
  
        <script type="text/javascript">
            $(document).ready(function () {
@@ -238,17 +263,7 @@ if ("serviceWorker" in navigator) {
       </div>
       <div class="home-screen">
         <nav>
-          <div class="logo-container">
-            <img class="vivify fadeIn delay-200" src="Branding/stega full length.svg">
-            <div class="menu-btn">
-              <a href="">
-                <button class="menu-btn-r">Create Deck</button>
-              </a>
-              <a href="">
-                <button style="" class="menu-btn-r exr">Enter Deck Pin</button>
-              </a>
-            </div>
-            </div>
+        
 
             <a href="#settings">
 <div class="settings-icon">
@@ -290,6 +305,11 @@ if ("serviceWorker" in navigator) {
                   });
               </script>
         </nav>
+        <div id="hero" class="scroll-container large-container">
+
+
+
+        </div>
         <div class="group-btn-wrapper">
         <div class="group-btns">
           <button class="left-btn"><p>Get Plus</p></button><button class="right-btn"><p>Remove Ads</p></button>
