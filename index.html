@@ -66,6 +66,7 @@ if ("serviceWorker" in navigator) {
        <script id="item-template" type="text/x-handlebars-template">
         <div class="difficulty-container" style="">
           <h3 class="difficulty">Easy</h3>
+          <p>Universally Understood Topics</p>
         </div>
         <div  class="deck-scroll ad vivify fadeIn delay-{{id}}00" style="display: none;">
           <img loading="lazy" alt="Loading Deck..." src="https://i.pcmag.com/imagery/reviews/05xwFbRxmnrvbWMjdC9Myo5-5.fit_scale.size_2698x1517.jpg">
@@ -77,27 +78,18 @@ if ("serviceWorker" in navigator) {
           </div>
         </div>
            {{#each this}}
-           <div class="deck-scroll vivify fadeIn delay-{{id}}00">
+           <a href="#chd">
+           <div onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
+           document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
+           document.getElementById('cntd').style.display = 'block';tutorial();" class="deck-scroll vivify fadeIn delay-{{id}}00">
             <img loading="lazy" alt="Loading Deck..." src="{{image}}">
             <h2>{{name}}</h2>
             <div class="deck-btn-container">
-             <a href="#chd"><button onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
-             document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
-             document.getElementById('cntd').style.display = 'block';tutorial();"
-   
-             >PLAY</button></a> 
             </div>
           </div>
+        </a>
        {{/each}}
-       <div style="padding-right: 15px;" class="ad deck-scroll vivify fadeIn delay-{{id}}00">
-        <img loading="lazy" alt="Loading Deck..." src="https://i.ya-webdesign.com/images/airpods-png-transparent-8.jpg">
-        <h2>Airpods (AD)</h2>
-        <div class="deck-btn-container">
-         <a href="https://amzn.to/3bdZRD6"><button
-
-         >BUY</button></a> 
-        </div>
-      </div>
+    
    </script>
 
    <script type="text/javascript">
@@ -112,20 +104,18 @@ if ("serviceWorker" in navigator) {
 <script id="item-template2" type="text/x-handlebars-template">
  <div class="difficulty-container">
    <h3 class="difficulty">Medium</h3>
+   <p>Reasonably Understood Topics</p>
  </div>
 
-    {{#each this}}
-    <div class="deck-scroll vivify fadeIn delay-{{id}}00">
+    {{#each this}} <a href="#chd">
+    <div  onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
+    document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
+    document.getElementById('cntd').style.display = 'block';tutorial();" class="deck-scroll vivify fadeIn delay-{{id}}00">
      <img loading="lazy" src="{{image}}">
      <h2>{{name}}</h2>
-     <div class="deck-btn-container">
-      <a href="#chd"><button onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
-      document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
-      document.getElementById('cntd').style.display = 'block';tutorial();"
 
-      >PLAY</button></a> 
-     </div>
    </div>
+  </a> 
 {{/each}}
 <script type="text/javascript">
   $(document).ready(function () {
@@ -222,7 +212,7 @@ if ("serviceWorker" in navigator) {
  
     </head>
     <body class="dark-html">
-      <div class="pwa-container">
+      <div class="pwa-container" style="display: none;">
         <div class="top-pwa-container">
           <img src="https://media.giphy.com/media/QuxsGPSa8HwHq6ngAF/giphy.gif">
         <div class="pwa-logo-container">
@@ -300,9 +290,12 @@ if ("serviceWorker" in navigator) {
                   });
               </script>
         </nav>
-        
-         
-          <div style="margin-top:70px;" id="items" class="scroll-container">
+        <div class="group-btn-wrapper">
+        <div class="group-btns">
+          <button class="left-btn"><p>Get Plus</p></button><button class="right-btn"><p>Remove Ads</p></button>
+        </div>
+      </div>
+          <div style="" id="items" class="scroll-container">
 
 
 
