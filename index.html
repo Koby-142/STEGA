@@ -54,9 +54,9 @@ if ("serviceWorker" in navigator) {
    
        <script type="text/javascript">
         $(document).ready(function () {
-            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/deck/easy', function (data) {
+            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/deck/featured', function (data) {
                 var template = Handlebars.compile($('#item-template9').html())
-                $('#hero').html(template(data.easy))
+                $('#hero').html(template(data.featured))
             })
         })
     </script>
