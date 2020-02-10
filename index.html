@@ -575,29 +575,58 @@ if ("serviceWorker" in navigator) {
         </script>
       </div>
 
-<div id="creator" style="display: none;">
+<!-------------------------------------Stega Plus--------------------------------------->
+
+<div id="creator" style="display: block;">
       <div class="creator-container">
         <form>
-          <div class="title">
-            <input type="text">
+          <div id="title" class="title">
+            <div class="difficulty-container" style="">
+              <h3 class="difficulty">Title</h3>
+              <p>This is shown before the game starts</p>
+            </div>
+            <input type="text" class="gen-input" placeholder="Title">
+          <div class="form-btn-container"><a href="#"><p class="next-btn">Prev</p></a>  <a href="#img-upload"><p class="next-btn xor">Next</p></a></div>
           </div>
+
           <div id="img-upload">
+            <div class="fixed-container">
+              <div class="center-container">
+            <div class="difficulty-container" style="">
+              <h3 class="difficulty">Thumbnail Image</h3>
+              <p>This is the thumbnail image and the in-game Image</p>
+            </div>
             <textarea>
 
             </textarea>
+            
             <script async src="https://imgbb.com/upload.js" data-auto-insert="html-embed-medium"></script>
+            <div class="form-btn-container"><a href="#"><p class="next-btn">Prev</p></a>  <a href="#deck-items"><p class="next-btn xor">Next</p></a></div>
           </div>
+        </div>
+          </div>
+
+          <div id="deck-items">
+            <div class="fixed-container">
+              <div class="center-container">
           <div class="deck-item-input">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+            <div class="difficulty-container" style="">
+              <h3 class="difficulty">Deck Items</h3>
+              <p>Each deck item is described while playing make sure they are representative of the title you choose before.</p>
+            </div>
+            <input class="gen-input half" placeholder="Item 1" type="text">
+            <input class="gen-input half" placeholder="Item 1" type="text">
+            <input class="gen-input half" placeholder="Item 1" type="text">
+            <input class="gen-input half" placeholder="Item 1" type="text">
+            <input class="gen-input half" placeholder="Item 1" type="text">
+            <input class="gen-input half" placeholder="Item 1" type="text">
+            <input class="gen-input half" placeholder="Item 1" type="text">
+            <input class="gen-input half" placeholder="Item 1" type="text">
           </div>
-         
+          <div class="form-btn-container"><a href="#img-upload"><p class="next-btn">Prev</p></a>  <a href="#img-upload"><p class="next-btn xor">Next</p></a></div>
+        </div>
+        </div>
+        </div>
         </form>
       </div>
     </div>
