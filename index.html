@@ -585,7 +585,7 @@ if ("serviceWorker" in navigator) {
               <h3 class="difficulty">Title</h3>
               <p>This is shown before the game starts</p>
             </div>
-            <input type="text" class="gen-input" placeholder="Title">
+            <input id="title-input" type="text" class="gen-input" placeholder="Title">
           <div class="form-btn-container"><a href="#"><p class="next-btn">Prev</p></a>  <a href="#img-upload"><p class="next-btn xor">Next</p></a></div>
           </div>
 
@@ -596,10 +596,11 @@ if ("serviceWorker" in navigator) {
               <h3 class="difficulty">Thumbnail Image</h3>
               <p>This is the thumbnail image and the in-game Image</p>
             </div>
-            <textarea>
+            <div id="image-live"></div>
+            <textarea oninput="live()" id="img-upload-input">
 
             </textarea>
-            
+           
             <script async src="https://imgbb.com/upload.js" data-auto-insert="html-embed-medium"></script>
             <div class="form-btn-container"><a href="#"><p class="next-btn">Prev</p></a>  <a href="#deck-items"><p class="next-btn xor">Next</p></a></div>
           </div>
@@ -630,5 +631,21 @@ if ("serviceWorker" in navigator) {
         </form>
       </div>
     </div>
+    <script>
+
+function live(){
+            
+            var image= document.getElementById('img-upload-input').value;
+            document.getElementById('image-live').innerHTML = image;
+         
+            setTimeout(live, 100);
+           }
+           live();
+        
+       function livemedia(){
+           var image = document.getElementById('imageUrl').value;
+            document.getElementById('liveimg').innerHTML = image;
+       }
+    </script>
     </body>
 </html>

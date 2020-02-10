@@ -270,7 +270,7 @@ a:active {outline: none;}
 
 #deck-items:target {display: block;}
 
-.imgbb-button {height: 100px;background-color: white !important;border-radius: 10px !important;}
+.imgbb-button {height: 100px;background-color: white !important;border-radius: 10px !important;display: inline-block !important;}
 
 .center-container > textarea {display: none;}
 
@@ -279,6 +279,10 @@ a:active {outline: none;}
 .fixed-container {position: fixed; top: 0px; width: 100%; margin-top: 30vh;background-color: white;z-index: 150;}
 
 .half {width: 125px;display: inline-block;margin-top: 7px;}
+
+#image-live {width:100%;display: inline-block;}
+
+#image-live > a >img {width: 100%; border: solid 1px lightgray;display: inline-block;height: 200px; object-fit: cover;border-radius: 10px;display: inline-block;}
 /*------------------------------------------Dark Mode---------------------------*/
 
 #settings {position: fixed; top: 70px;left: 0px; width: 100%; height: 100vh; background-color: white;z-index: 150;display: none;}
