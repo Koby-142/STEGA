@@ -336,6 +336,8 @@ label > img:active {
 .bottom-nav-wrapper {
   margin: auto;
   width: 335px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .bottom-navigation {
