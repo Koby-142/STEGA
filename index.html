@@ -648,5 +648,46 @@ function live(){
             document.getElementById('liveimg').innerHTML = image;
        }
     </script>
+
+<div class="bottom-navigation">
+  <div class="bottom-nav-wrapper">
+     
+      
+    
+          <div class="bottom-nav-button start " onclick="document.getElementById('account').style.display = 'none';"
+        >
+     
+          <input id="nav-btn2" type="radio" name="bottom-nav">
+         
+          <label for="nav-btn2"><img  src="/Assets/Create.svg" alt="Home"></label>
+      </a>
+      </div>
+      <div class="bottom-nav-button" onclick="document.getElementById('account').style.display = 'block';">
+         
+          <input id="nav-btn3" type="radio" name="bottom-nav" >
+          <label for="nav-btn3"><img src="/Assets/Profile.svg" alt="Account"></label>
+  
+      </div>
+      <div class="bottom-nav-button " onclick="document.getElementById('search').focus()">
+        <input  id="nav-btn1" type="radio" name="bottom-nav"  checked>
+        <label for="nav-btn1" ><img  src="/Assets/Play.svg" alt="Search"></label>
+    </div>
+      <div class="bottom-nav-button" onclick="document.getElementById('account').style.display = 'block';">
+         
+        <input id="nav-btn4" type="radio" name="bottom-nav" >
+        <label for="nav-btn4"><img src="/Assets/Settings.svg" alt="Account"></label>
+
+    </div>
+
+    <div class="bottom-nav-button" onclick="document.getElementById('account').style.display = 'block';">
+         
+      <input id="nav-btn5" type="radio" name="bottom-nav" >
+      <label for="nav-btn5"><img src="/Assets/Explore.svg" alt="Account"></label>
+
+  </div>
+
+  </div>
+</div>
+
     </body>
 </html>

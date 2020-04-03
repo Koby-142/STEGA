@@ -288,6 +288,71 @@ a:active {outline: none;}
 #image-live {width:100%;display: inline-block;}
 
 #image-live > a >img {width: 100%; border: solid 1px lightgray;display: inline-block;height: 200px; object-fit: cover;border-radius: 10px;display: inline-block;}
+
+/*-----------------------------------------Bottom Navigation-------------------------*/
+
+/*----------------------------------------Bottom Navigation--------------------------*/
+
+.bottom-nav-button > input {
+  display: none;
+}
+
+label > img {
+  transition: 0.2s ease;
+  width: 50px;
+  object-fit: cover;
+  height: 46px;
+  margin-left:10px;
+  filter: saturate(0);
+  margin-bottom: -5px;
+  border: solid 2px transparent;
+  transition: 0.1s linear;
+  opacity: 0.4;
+  
+}
+
+label {
+}
+
+.start {
+  margin-left: 8px;
+}
+
+label > img:active {
+}
+
+.bottom-nav-button > input:checked + label > img {
+  filter: saturate(1);
+  opacity: 1;
+}
+
+.bottom-nav-button {
+  display: inline-block;
+}
+
+.bottom-nav-button:focus {
+}
+
+.bottom-nav-wrapper {
+  margin: auto;
+  width: 355px;
+}
+
+.bottom-navigation {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 200;
+  border-top: solid 1px lightgray;
+  background-color: white;
+
+}
+
+@media screen and (orientation:landscape) {
+  .bottom-navigation {display: none;}
+}
+
 /*------------------------------------------Dark Mode---------------------------*/
 
 #settings {position: fixed; top: 70px;left: 0px; width: 100%; height: 100vh; background-color: white;z-index: 150;display: none;}

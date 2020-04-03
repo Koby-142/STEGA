@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="46" viewBox="0 0 55 46">
+  <defs>
+    <clipPath id="clip-Profile">
+      <rect width="55" height="46"/>
+    </clipPath>
+  </defs>
+  <g id="Profile" clip-path="url(#clip-Profile)">
+    <rect width="55" height="46" fill="rgba(255,255,255,0)"/>
+    <text id="Profile-2" data-name="Profile" transform="translate(4 27)" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="6.616" y="13">Profile</tspan></text>
+    <g id="person-24px" transform="translate(14 2)">
+      <path id="Path_35" data-name="Path 35" d="M0,0H26V26H0Z" fill="none"/>
+      <path id="Path_36" data-name="Path 36" d="M12.667,6.167A2.167,2.167,0,1,1,10.5,8.333a2.173,2.173,0,0,1,2.167-2.167m0,10.833c2.925,0,6.283,1.4,6.5,2.167h-13c.249-.78,3.586-2.167,6.5-2.167m0-13A4.333,4.333,0,1,0,17,8.333,4.332,4.332,0,0,0,12.667,4Zm0,10.833C9.774,14.833,4,16.285,4,19.167v2.167H21.333V19.167C21.333,16.285,15.559,14.833,12.667,14.833Z" transform="translate(0.333 0.333)"/>
+    </g>
+  </g>
+</svg>

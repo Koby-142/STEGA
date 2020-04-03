@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="46" viewBox="0 0 55 46">
+  <defs>
+    <clipPath id="clip-Play">
+      <rect width="55" height="46"/>
+    </clipPath>
+  </defs>
+  <g id="Play" clip-path="url(#clip-Play)">
+    <rect width="55" height="46" fill="rgba(255,255,255,0)"/>
+    <g id="games-24px" transform="translate(16 4)">
+      <path id="Path_29" data-name="Path 29" d="M0,0H24V24H0Z" fill="none"/>
+      <path id="Path_30" data-name="Path 30" d="M13,4V6.67l-1,1-1-1V4h2m7,7v2H17.33l-1-1,1-1H20M6.67,11l1,1-1,1H4V11H6.67M12,16.33l1,1V20H11V17.33l1-1M15,2H9V7.5l3,3,3-3Zm7,7H16.5l-3,3,3,3H22ZM7.5,9H2v6H7.5l3-3ZM12,13.5l-3,3V22h6V16.5Z"/>
+    </g>
+    <text id="Play-2" data-name="Play" transform="translate(7 26)" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="10.23" y="13">Play</tspan></text>
+  </g>
+</svg>

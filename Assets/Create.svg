@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="46" viewBox="0 0 55 46">
+  <defs>
+    <clipPath id="clip-Create">
+      <rect width="55" height="46"/>
+    </clipPath>
+  </defs>
+  <g id="Create" clip-path="url(#clip-Create)">
+    <rect width="55" height="46" fill="rgba(255,255,255,0)"/>
+    <text id="Create-2" data-name="Create" transform="translate(4 26)" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="6.338" y="13">Create</tspan></text>
+    <g id="add-24px_1_" data-name="add-24px (1)" transform="translate(12 1)">
+      <path id="Path_33" data-name="Path 33" d="M0,0H30.007V30.007H0Z" fill="none"/>
+      <path id="Path_34" data-name="Path 34" d="M22.5,15H15v7.5H12.5V15H5V12.5h7.5V5H15v7.5h7.5Z" transform="translate(1.252 1.252)"/>
+    </g>
+  </g>
+</svg>
