@@ -302,7 +302,7 @@ label > img {
   width: 50px;
   object-fit: cover;
   height: 46px;
-  margin-left:10px;
+  margin-left:5px;
   filter: saturate(0);
   margin-bottom: -5px;
   border: solid 2px transparent;
@@ -335,7 +335,7 @@ label > img:active {
 
 .bottom-nav-wrapper {
   margin: auto;
-  width: 355px;
+  width: 335px;
 }
 
 .bottom-navigation {
