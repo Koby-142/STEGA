@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190" height="49" viewBox="0 0 190 49">
+  <defs>
+    <clipPath id="clip-stega_plus">
+      <rect width="190" height="49"/>
+    </clipPath>
+  </defs>
+  <g id="stega_plus" data-name="stega plus" clip-path="url(#clip-stega_plus)">
+    <rect width="190" height="49" fill="#fff"/>
+    <g id="Group_2" data-name="Group 2" transform="translate(-1303 61)">
+      <path id="Path_13" data-name="Path 13" d="M34.576,59.367h-14.2V73.535H15.7V59.367H1.529V54.656H15.7V40.488h4.676V54.656h14.2Z" transform="translate(1452 -93)" fill="#ffcb00"/>
+    </g>
+    <text id="STEGA" transform="translate(0 -7)" font-size="46" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="3.192" y="48">STEGA</tspan></text>
+    <text id="STEGA-2" data-name="STEGA" transform="translate(0 -7)" font-size="46" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="3.192" y="48">STEGA</tspan></text>
+  </g>
+</svg>
