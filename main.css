@@ -124,7 +124,7 @@ details summary::-webkit-details-marker {
 
 .home-screen {background-color: white;position: absolute; top: 0px; left: 0px; width: 100%;z-index: 150;}
 
-.scroll-container {overflow-x:scroll;white-space: nowrap;height: 190px;}
+.scroll-container {overflow-x:scroll;white-space: nowrap;height: 160px;}
 
 .group-btns {margin-top: 15px;}
 
@@ -177,13 +177,13 @@ details summary::-webkit-details-marker {
 
 .deck-btn-container > button {width: 105px;height: 37px;background-color: transparent;border-radius: 5px;border: solid 2px white;color: white;font-size: 24px; font-weight: 500;}
 
-.difficulty-container {vertical-align: top;height: 30%;border-color: lightgray;
+.difficulty-container {vertical-align: top;height: auto;border-color: lightgray;
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -o-sticky;
-    position: -ms-sticky;left: 15px;z-index: 150;border-radius: 100px;margin-top:15px;backdrop-filter: blur(5px);scroll-snap-align: start; padding-right: 0px;background-color: white;position: sticky;;margin-bottom: 7px;width: 100%;}
+    position: -ms-sticky;left: 15px;z-index: 150;border-radius: 100px;margin-top:5px;backdrop-filter: blur(5px);scroll-snap-align: start; padding-right: 0px;background-color: white;position: sticky;;margin-bottom: 7px;width: 100%;}
 
-    .difficulty-container > p {font-size: 14px;color: #424242;margin-top: 5px;margin-bottom: 14px;}
+    .difficulty-container > p {font-size: 14px;color: #666666;margin-top: 0px;margin-bottom: 14px;font-weight: normal;}
 
 .difficulty {font-size:19px;margin-top: 0px;padding-top: 0px;padding-right: 15px;width: 100%;color: black;margin-bottom: 0px;font-weight: 500;}
 

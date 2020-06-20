@@ -92,7 +92,7 @@ if ("serviceWorker" in navigator) {
        <script id="item-template" type="text/x-handlebars-template">
         <div class="difficulty-container" style="">
           <h3 class="difficulty">Easy</h3>
-          <p>Universally Understood Topics</p>
+         
         </div>
         <div  class="deck-scroll ad vivify fadeIn delay-{{id}}00" style="display: none;">
           <img loading="lazy" alt="Loading Deck..." src="https://i.pcmag.com/imagery/reviews/05xwFbRxmnrvbWMjdC9Myo5-5.fit_scale.size_2698x1517.jpg">
@@ -131,7 +131,7 @@ if ("serviceWorker" in navigator) {
 <script id="item-template2" type="text/x-handlebars-template">
  <div class="difficulty-container">
    <h3 class="difficulty">Medium</h3>
-   <p>Reasonably Understood Topics</p>
+  
  </div>
  <div class="mini-u"></div>
     {{#each this}} <a href="#chd">
@@ -660,11 +660,11 @@ function live(){
           <label for="nav-btn3"><img src="/Assets/Profile.svg" alt="Account"></label>
   
       </div>
-      <div class="bottom-nav-button " onclick="document.getElementById('search').focus()">
+      <div class="bottom-nav-button " onclick="self.location.href = '#'">
         <input  id="nav-btn1" type="radio" name="bottom-nav"  checked>
         <label for="nav-btn1" ><img  src="/Assets/Play.svg" alt="Search"></label>
     </div>
-      <div class="bottom-nav-button" onclick="document.getElementById('account').style.display = 'block';">
+      <div class="bottom-nav-button" onclick="self.location.href = '#settings'">
          
         <input id="nav-btn4" type="radio" name="bottom-nav" >
         <label for="nav-btn4"><img src="/Assets/Settings.svg" alt="Account"></label>
