@@ -146,9 +146,9 @@ details summary::-webkit-details-marker {
 
 .deck-scroll:first-of-type {background-color: transparent;padding-left: 0px !important;;}
 
-.deck-scroll > img {width: 100%;object-fit: cover;border-radius: 10px;height: 165px;background-color: lightgray;border: solid 1px lightgray;}
+.deck-scroll > img {width: 100%;object-fit: cover;border-radius: 0px;height: 165px;background-color: lightgray;border: none;}
 
-.deck-scroll > h2 {width: 100%; text-align: center;font-size: 16px;margin-top: 5px;color: black;z-index: 15;position: relative;padding-bottom: 6px;font-family:'Roboto';font-weight: 500;background-color: rgb(241, 241, 241);padding-top: 6px;border-radius: 7px;}
+.deck-scroll > h2 {width: 100%; text-align: center;font-size: 16px;margin-top: 5px;color: black;z-index: 15;position: relative;padding-bottom: 6px;font-family:'Roboto';font-weight: 500;background-color: rgb(241, 241, 241);padding-top: 6px;border-radius: 0px;}
 
 .mini-u {width: 4px; height: 50px; display: inline-block;}
 
