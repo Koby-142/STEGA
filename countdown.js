@@ -32,7 +32,7 @@ function startCountDown(){
         gameStatus += 1;
         console.log("Game Status:" + gameStatus);
         gameStatus = 0;
-        gameStatus += 1;
+        globalGameStatus += 1;
       }
 
       if (globalGameStatus > 8){
