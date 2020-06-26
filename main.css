@@ -499,6 +499,7 @@ details summary::-webkit-details-marker {
   background-color: white;
   height: 211px;
   margin-top: 17px;
+
 }
 
 .deck-scroll:active {
@@ -1393,7 +1394,7 @@ body.darkclass .bottom-nav-button > label > img {
 }
 
 .loading-container > img {
-  width: 47%;
+  width: 23%;
   position: relative;
   border-radius: 150px;
   position: fixed;
