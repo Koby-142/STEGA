@@ -294,7 +294,7 @@
       <button class="prev charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById('I1').style.color = 'red';"></button>
     <button class="next charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);up();"></button>
    <div class="block-container vivify popIn">
-     <h1 id="m1">{{d1}}</h1>
+     <h1 id="m1">Game Unavailable</h1>
    </div>
     </div>
 
@@ -432,7 +432,7 @@
   <div class="complete-image ">  <img src="Branding/deck complete.svg"></div>
 
   <div class="left-group-btn-container">
-    <a href=""><button>New Game</button></a>
+    <a href=""><button onclick="window.navigator.vibrate(40);document.getElementById('tapstart').play();">New Game</button></a>
   </div>
 
  
