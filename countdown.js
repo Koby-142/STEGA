@@ -19,6 +19,7 @@ function startCountDown(){
       var gameStatus = 0;
       if (event.gamma < 7  && event.gamma > 0){
         gameStatus += 1;
+        alert('Action Complete')
       }
 
       if (gameStatus > 3){
