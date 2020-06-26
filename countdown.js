@@ -30,6 +30,7 @@ function startCountDown(){
       function status(){
         gameStatus += 1
         console.log("Game Status:" + gameStatus);
+        gameStatus = 0;
       }
 
       document.getElementById("gyro").innerHTML = event.gamma;
