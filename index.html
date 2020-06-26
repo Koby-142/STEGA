@@ -242,16 +242,21 @@
             <h2 id="time_div"></h2>
           
           </div>
+         <div class="endgame-container">
+           <div class="sub-end">
+             <button class="endgame" onclick="document.getElementById('popup2').style.display='block';document.getElementById('tapclose').play();">Endgame</button>
+            </div>
          
-            <button class="endgame"></button>
+         </div>
+   
 
 
 
             <div class="popup-container " id="popup2">
-              <button class="close-pop-btn" onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper').classList.add('flipOutY');setTimeout(closePopup, 500);document.getElementById('tapclose').play()"></button>
+              <button class="close-pop-btn" onclick=" "></button>
               <div class="popin " >
                 <div class="popin-wrapper vivify flipInY duration-500" >
-                <button onclick="closePopup()"class="close-btn" >Close</button>
+                <button onclick="setTimeout(closePopup2, 500);" class="close-btn" >Close</button>
               
             <a href="/index.html">
                 <div class="wide-button" >
@@ -266,7 +271,7 @@
                 </div>
               </a>
                 <div class="wide-button invert">
-                  <button onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper').classList.add('flipOutY');setTimeout(closePopup, 500);document.getElementById('tapclose').play();window.navigator.vibrate(20);">Cancel</button>
+                  <button onclick="document.getElementById('popup2').style.display = 'none';document.getElementById('tapclose').play();window.navigator.vibrate(20);">Cancel</button>
                   <audio src="sound effects/tapclose.mp3" id="tapclose"></audio>
                 </div>
               </div>

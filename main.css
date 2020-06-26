@@ -423,6 +423,12 @@ details summary::-webkit-details-marker {
 
 #popup2 {display: none;}
 
+.endgame-container {position: fixed;bottom: 0px;width: 100%;left: 0px;z-index: 1000;;}
+
+.sub-end {margin: auto;width: 120px;}
+
+.endgame {width: 120px;padding-top: 10px;padding-bottom: 10px;font-size: 17px;font-weight: bold;background-color: white;border: none;border-radius: 7px 7px 0px 0px;}
+
 .close-btn {
   position: fixed;
   right: 0px;
