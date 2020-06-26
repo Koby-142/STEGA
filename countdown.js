@@ -24,7 +24,8 @@ function startCountDown(){
 
       if (gameStatus > 3){
         plusSlides(1, 0);window.navigator.vibrate(75);status();
-        alert('Next Slide Complete!')
+        alert('Next Slide Complete!');
+        var gameStatus = 0; 
       }
      
       function status(){
