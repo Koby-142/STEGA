@@ -253,7 +253,7 @@
 
 
             <div class="popup-container " id="popup2">
-              <button class="close-pop-btn" onclick=" "></button>
+              <button class="close-pop-btn" onclick=" document.getElementById('popup2').style.display = 'none';document.getElementById('tapclose').play();window.navigator.vibrate(20);"></button>
               <div class="popin " >
                 <div class="popin-wrapper vivify flipInY duration-500" >
                 <button onclick="setTimeout(closePopup2, 500);" class="close-btn" >Close</button>
