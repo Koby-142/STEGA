@@ -4,8 +4,11 @@
        <title>Stega</title> 
        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="main.css">
+       <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+       <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+       <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
        <link rel="manifest" href="manifest.json">
-       <link rel="stylesheet" href="/vivify.min.css">
+       <link rel="stylesheet" href="vivify.min.css">
        <link rel="shortcut icon" href="Branding/decklogo512.png">
        <meta name="apple-mobile-web-app-capable" content="yes">
        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
@@ -33,52 +36,9 @@
   <meta property="twitter:image" content="/Branding/decklogo512.png">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <meta name="language" content="English">
-        <script >
-
-if ("serviceWorker" in navigator) {
-  if (navigator.serviceWorker.controller) {
-    console.log("[PWA Builder] active service worker found, no need to register");
-  } else {
-    // Register the service worker
-    navigator.serviceWorker
-      .register("pwabuilder-sw.js", {
-        scope: "/index.html"
-      })
-      .then(function (reg) {
-        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
-      });
-  }
-}
-
-</script>
-       <link rel="apple-touch-icon" href="/Branding/deck logo.png">
-   
-       <script type="text/javascript">
-        $(document).ready(function () {
-            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/deck/featured', function (data) {
-                var template = Handlebars.compile($('#item-template9').html())
-                $('#hero').html(template(data.featured))
-            })
-        })
-    </script>
-
-    <script id="item-template9" type="text/x-handlebars-template">
-      <div class="mini-u"></div>
   
-        {{#each this}}
-        <a href="#chd">
-        <div onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
-        document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
-        document.getElementById('cntd').style.display = 'block';tutorial();" class="deck-scroll large-scroll vivify fadeIn delay-{{id}}00">
-         <img loading="lazy" alt="Loading Deck..." src="{{image}}">
-         <h2 style="background-color: transparent;color:white;">{{name}}</h2>
-         <div class="deck-btn-container">
-         </div>
-       </div>
-     </a>
-    {{/each}}
- 
-</script>
+       <link rel="apple-touch-icon" href="/Branding/deck logo.png">
+  
  
        <script type="text/javascript">
            $(document).ready(function () {
@@ -94,23 +54,20 @@ if ("serviceWorker" in navigator) {
           <h3 class="difficulty">Easy</h3>
          
         </div>
-        <div  class="deck-scroll ad vivify fadeIn delay-{{id}}00" style="display: none;">
-          <img loading="lazy" alt="Loading Deck..." src="https://i.pcmag.com/imagery/reviews/05xwFbRxmnrvbWMjdC9Myo5-5.fit_scale.size_2698x1517.jpg">
-          <h2>Fire TV Stick (AD)</h2>
-          <div class="deck-btn-container">
-           <a target="_blank" href="https://www.amazon.com/gp/product/B0791TX5P5/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0791TX5P5&linkCode=as2&tag=jacobybroadna-20&linkId=68532788209d72deb2e84d491b2e722a"><button
-  
-           >BUY</button></a> 
-          </div>
-        </div>
+
+      
         <div class="mini-u"></div>
            {{#each this}}
-           <a href="#chd">
-           <div onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
-           document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
-           document.getElementById('cntd').style.display = 'block';tutorial();" class="deck-scroll vivify fadeIn delay-{{id}}00">
+           <a >
+           <div  onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
+           document.getElementById('imgview').src ='{{image}}';popup();document.getElementById('gameTitle').innerHTML='{{name}}';document.getElementById('gameImg').src='{{image}}';document.getElementById('gameDifficulty').classList.add('{{difficulty}}');document.getElementById('gameDifficulty').innerHTML = '{{difficulty}}';document.getElementById('popup-wrapper').classList.remove('flipOutY');document.getElementById('tap').play()" class="deck-scroll vivify fadeIn delay-{{id}}00">
             <img loading="lazy" alt="Loading Deck..." src="{{image}}">
             <h2>{{name}}</h2>
+            <div class="difficutly-text-container">
+<p class="{{difficulty}}">{{difficulty}}</p>
+            </div>
+            
+          
             <div class="deck-btn-container">
             </div>
           </div>
@@ -119,91 +76,8 @@ if ("serviceWorker" in navigator) {
     
    </script>
 
-   <script type="text/javascript">
-    $(document).ready(function () {
-        $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/deck/medium', function (data) {
-            var template = Handlebars.compile($('#item-template2').html())
-            $('#items2').html(template(data.medium))
-        })
-    })
-</script>
 
-<script id="item-template2" type="text/x-handlebars-template">
- <div class="difficulty-container">
-   <h3 class="difficulty">Medium</h3>
-  
- </div>
- <div class="mini-u"></div>
-    {{#each this}} <a href="#chd">
-    <div  onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
-    document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
-    document.getElementById('cntd').style.display = 'block';tutorial();" class="deck-scroll vivify fadeIn delay-{{id}}00">
-     <img loading="lazy" src="{{image}}">
-     <h2>{{name}}</h2>
 
-   </div>
-  </a> 
-{{/each}}
-<script type="text/javascript">
-  $(document).ready(function () {
-      $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/deck/hard', function (data) {
-          var template = Handlebars.compile($('#item-template3').html())
-          $('#items3').html(template(data.hard))
-      })
-  })
-</script>
-
-<script id="item-template3" type="text/x-handlebars-template">
-<div class="difficulty-container">
- <h3 class="difficulty">Hard</h3>
-</div>
-<div class="mini-u"></div>
-  {{#each this}}
-  <div class="deck-scroll vivify fadeIn delay-{{id}}00">
-   <img loading="lazy" src="{{image}}">
-   <h2>{{name}}</h2>
-   
-   <div class="deck-btn-container">
-    <a href="#chd"><button onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
-    document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
-    document.getElementById('cntd').style.display = 'block';tutorial();"
-
-    >PLAY</button></a> 
-   </div>
- </div>
-{{/each}}
-
-</script>
-<script type="text/javascript">
-  $(document).ready(function () {
-      $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/deck/all', function (data) {
-          var template = Handlebars.compile($('#item-template4').html())
-          $('#items4').html(template(data.all))
-      })
-  })
-</script>
-
-<script id="item-template4" type="text/x-handlebars-template">
-<div class="difficulty-container">
- <h3 class="difficulty">Plus</h3>
-</div>
-<div class="mini-u"></div>
-  {{#each this}}
-  <div class="deck-scroll vivify fadeIn delay-{{id}}00">
-   <img loading="lazy" src="{{image}}">
-   <h2>{{name}}</h2>
-   <div class="mini-u"></div>
-   <div class="deck-btn-container">
-    <a href="#chd"><button onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
-    document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
-    document.getElementById('cntd').style.display = 'block';tutorial();"
-
-    >PLAY</button></a> 
-   </div>
- </div>
-{{/each}}
-
-</script>
 </script>
 
    <script type="text/javascript">
@@ -238,8 +112,19 @@ if ("serviceWorker" in navigator) {
 </script>
  
     </head>
-    <body class="dark-html">
-      <div class="pwa-container" style="display: none;">
+    <h3 id="gyro" style="position: fixed; left: 70px; top:-3px;z-index: 9000;color: white;background-color: black;padding-left: 7px ;padding-right: 7px; border-radius: 5px;transition: 0.2s ease;padding-top: 4px;display: none;">Null</h3>
+    <body class="dark-html" style="background-color:white;display: block;
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    -ms-scroll-snap-type: mandatory;">
+
+
+
+<!------PWA Container
+
+      <div class="pwa-container" style="display: block;">
         <div class="top-pwa-container">
           <img src="https://media.giphy.com/media/QuxsGPSa8HwHq6ngAF/giphy.gif">
         <div class="pwa-logo-container">
@@ -263,10 +148,14 @@ if ("serviceWorker" in navigator) {
         </section>
        
       </div>
+      -->
+
+      
+
       <div class="home-screen">
-        <nav>
+        <nav id="nav">
         
-<div class="logo-container"><img src="/Branding/stega full length.svg"></div>
+<div class="logo-container"><img src="Branding/stega full length.svg"></div>
           
             <section style="display:none" class="search" id="main-search">
               <div class="search-wrapper">
@@ -284,7 +173,9 @@ if ("serviceWorker" in navigator) {
                 <div id="search"></div>
               </ul>
       </section>
-          
+     
+
+      
               <script>
                   function myFunction() {
                       var e, s, t;
@@ -295,53 +186,37 @@ if ("serviceWorker" in navigator) {
               </script>
       
       
-              <script>
-                  $('.search-input').keyup(function (e) {
-                      if (e.keyCode === 13) {
-                          document.getElementsByClassName("result-list")[0].style.display = "block";
-                      }
-                  });
-              </script>
+            
         </nav>
-        <div id="hero" class="scroll-container large-container">
+    
+        <script>
+          window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+          document.getElementById("nav").style.borderBottom = "1px lightgray solid";
+        } else {
+          document.getElementById("nav").style.borderBottom = "none";
+        }
+      }
+          </script>
 
 
 
-        </div>
 
           <div style="" id="items" class="scroll-container">
 
 
 
           </div>
-          <a href="https://www.amazon.com/gp/product/B0791TX5P5/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0791TX5P5&linkCode=as2&tag=jacobybroadna-20&linkId=68532788209d72deb2e84d491b2e722a" target="_blank">
-<img style="display: none;" class="inline-ad" src="/Images/amazon fire tv ad.svg">
-          </a>
-          <div id="items2" class="scroll-container">
+          <script>
 
-
-
-          </div>
-          <div id="items4" class="scroll-container">
-
-
-
-          </div>
-          <div class="ad-container" style="display: none;">  
-            <h3>Advertisement</h3>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- Deal Fuze 1App -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-2337057488348896"
-                 data-ad-slot="9422053163"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-          </div>
+          </script>
+          <div id="audio-region">
+      
+      
+     
+         
           <div id="items3"  class="scroll-container">
 
 
@@ -350,13 +225,16 @@ if ("serviceWorker" in navigator) {
       
 
       </div>
-      <audio id="tutorial" src="/Sound Effects/gamestart1.mp3"></audio>
+      <audio id="tutorial" src="Sound Effects/tutorial.mp3"></audio>
     <script>
       function tutorial(){
         document.getElementById("tutorial").play();
       }
       
     </script>
+
+<!----------------------------------Game Zone----------------------------->
+
       <div  class="charades-container" id="chd">
         
         <div class="charades-view">
@@ -364,8 +242,8 @@ if ("serviceWorker" in navigator) {
             <h2 id="time_div"></h2>
           
           </div>
-          <audio id="gamemusic" src="/Sound Effects/Ketsa_-_09_-_Life_Illusion.mp3" ></audio>
-          <audio id="speedup" src="/Sound Effects/speedup.mp3" ></audio>
+          <audio id="gamemusic" src="Sound Effects/Ketsa_-_09_-_Life_Illusion.mp3" ></audio>
+          <audio id="speedup" src="Sound Effects/speedup.mp3" ></audio>
             <div class="slideshow-container">
                 <img id="imgview" class="ch-view-image" src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-652ovhkibhg82kh6on274ihkn1-20171208011414.Medi.jpeg">
 
@@ -454,8 +332,8 @@ if ("serviceWorker" in navigator) {
               </div>
               </div>
           
-             <audio volume="1" id="skip" src="/Sound Effects/downward.wav"></audio>
-             <audio volume="1" id="correct" src="/Sound Effects/upwards.wav"></audio>
+             <audio volume="1" id="skip" src="Sound Effects/downward.wav"></audio>
+             <audio volume="1" id="correct" src="Sound Effects/upwards.wav"></audio>
              <script src="countdown.js">
             </script>
             <script id="time" src="timing.js" >
@@ -470,14 +348,18 @@ if ("serviceWorker" in navigator) {
         event.preventDefault()
     }
 }
+
+
             function down(){
-              document.getElementById("skip").play();
+              
               document.getElementById("skip").currentTime = 0;
+              document.getElementById("skip").play();
             }
 
             function up(){
-              document.getElementById("correct").play();
+            
               document.getElementById("correct").currentTime = 0;
+              document.getElementById("correct").play();
             }
             </script>
               <script>
@@ -502,11 +384,11 @@ if ("serviceWorker" in navigator) {
               }
               </script>
         </div>
-<audio src="/Sound Effects/endgame.mp3" id="endgame"></audio>
-        <audio volume="0.1" id="correct" src="/Sound Effects/upwards.wav"></audio>
+<audio src="Sound Effects/endgame.mp3" id="endgame"></audio>
+        <audio volume="0.1" id="correct" src="Sound Effects/upwards.wav"></audio>
         <div class="end-screen vivify fadeIn popIn duration-100" id="end" style="animation-delay: 1950ms;">
 <div class="left-group vivify fadeInBottom " style="animation-delay: 1900ms;">
-  <div class="complete-image ">  <img src="/Branding/deck complete.svg"></div>
+  <div class="complete-image ">  <img src="Branding/deck complete.svg"></div>
 
   <div class="left-group-btn-container">
     <a href=""><button>New Game</button></a>
@@ -538,16 +420,62 @@ if ("serviceWorker" in navigator) {
         </div>
       </div>
 
-      <div id="settings" class="dark-mode">
-        <a href="#">
-          <div class="settings-icon close">
-            <img src="https://www.materialui.co/materialIcons/navigation/close_black_1024x1024.png">
-          </div>
-        </a>
+      <div id="settings" class="dark-mode tab-page">
+    
         <p style="margin-left: 10px;">Dark Mode</p>
-        <div><a onclick="launch_toast()" class="darkmode F btn blue darken-4">Enable</a></div>
-        <div><a class="normalmode F btn-flat">Disable</a></div>
+        <div><a onclick="launch_toast()" class="darkmode normal-button ">Enable</a></div>
+        <div><a class="normalmode normal-button filled">Disable</a></div>
         <div class="card-divider" style="display: block; margin-top:10px; "></div>
+        <div class="spacer"></div>
+        <br>
+        <p style="margin-left: 10px;">Music</p>
+          <div class="music-container">
+        <div class="music-item">
+          <i class="material-icons musicIcon" id="music1play" onclick="document.getElementById('music1').play();document.getElementById('music1pause').style.display='inline-block';document.getElementById('music1play').style.display='none'">play_arrow</i>
+          <i class="material-icons musicIcon" onclick="document.getElementById('music1').pause();document.getElementById('music1pause').style.display='none';document.getElementById('music1play').style.display='inline-block'" style="display: none;" id="music1pause">pause</i>
+          <audio id="music1" src="Sound Effects/Ketsa_-_09_-_Life_Illusion.mp3"></audio>
+          <div class="music-text">
+            <h2>Life Illusion</h2>
+            <p>By Ketsa</p>
+          </div>
+          <label class="radio-button radio-button--material">
+            <input type="radio" class="radio-button__input radio-button--material__input" name="r" >
+            <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+            
+          </label>
+        </div>
+        <div class="music-item">
+          <i class="material-icons musicIcon" onclick="document.getElementById('music2').play();document.getElementById('music2pause').style.display='inline-block';document.getElementById('music2play').style.display='none'" id="music2play" style="background-color: #AC26F9;">play_arrow</i>
+          <i class="material-icons musicIcon" onclick="document.getElementById('music2').pause();document.getElementById('music2pause').style.display='none';document.getElementById('music2play').style.display='inline-block'" style="display: none;background-color: #AC26F9;" id="music2pause">pause</i>
+          <audio id="music2" src="Sound Effects/Ketsa_-_Special_PlaceChoice2.mp3"></audio>
+          <div class="music-text">
+            <h2>Special Place</h2>
+            <p>By Ketsa</p>
+          </div>
+          <label class="radio-button radio-button--material">
+            <input type="radio" class="radio-button__input radio-button--material__input" name="r" checked="checked">
+            <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+            
+          </label>
+        </div>
+        <div class="music-item">
+          <i class="material-icons musicIcon" onclick="document.getElementById('music3').play();document.getElementById('music3pause').style.display='inline-block';document.getElementById('music3play').style.display='none'" id="music3play" style="background-color: #F9B126;">play_arrow</i>
+          <i class="material-icons musicIcon" onclick="document.getElementById('music3').pause();document.getElementById('music3pause').style.display='none';document.getElementById('music3play').style.display='inline-block'" style="display: none;background-color: #F9B126;" id="music3pause">pause</i>
+          <audio id="music3" src="sound effects/Rings Of Saturn Choice3.mp3"></audio>
+          <div class="music-text">
+            <h2>Rings of Saturn</h2>
+            <p>By 
+              Oscar Owl</p>
+          </div>
+          <label class="radio-button radio-button--material">
+            <input type="radio" class="radio-button__input radio-button--material__input" name="r" checked="checked">
+            <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+            
+          </label>
+        </div>
+    
+        </div>
+       
         <script>
             $(document).ready(function ($) {
                 var mode = localStorage.getItem('mode');
@@ -568,6 +496,7 @@ if ("serviceWorker" in navigator) {
         </script>
       </div>
 
+  
 <!-------------------------------------Stega Plus--------------------------------------->
 
 <div id="creator" style="display: none;">
@@ -651,35 +580,88 @@ function live(){
      
           <input id="nav-btn2" type="radio" name="bottom-nav">
          
-          <label for="nav-btn2"><img  src="/Assets/Create.svg" alt="Home"></label>
+          <label for="nav-btn2"><img  src="Assets/Create.svg" alt="Home"></label>
       </a>
       </div>
       <div class="bottom-nav-button" onclick="document.getElementById('account').style.display = 'block';">
          
           <input id="nav-btn3" type="radio" name="bottom-nav" >
-          <label for="nav-btn3"><img src="/Assets/Profile.svg" alt="Account"></label>
+          <label for="nav-btn3"><img src="Assets/Profile.svg" alt="Account"></label>
   
       </div>
       <div class="bottom-nav-button " onclick="self.location.href = '#'">
         <input  id="nav-btn1" type="radio" name="bottom-nav"  checked>
-        <label for="nav-btn1" ><img  src="/Assets/Play.svg" alt="Search"></label>
+        <label for="nav-btn1" ><img  src="Assets/Play.svg" alt="Search"></label>
     </div>
       <div class="bottom-nav-button" onclick="self.location.href = '#settings'">
          
         <input id="nav-btn4" type="radio" name="bottom-nav" >
-        <label for="nav-btn4"><img src="/Assets/Settings.svg" alt="Account"></label>
+        <label for="nav-btn4"><img src="Assets/Settings.svg" alt="Account"></label>
 
     </div>
 
     <div class="bottom-nav-button" onclick="document.getElementById('account').style.display = 'block';">
          
       <input id="nav-btn5" type="radio" name="bottom-nav" >
-      <label for="nav-btn5"><img src="/Assets/Explore.svg" alt="Account"></label>
+      <label for="nav-btn5"><img src="Assets/Explore.svg" alt="Account"></label>
 
   </div>
 
   </div>
 </div>
 
+<!-------------------------Popup Container-------------------------->
+
+<div class="popup-container " id="popup">
+  <div class="popin " id="popin-go">
+    <div class="popin-wrapper vivify flipInY duration-500" id="popup-wrapper">
+    <button onclick="closePopup()"class="close-btn" >Close</button>
+    <div class="popin-image" id="pop-image">
+      <img id="gameImg" src="Assets/placeholder.png" class="pop-image gameStarting">
+    </div>
+    <div class="popin-text-container" id="pop-text">
+      <div class="loading-container " id="loader">
+        <img class="loading" src="https://cdn.dribbble.com/users/503653/screenshots/3143656/fluid-loader.gif">
+     </div>
+      <div class="difficutly-text-container popup-difficulty">
+        <p id="gameDifficulty">{{difficulty}}</p>
+                    </div>
+      <h2 id="gameTitle">Null</h2>
+
+     
+    </div>
+    <div class="wide-button">
+      <button onclick="setTimeout(startTheGame, 170000);document.getElementById('loader').style.display='block';document.getElementById('pop-image').classList.add('gameStarting');document.getElementById('popin-go').style.width = '100%'; document.getElementById('tapstart').play();document.getElementById('pop-text').style.marginTop = '-202px';">START</button>
+
+      <script>
+        function startTheGame(){
+          document.getElementById('time').src = 'timing.js';startCountDown();
+      document.getElementById('cntd').style.display = 'block';tutorial();self.location.href = '#chd';closePopup();
+        }
+      </script>
+    </div>
+  
+    <div class="wide-button invert">
+      <button onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper').classList.add('flipOutY');setTimeout(closePopup, 500);document.getElementById('tapclose').play()">CLOSE</button>
+      <audio src="sound effects/tapclose.mp3" id="tapclose"></audio>
+    </div>
+  </div>
+  </div>
+</div>
+
+<script> 
+  
+  function popup(){
+document.getElementById("popup").style.display="block"
+  }
+
+  function closePopup(){
+document.getElementById("popup").style.display="none"
+  }
+</script>
+
     </body>
+    <audio src="sound effects/tap.mp3" id="tap"></audio>
+
+    <audio src="sound effects/start.mp3" id="tapstart"></audio>
 </html>
