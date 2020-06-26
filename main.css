@@ -421,6 +421,8 @@ details summary::-webkit-details-marker {
   display: none;
 }
 
+#popup2 {display: none;}
+
 .close-btn {
   position: fixed;
   right: 0px;

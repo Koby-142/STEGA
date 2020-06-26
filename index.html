@@ -242,6 +242,42 @@
             <h2 id="time_div"></h2>
           
           </div>
+         
+            <button class="endgame"></button>
+
+
+
+            <div class="popup-container " id="popup2">
+              <button class="close-pop-btn" onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper').classList.add('flipOutY');setTimeout(closePopup, 500);document.getElementById('tapclose').play()"></button>
+              <div class="popin " >
+                <div class="popin-wrapper vivify flipInY duration-500" >
+                <button onclick="closePopup()"class="close-btn" >Close</button>
+              
+            <a href="/index.html">
+                <div class="wide-button" >
+                  <button onclick="document.getElementById('tapstart').play();document.getElementById('pop-text').style.marginTop = '-202px';window.navigator.vibrate(40);" style="margin-top: 12px;background-color: rgb(177, 2, 2);">Endgame</button>
+            
+                  <script>
+                    function startTheGame(){
+                      document.getElementById('time').src = 'timing.js';startCountDown();
+                  document.getElementById('cntd').style.display = 'block';tutorial();self.location.href = '#chd';closePopup();
+                    }
+                  </script>
+                </div>
+              </a>
+                <div class="wide-button invert">
+                  <button onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper').classList.add('flipOutY');setTimeout(closePopup, 500);document.getElementById('tapclose').play();window.navigator.vibrate(20);">Cancel</button>
+                  <audio src="sound effects/tapclose.mp3" id="tapclose"></audio>
+                </div>
+              </div>
+              </div>
+            </div>
+            
+
+
+
+         
+         
           <audio id="gamemusic" src="Sound Effects/Ketsa_-_09_-_Life_Illusion.mp3" ></audio>
           <audio id="speedup" src="Sound Effects/speedup.mp3" ></audio>
             <div class="slideshow-container">
