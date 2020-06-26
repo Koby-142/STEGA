@@ -619,11 +619,9 @@ function live(){
     <div class="popin-image" id="pop-image">
       <img id="gameImg" src="Assets/placeholder.png" class="pop-image gameStarting">
     </div>
-
     <div class="popin-text-container" id="pop-text">
       <div class="loading-container " id="loader">
         <img class="loading" src="https://cdn.dribbble.com/users/503653/screenshots/3143656/fluid-loader.gif">
-
      </div>
       <div class="difficutly-text-container popup-difficulty">
         <p id="gameDifficulty">{{difficulty}}</p>
@@ -633,7 +631,6 @@ function live(){
      
     </div>
     <div class="wide-button">
-
       <button onclick="setTimeout(startTheGame, 170000);document.getElementById('loader').style.display='block';document.getElementById('pop-image').classList.add('gameStarting');document.getElementById('popin-go').style.width = '100%'; document.getElementById('tapstart').play();document.getElementById('pop-text').style.marginTop = '-202px';">START</button>
 
       <script>
