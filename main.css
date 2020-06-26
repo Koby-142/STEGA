@@ -1393,7 +1393,11 @@ body.darkclass .bottom-nav-button > label > img {
 }
 
 .loading-container > img {
+<<<<<<< HEAD
+  width: 47%;
+=======
   width: 40%;
+>>>>>>> 727cbd8b0db360cf1672a745c7ccaf47d7471a94
   position: relative;
   border-radius: 150px;
   position: fixed;

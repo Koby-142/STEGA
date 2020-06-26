@@ -17,7 +17,11 @@ function startCountDown(){
         
       window.addEventListener('deviceorientation', function(event) {
 
+<<<<<<< HEAD
+        if (event.gamma < 1 && event.gamma > 2){
+=======
         if (event.gamma < 1 && event.gamma > 0.5){
+>>>>>>> 727cbd8b0db360cf1672a745c7ccaf47d7471a94
         
           plusSlides(1, 0);window.navigator.vibrate(75);up();status();
 
