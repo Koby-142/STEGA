@@ -337,6 +337,8 @@ details summary::-webkit-details-marker {
 
 /*-----------------------------------Popup Container---------------------------*/
 
+.close-pop-btn{position: fixed;width: 100%; height: 100vh;background-color: transparent;border: none;}
+
 .popup-container {
   position: fixed;
   left: 0px;
