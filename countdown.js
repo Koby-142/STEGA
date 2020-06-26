@@ -15,6 +15,7 @@ function startCountDown(){
       clearTimeout(timerId);
       doSomething();
       var gameStatus = 0; 
+      var globalGameStatus = 0;
     window.addEventListener('deviceorientation', function(event) {
      
       if (event.gamma < 20  && event.gamma > -20){
@@ -28,10 +29,22 @@ function startCountDown(){
       }
      
       function status(){
-        gameStatus += 1
+        gameStatus += 1;
         console.log("Game Status:" + gameStatus);
         gameStatus = 0;
+        gameStatus += 1;
       }
+
+      if (globalGameStatus > 8){
+        console.log("Time Complete");
+        document.getElementById("timeUp").style.display="block";
+        document.getElementById("end").style.display="block";
+        document.getElementById('gamemusic').pause();
+        document.getElementById('speedup').pause(); 
+        document.getElementById('endgame').play();
+        window.navigator.vibrate(600);
+      }
+
 
       document.getElementById("gyro").innerHTML = event.gamma;
 
