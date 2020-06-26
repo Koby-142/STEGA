@@ -14,17 +14,17 @@ function startCountDown(){
     if (timeLeft == 0) {
       clearTimeout(timerId);
       doSomething();
-      
+      var gameStatus = 0; 
     window.addEventListener('deviceorientation', function(event) {
-      var gameStatus = 0;
+     
       if (event.gamma < 7  && event.gamma > 0){
-        gameStatus += 1;
+        gameStatus = gameStatus + 1
         alert('Action Complete')
       }
 
       if (gameStatus > 3){
         plusSlides(1, 0);window.navigator.vibrate(75);status();
-        alert('Test Complete')
+        alert('Next Slide Complete!')
       }
      
       function status(){
