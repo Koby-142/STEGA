@@ -43,6 +43,7 @@ function startCountDown(){
         document.getElementById('speedup').pause(); 
         document.getElementById('endgame').play();
         window.navigator.vibrate(600);
+        globalGameStatus = 0;
       }
 
 
