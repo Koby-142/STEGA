@@ -22,7 +22,7 @@ function startCountDown(){
        
       }
 
-      if (gameStatus > 3){
+      if (gameStatus > 6){
         plusSlides(1, 0);window.navigator.vibrate(75);status();
      
       }
