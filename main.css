@@ -355,6 +355,7 @@ details summary::-webkit-details-marker {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 85%;
+  max-width: 300px;
 }
 
 .popin-wrapper {
@@ -1387,6 +1388,10 @@ body.darkclass .bottom-nav-button > label > img {
   .popin-image > img {
     height: 155px;
   }
+
+  .loading-container {
+    margin-bottom: 30px;
+  }
 }
 
 .loading-container {
@@ -1396,7 +1401,7 @@ body.darkclass .bottom-nav-button > label > img {
 }
 
 .loading-container > img {
-  width: 23%;
+  width: 100px;
   position: relative;
   border-radius: 150px;
   position: fixed;
