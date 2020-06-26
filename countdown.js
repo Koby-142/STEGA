@@ -16,25 +16,21 @@ function startCountDown(){
       doSomething();
       
     window.addEventListener('deviceorientation', function(event) {
-
-      if (event.gamma < 7  && event.gamma > 0){
-      
-        plusSlides(1, 0);window.navigator.vibrate(75);up();status();
-
-
-      }
       var gameStatus = 0;
+      if (event.gamma < 7  && event.gamma > 0){
+        gameStatus += 1;
+      }
+
+      if (gameStatus > 3){
+        plusSlides(1, 0);window.navigator.vibrate(75);status();
+        alert('Test Complete')
+      }
+     
       function status(){
         gameStatus += 1
         console.log("Game Status:" + gameStatus);
       }
 
-      if (gameStatus > 8){
-        console.log('Time Complete Via User Input');
-    document.getElementById('timeUp').style.display='block';
-    document.getElementById('end').style.display='block';
-    document.getElementById('gamemusic').pause()
-      }
       document.getElementById("gyro").innerHTML = event.gamma;
 
     //  if (event.beta < -50){
