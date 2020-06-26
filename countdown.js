@@ -18,8 +18,8 @@ function startCountDown(){
     window.addEventListener('deviceorientation', function(event) {
      
       if (event.gamma < 7  && event.gamma > 0){
-        gameStatus = gameStatus + 1
-        alert('Action Complete')
+        gameStatus = gameStatus + 1;
+       
       }
 
       if (gameStatus > 3){
