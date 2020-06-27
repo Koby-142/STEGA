@@ -58,7 +58,7 @@
       
         <div class="mini-u"></div>
            {{#each this}}
-           <a >
+           <a class="{{difficulty}}">
            <div  onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
            document.getElementById('imgview').src ='{{image}}';popup();document.getElementById('gameTitle').innerHTML='{{name}}';document.getElementById('gameImg').src='{{image}}';document.getElementById('gameDifficulty').classList.add('{{difficulty}}');document.getElementById('gameDifficulty').innerHTML = '{{difficulty}}';document.getElementById('popup-wrapper').classList.remove('flipOutY');document.getElementById('tap').play();window.navigator.vibrate(20);" class="deck-scroll vivify fadeIn delay-{{id}}00">
             <img loading="lazy" alt="Loading Deck..." src="{{image}}">
@@ -92,7 +92,7 @@
 <script id="item-template9" type="text/x-handlebars-template">
   <div class="mini-u"></div>
     {{#each this}}
-<li>
+<li class="">
   <a onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
   document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
   document.getElementById('cntd').style.display = 'block';tutorial();" href="#chd" class="search-result-container">
@@ -202,8 +202,47 @@
           </script>
 
 
+<div class="tabbar tabbar--top tabbar--material">
+  <label class="tabbar__item tabbar--material__item">
+    <input type="radio" name="tabbar-material-a" checked="checked">
+    <button onclick="easy()" class="tabbar__button tabbar--material__button">
+     All
+    </button>
+  </label>
 
+  <script>
+    function easy() {
+  var x, i;
+  x = document.querySelectorAll(".EASY");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+  </script>
 
+  <label class="tabbar__item tabbar--material__item">
+    <input type="radio" name="tabbar-material-a" >
+    <button class="tabbar__button tabbar--material__button">
+      Easy
+    </button>
+  </label>
+
+  <label class="tabbar__item tabbar--material__item">
+    <input type="radio" name="tabbar-material-a">
+    <button class="tabbar__button tabbar--material__button">
+     Medium
+    </button>
+  </label>
+
+  <label class="tabbar__item tabbar--material__item">
+    <input type="radio" name="tabbar-material-a">
+    <button class="tabbar__button tabbar--material__button">
+      Hard
+    </button>
+  </label>
+
+ 
+</div>
           <div style="" id="items" class="scroll-container">
 
 
@@ -678,7 +717,7 @@ function live(){
       <script>
         function startTheGame(){
           document.getElementById('time').src = 'timing.js';startCountDown();
-      document.getElementById('cntd').style.display = 'block';tutorial();self.location.href = '#chd';closePopup();
+      document.getElementById('cntd').style.display = 'block';tutorial();self.location.href = '#chd';closePopup();openFullscreen();
         }
       </script>
     </div>
@@ -700,6 +739,17 @@ document.getElementById("popup").style.display="block"
   function closePopup(){
 document.getElementById("popup").style.display="none"
   }
+  function openFullscreen() {
+  if (elem.requestFullscreen) {
+  elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+  elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+  elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+  elem.msRequestFullscreen();
+  }
+}
 </script>
 
     </body>
