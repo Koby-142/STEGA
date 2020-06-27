@@ -95,10 +95,10 @@
 
 
     {{#each this}}
-    <div class="collection-item" onclick="document.getElementById('mySearch').value='Gaming';myFunction();window.navigator.vibrate(20);self.location.href = '#';document.getElementById('collection-overlay').style.display='block';document.getElementById('tap').play();document.getElementById('items').style.marginTop = '0px';document.getElementById('items').classList.add('fadeIn');document.getElementById('collection').style.display='none';document.getElementById('main-search').style.display='none';document.getElementById('collection-indicator').innerHTML='GAMING';">
+    <div class="collection-item" onclick="document.getElementById('mySearch').value='{{filter}}';myFunction();window.navigator.vibrate(20);self.location.href = '#';document.getElementById('collection-overlay').style.display='block';document.getElementById('tap').play();document.getElementById('items').style.marginTop = '0px';document.getElementById('items').classList.add('fadeIn');document.getElementById('collection').style.display='none';document.getElementById('main-search').style.display='none';document.getElementById('collection-indicator').innerHTML='{{title}}';">
       <img src="{{image}}">
       <p>Collection</p>
-      <h3>GAMING</h3>
+      <h3>{{title}}</h3>
     </div>
 
 {{/each}}
