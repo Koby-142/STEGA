@@ -1412,7 +1412,7 @@ body.darkclass .bottom-nav-button > label > img {
 
 @media screen and (orientation: landscape) {
   .deck-scroll {
-    width: 300px;
+    width: 230px;
     display: inline-block;
     margin-left: 10px;
   }
