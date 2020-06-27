@@ -36,7 +36,7 @@
   <meta property="twitter:image" content="/Branding/decklogo512.png">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <meta name="language" content="English">
-  
+
        <link rel="apple-touch-icon" href="/Branding/deck logo.png">
   
  
@@ -149,7 +149,7 @@
       <div class="home-screen">
         <nav id="nav">
         
-<div class="logo-container"><img src="Branding/stega full length.svg"></div>
+<div class="logo-container"><img onload="storageCheck()" src="Branding/stega full length.svg"></div>
 
             <section style="display:block" class="search" id="main-search">
               <div class="search-wrapper">
@@ -311,8 +311,6 @@ function clearSearch(){
 
          
          
-          <audio id="gamemusic" src="Sound Effects/Ketsa_-_09_-_Life_Illusion.mp3" ></audio>
-          <audio id="speedup" src="Sound Effects/speedup.mp3" ></audio>
             <div class="slideshow-container">
                 <img id="imgview" class="ch-view-image" src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-652ovhkibhg82kh6on274ihkn1-20171208011414.Medi.jpeg">
 
@@ -490,25 +488,32 @@ function clearSearch(){
       </div>
 
       <div id="settings" class="dark-mode tab-page">
-    
+        
+        <audio id="gamemusic" src="Sound Effects/LifeIllusion.mp3" ></audio>
+        <audio id="speedup" src="Sound Effects/speedup.mp3" ></audio>
+    <div class="section-page-indicator">
+      <h2>SETTINGS</h2>
+    </div>
         <p style="margin-left: 10px;">Dark Mode</p>
         <div><a onclick="launch_toast()" class="darkmode normal-button ">Enable</a></div>
         <div><a class="normalmode normal-button filled">Disable</a></div>
         <div class="card-divider" style="display: block; margin-top:10px; "></div>
         <div class="spacer"></div>
         <br>
+
+
         <p style="margin-left: 10px;">Music</p>
           <div class="music-container">
         <div class="music-item">
           <i class="material-icons musicIcon" id="music1play" onclick="document.getElementById('music1').play();document.getElementById('music1pause').style.display='inline-block';document.getElementById('music1play').style.display='none'">play_arrow</i>
           <i class="material-icons musicIcon" onclick="document.getElementById('music1').pause();document.getElementById('music1pause').style.display='none';document.getElementById('music1play').style.display='inline-block'" style="display: none;" id="music1pause">pause</i>
-          <audio id="music1" src="Sound Effects/Ketsa_-_09_-_Life_Illusion.mp3"></audio>
+          <audio id="music1" src="Sound Effects/LifeIllusion.mp3"></audio>
           <div class="music-text">
             <h2>Life Illusion</h2>
             <p>By Ketsa</p>
           </div>
           <label class="radio-button radio-button--material">
-            <input type="radio" class="radio-button__input radio-button--material__input" name="r" >
+            <input id="LifeIllusion" onclick="document.getElementById('gamemusic').src='Sound Effects/LifeIllusion.mp3';localStorage.setItem('currentMusic', 'Sound Effects/LifeIllusion.mp3');document.getElementById('tapclose').play();window.navigator.vibrate(20);localStorage.setItem('musicState', 'LifeIllusion');" type="radio" class="radio-button__input radio-button--material__input" name="r" >
             <div class="radio-button__checkmark radio-button--material__checkmark"></div>
             
           </label>
@@ -516,13 +521,13 @@ function clearSearch(){
         <div class="music-item">
           <i class="material-icons musicIcon" onclick="document.getElementById('music2').play();document.getElementById('music2pause').style.display='inline-block';document.getElementById('music2play').style.display='none'" id="music2play" style="background-color: #AC26F9;">play_arrow</i>
           <i class="material-icons musicIcon" onclick="document.getElementById('music2').pause();document.getElementById('music2pause').style.display='none';document.getElementById('music2play').style.display='inline-block'" style="display: none;background-color: #AC26F9;" id="music2pause">pause</i>
-          <audio id="music2" src="Sound Effects/Ketsa_-_Special_PlaceChoice2.mp3"></audio>
+          <audio id="music2" src="Sound Effects/SpecialPlace.mp3"></audio>
           <div class="music-text">
             <h2>Special Place</h2>
             <p>By Ketsa</p>
           </div>
           <label class="radio-button radio-button--material">
-            <input type="radio" class="radio-button__input radio-button--material__input" name="r" checked="checked">
+            <input id="SpecialPlace" onclick="document.getElementById('gamemusic').src='Sound Effects/SpecialPlace.mp3';localStorage.setItem('currentMusic', 'Sound Effects/SpecialPlace.mp3');document.getElementById('tapclose').play();window.navigator.vibrate(20);localStorage.setItem('musicState', 'SpecialPlace');" type="radio" class="radio-button__input radio-button--material__input" name="r">
             <div class="radio-button__checkmark radio-button--material__checkmark"></div>
             
           </label>
@@ -530,14 +535,14 @@ function clearSearch(){
         <div class="music-item">
           <i class="material-icons musicIcon" onclick="document.getElementById('music3').play();document.getElementById('music3pause').style.display='inline-block';document.getElementById('music3play').style.display='none'" id="music3play" style="background-color: #F9B126;">play_arrow</i>
           <i class="material-icons musicIcon" onclick="document.getElementById('music3').pause();document.getElementById('music3pause').style.display='none';document.getElementById('music3play').style.display='inline-block'" style="display: none;background-color: #F9B126;" id="music3pause">pause</i>
-          <audio id="music3" src="sound effects/Rings Of Saturn Choice3.mp3"></audio>
+          <audio id="music3" src="sound effects/Saturn.mp3"></audio>
           <div class="music-text">
             <h2>Rings of Saturn</h2>
             <p>By 
               Oscar Owl</p>
           </div>
           <label class="radio-button radio-button--material">
-            <input type="radio" class="radio-button__input radio-button--material__input" name="r" checked="checked">
+            <input id="Saturn" onclick="document.getElementById('gamemusic').src='Sound Effects/Saturn.mp3';localStorage.setItem('currentMusic', 'Sound Effects/Saturn.mp3');document.getElementById('tapclose').play();window.navigator.vibrate(20);localStorage.setItem('musicState', 'Saturn');" type="radio" class="radio-button__input radio-button--material__input" name="r" >
             <div class="radio-button__checkmark radio-button--material__checkmark"></div>
             
           </label>
@@ -658,11 +663,11 @@ function live(){
           <label for="nav-btn3"><img src="/Assets/Profile.svg" alt="Account"></label>
   
       </div>
-      <div class="bottom-nav-button " onclick="self.location.href = '#'">
+      <div class="bottom-nav-button " onclick="self.location.href = '#';document.getElementById('nav').style.display='block';">
         <input  id="nav-btn1" type="radio" name="bottom-nav"  checked>
         <label for="nav-btn1" ><img  src="/Assets/Play.svg" alt="Search"></label>
     </div>
-      <div class="bottom-nav-button" onclick="self.location.href = '#settings'">
+      <div class="bottom-nav-button" onclick="self.location.href = '#settings';document.getElementById('nav').style.display='none';">
          
         <input id="nav-btn4" type="radio" name="bottom-nav" >
         <label for="nav-btn4"><img src="/Assets/Settings.svg" alt="Account"></label>
@@ -745,4 +750,5 @@ document.getElementById("popup").style.display="none"
     <audio src="sound effects/tap.mp3" id="tap"></audio>
 
     <audio src="sound effects/start.mp3" id="tapstart"></audio>
+    <script src="/localStorage.js"></script>
 </html>

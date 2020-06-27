@@ -352,6 +352,9 @@ details summary::-webkit-details-marker {
 .collection-item {width: 127px;height: 188px;display: inline-block;margin-left: 10px;}
 
 .collection-item:first-of-type {margin-left: 4.5%;}
+
+.collection-item:last-of-type {margin-right: 4.5%;}
+
 .collection-item > p {margin-top: -120px;color: white;margin-bottom: 0px;position: relative;margin-left: 7px;}
 
 .collection-item > h3 {margin-top: -3px; color: white;position: relative;font-size: 27px;font-weight: normal;margin-left: 7px;}
@@ -1197,6 +1200,7 @@ label > img:active {
   background-color: #2649f9;
   border-radius: 50px;
   color: white;
+  margin-bottom: 0px;
 }
 
 .musicIcon {
@@ -1214,6 +1218,7 @@ label > img:active {
 .music-text > h2 {
   font-size: 16px;
   margin-bottom: 0px;
+  margin-top: 7px;
 }
 
 .music-text > p {
@@ -1225,7 +1230,7 @@ label > img:active {
   float: right;
   position: relative;
   right: 0px;
-  padding-top: 27px;
+margin-top: 22px;
   padding-right: 20px;
 }
 
@@ -1236,19 +1241,23 @@ label > img:active {
 
 .music-text {
   display: inline-block;
-  padding-bottom: 5px;
+
   margin-left: 11px;
 }
 
 .tab-page {
   position: fixed;
-  top: 50px;
+  top: 0px;
   left: 0px;
   width: 100%;
   height: 100vh;
   background-color: white;
   z-index: 150;
 }
+
+.section-page-indicator {margin-left: 3%;position: relative;z-index: 4000;}
+
+.section-page-indicator > h2 {font-weight: normal;font-size: 36px;}
 
 .normal-button {
   background-color: black;
@@ -1273,6 +1282,8 @@ label > img:active {
   color: black;
   border: solid 1px lightgray;
 }
+
+
 
 #settings {
   display: none;
