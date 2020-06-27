@@ -1403,6 +1403,8 @@ body.darkclass .bottom-nav-button > label > img {
     opacity: 1;
     transition: 0.2s ease;
   }
+
+  .bottom-navigation {display: none;}
 }
 
 @media screen and (orientation: landscape) {

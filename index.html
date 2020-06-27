@@ -168,42 +168,9 @@
                           class="search-input" type="search" id="mySearch" onkeyup="myFunction()" onload="myFunction()"
                           placeholder=" Search Stega.." title="Click To Search For Jobs"></div>
               </div>
-<div class="tabbar tabbar--top tabbar--material">
-  <label class="tabbar__item tabbar--material__item">
-    <input type="radio" name="tabbar-material-a" checked="checked">
-    <button onclick="document.getElementById('mySearch').value = 'all'" class="tabbar__button tabbar--material__button">
-      All
-    </button>
-  </label>
-  <label class="tabbar__item tabbar--material__item">
-    <input type="radio" name="tabbar-material-a" >
-    <button class="tabbar__button tabbar--material__button">
-     Easy
-    </button>
-  </label>
-
-  <label class="tabbar__item tabbar--material__item">
-    <input type="radio" name="tabbar-material-a">
-    <button class="tabbar__button tabbar--material__button">
-      Medium
-    </button>
-  </label>
-
-  <label class="tabbar__item tabbar--material__item">
-    <input type="radio" name="tabbar-material-a">
-    <button class="tabbar__button tabbar--material__button">
-      Hard
-    </button>
-  </label>
-
-  
-
-
-</div>
-            
+   
       </section>
-     
-
+    
       
               <script>
                   function myFunction() {
@@ -217,7 +184,12 @@
       
             
         </nav>
-    
+        <select class="select-input">
+          <option>Difficulty</option>
+          <option>Easy</option>
+          <option>Medium</option>
+          <option>Hard</option>
+        </select>
         <script>
           window.onscroll = function() {scrollFunction()};
       
