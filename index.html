@@ -57,7 +57,10 @@
 
       
         <div class="mini-u"></div>
+        <ul id="myMenu" class="result-list vivify fadeIn  "
+        style="padding-left-start {0px;}">
            {{#each this}}
+           <li>
            <a class="{{difficulty}}">
            <div  onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
            document.getElementById('imgview').src ='{{image}}';popup();document.getElementById('gameTitle').innerHTML='{{name}}';document.getElementById('gameImg').src='{{image}}';document.getElementById('gameDifficulty').classList.add('{{difficulty}}');document.getElementById('gameDifficulty').innerHTML = '{{difficulty}}';document.getElementById('popup-wrapper').classList.remove('flipOutY');document.getElementById('tap').play();window.navigator.vibrate(20);" class="deck-scroll vivify fadeIn delay-{{id}}00">
@@ -72,8 +75,10 @@
             </div>
           </div>
         </a>
+      </li>
+      
        {{/each}}
-    
+    </ul>
    </script>
 
 
@@ -156,22 +161,20 @@
         <nav id="nav">
         
 <div class="logo-container"><img src="Branding/stega full length.svg"></div>
-          
-            <section style="display:none" class="search" id="main-search">
+<i
+onclick="search()" class="material-icons search-icon">search</i>
+            <section style="display:block" class="search" id="main-search">
               <div class="search-wrapper">
                   <div class="search-input-container"> <input autocomplete="off" 
                           class="search-input" type="search" id="mySearch" onkeyup="myFunction()" onload="myFunction()"
-                          placeholder="&emsp; Search Stega.." title="Click To Search For Jobs"><i
-                          onclick="search()" class="material-icons search-icon">search</i></div>
+                          placeholder="&emsp; Search Stega.." title="Click To Search For Jobs"></div>
               </div>
 
       
-              <ul id="myMenu" style="display: none;" class="result-list vivify fadeIn  "
-                  style="padding-left-start {0px;}">
+          
                 
-             
-                <div id="search"></div>
-              </ul>
+        
+            
       </section>
      
 

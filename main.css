@@ -16,6 +16,9 @@ a {
   text-decoration: none;
 }
 
+li {list-style-type: none;padding: 0px; margin: 0px;display: inline-block}
+
+ul {padding: 0px;margin: 0px}
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
@@ -842,6 +845,8 @@ a:active {
 
 /*---------------------------------------Search-----------------------------------*/
 
+.search-icon {position: fixed; top: 15px;left: 20px;  background-color: rgb(243, 243, 243);padding-left: 10px;}
+
 .search-result-container > img {
   width: 130px;
   height: 80px;
@@ -890,14 +895,19 @@ a:active {
 
 .search-wrapper {
   display: inline-block;
+  width: 92%;
+ 
 }
 
 .search-input-container > input {
-  width: 40vw;
+  width: 100%;
   height: 40px;
   border: solid 2px lightgray;
-  padding-left: 15px;
+
   border-radius: 50px;
+  margin-top: -53px;
+  background-color: rgb(243, 243, 243);
+  border: none;
 }
 
 .search-input-container > input:focus {
@@ -906,7 +916,7 @@ a:active {
 }
 
 .search-input-container {
-  width: 45vw;
+  width: 100%;
   margin-top: 30px;
   margin: 15px;
 }
