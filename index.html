@@ -210,7 +210,7 @@ function clearSearch(){
           window.onscroll = function() {scrollFunction()};
       
       function scrollFunction() {
-        if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
           document.getElementById("nav").style.borderBottom = "1px lightgray solid";
           
         } else {
