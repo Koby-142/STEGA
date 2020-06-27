@@ -343,7 +343,30 @@ details summary::-webkit-details-marker {
   width: 100%;
   color: black;
 }
+/*------------------------------------Collections-----------------------------*/
 
+.collection-container {margin-bottom: 100px;white-space: nowrap;overflow: scroll;}
+
+#collection-overlay {display: none;}
+
+.collection-item {width: 127px;height: 188px;display: inline-block;margin-left: 10px;}
+
+.collection-item:first-of-type {margin-left: 4.5%;}
+.collection-item > p {margin-top: -120px;color: white;margin-bottom: 0px;position: relative;margin-left: 7px;}
+
+.collection-item > h3 {margin-top: -3px; color: white;position: relative;font-size: 27px;font-weight: normal;margin-left: 7px;}
+
+.collection-item > img {width: 100%;height: 100%; object-fit: cover;filter: brightness(0.58);border-radius: 10px;}
+
+.collection-text {margin-left: 4.5%;margin-top: 40px;}
+
+.collection-text > p {font-size: 18px;margin: 0px;}
+
+.collection-text > h3 {font-size: 34px;font-weight: normal;margin: 0px;}
+
+.collection-overlay {position: absolute; top: 0px; background-color:white;width: 100%;z-index: 1000;padding-bottom: 10px;}
+
+.collection-button > button{padding:10px 10px 5px 10px;border-radius: 50px; border: none;background-color:white;color: black;float: right;margin-right: 4.5%;margin-top: -55px;font-weight:bold;border: solid 1px lightgray;}
 /*-----------------------------------Popup Container---------------------------*/
 
 .close-pop-btn{position: fixed;width: 100%; height: 100vh;background-color: transparent;border: none;}
@@ -501,7 +524,7 @@ details summary::-webkit-details-marker {
 .scroll-container {
   margin: auto;
   width: 92%;
-  margin-top: -78px;
+  margin-top: -153px;
   margin-bottom: 70px;
 }
 
