@@ -18,7 +18,7 @@ function startCountDown(){
       var globalGameStatus = 0;
     window.addEventListener('deviceorientation', function(event) {
      
-      if (event.gamma < 20  && event.gamma > -20){
+      if (event.gamma < 50  && event.gamma > -30){
         gameStatus = gameStatus + 1;
        
       }
@@ -62,3 +62,10 @@ function startCountDown(){
   }
 }
 
+import NoSleep from 'nosleep.js';
+
+var noSleep = new NoSleep();
+document.addEventListener('click', function enableNoSleep() {
+  document.removeEventListener('click', enableNoSleep, false);
+  noSleep.enable();
+}, false);
