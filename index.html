@@ -570,7 +570,50 @@ function clearSearch(){
         </script>
       </div>
 
+
+      <!--------------------------------Sign Up-------------------------------->
   
+    
+        
+      
+      <div class="popup-container " id="popup3">
+        <button class="close-pop-btn" onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper').classList.add('flipOutY');setTimeout(closePopup, 500);document.getElementById('tapclose').play();document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');"></button>
+        <div class="popin " id="popin-go">
+          <div class="popin-wrapper vivify flipInY duration-500" id="popup-wrapper">
+          <button onclick="closePopup()"class="close-btn" >Close</button>
+         
+          <h3 class="form-label">Signup</h3>
+
+          <div class="text-input-container"><input class="text-input text-input--material" placeholder="Username" type="text" required></div>
+        <br />
+          <div class="text-input-container"><input class="text-input text-input--material" placeholder="Email" type="text" required></div>
+        <br />
+        <div class="text-input-container"><input class="text-input text-input--material" placeholder="Password" type="password" required></div>
+      
+      
+          <div class="wide-button">
+            <button onclick="setTimeout(startTheGame, 3500);document.getElementById('loader').style.display='block';document.getElementById('pop-image').classList.add('gameStarting');document.getElementById('popin-go').style.maxWidth= 'none'; document.getElementById('popin-go').style.width = '100%';document.getElementById('tapstart').play();document.getElementById('pop-text').style.marginTop = '-202px';window.navigator.vibrate(40);">START</button>
+      
+            <script>
+              function startTheGame(){
+                document.getElementById('time').src = 'timing.js';startCountDown();
+            document.getElementById('cntd').style.display = 'block';tutorial();self.location.href = '#chd';closePopup();
+              }
+            </script>
+          </div>
+        
+          <div class="wide-button invert">
+            <button onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper').classList.add('flipOutY');setTimeout(closePopup, 500);document.getElementById('tapclose').play();window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');">CLOSE</button>
+            <audio src="sound effects/tapclose.mp3" id="tapclose"></audio>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+      
+
+
+
 <!-------------------------------------Stega Plus--------------------------------------->
 
 <div id="creator" style="display:none;">
