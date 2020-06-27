@@ -172,7 +172,9 @@
             
       </section>
     
-      
+      <div class="icon-container" id="profile-icon">
+        <img src="/Icons/guy2.svg">
+      </div>
               <script>
                   function myFunction() {
                       var e, s, t;
@@ -192,8 +194,15 @@
       function scrollFunction() {
         if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
           document.getElementById("nav").style.borderBottom = "1px lightgray solid";
+          
         } else {
           document.getElementById("nav").style.borderBottom = "none";
+          document.getElementById('profile-icon').style.display="block"
+        }
+        if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+          document.getElementById('profile-icon').style.display="none"
+        } else {
+          document.getElementById('profile-icon').style.display="block"
         }
       }
           </script>
@@ -202,7 +211,7 @@
           <div style="" id="items" class="scroll-container">
 
             <div class="loading-container " >
-              <img class="loading" style="width: 75px;" src="https://www.drupal.org/files/issues/throbber_12.gif">
+              <img class="loading" src="https://www.drupal.org/files/issues/throbber_12.gif">
            </div>
 
           </div>

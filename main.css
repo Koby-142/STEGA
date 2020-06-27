@@ -1436,17 +1436,24 @@ body.darkclass .bottom-nav-button > label > img {
   width: 150px;
   border-radius: 150px;
   margin: auto;
+  filter:;
+ 
 }
 
 .loading-container > img {
-  width: 100px;
+  width: 75px;
   position: relative;
   border-radius: 150px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+ filter: grayscale() saturate(1.5);
 }
+
+.icon-container {position: fixed; right: 15px;top: 7px;}
+
+.icon-container > img {width: 45px; height: 45px;}
 
 #loader {
   display: none;
