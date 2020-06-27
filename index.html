@@ -165,10 +165,25 @@
             <section style="display:block" class="search" id="main-search">
               <div class="search-wrapper">
                   <div class="search-input-container"> <input autocomplete="off" 
-                          class="search-input" type="search" id="mySearch" onkeyup="myFunction()" onload="myFunction()"
-                          placeholder=" Search Stega.." title="Click To Search For Jobs"></div>
+                          class="search-input" type="search" id="mySearch" onkeyup="myFunction();searchStart()"  onload="myFunction()"
+                          placeholder=" Search Stega.." title="Click To Search For Jobs">
+                            <button onclick="clearSearch()" class="clear-btn-search" id="search-clear">Clear</button>
+                        </div>
+                      
               </div>
-   
+   <script>
+function searchStart(){
+  var searchClear = document.getElementById('search-clear');
+  searchClear.style.display="block";
+  if (searchClear.value = ""){
+    searchClear.style.display="none";
+  }
+}
+function clearSearch(){
+ document.getElementById('mySearch').value = "";
+ myFunction();
+}
+   </script>
             
       </section>
     

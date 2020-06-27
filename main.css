@@ -853,6 +853,10 @@ a:active {
 
 .search-icon {position: fixed; top: 15px;left: 20px;  background-color: rgb(243, 243, 243);padding-left: 10px;}
 
+.clear-btn-search {float:right;margin-top: -26px;color: rgb(0, 0, 180);border: none;margin-right: 10px;background-color: transparent;}
+
+#search-clear {display: none;}
+
 .search-result-container > img {
   width: 130px;
   height: 80px;
