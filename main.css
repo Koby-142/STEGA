@@ -501,7 +501,7 @@ details summary::-webkit-details-marker {
 .scroll-container {
   margin: auto;
   width: 92%;
-  margin-top: -60px;
+  margin-top: -78px;
   margin-bottom: 70px;
 }
 
@@ -902,6 +902,7 @@ a:active {
 .search-wrapper {
   display: inline-block;
 width: 92%;
+margin-bottom: 8px;
  
 }
 
@@ -912,6 +913,8 @@ width: 92%;
 padding-top: 18px;
 padding-bottom: 18px;
 float: left;
+border-radius: 50px;
+
 }
 
 
