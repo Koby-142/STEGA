@@ -165,7 +165,7 @@
             <section style="display:block" class="search" id="main-search">
               <div class="search-wrapper">
                   <div class="search-input-container"> <input autocomplete="off" 
-                          class="search-input" type="search" id="mySearch" onkeyup="myFunction();searchStart()" onclick="document.getElementById('tapclose').play();window.navigator.vibrate(20);self.location.href = '#'"  onload="myFunction()"
+                          class="search-input" type="search" id="mySearch" onkeyup="myFunction();searchStart()" onclick="document.getElementById('tapclose').play();window.navigator.vibrate(20);self.location.href = '#'; document.getElementById('search-clear').style.display='block';"  onload="myFunction()"
                           placeholder=" Search Stega.." title="Click To Search For Jobs">
                             <button onclick="clearSearch()" class="clear-btn-search" id="search-clear">Cancel</button>
                         </div>
