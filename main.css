@@ -12,6 +12,11 @@ body {
   z-index: 0;
 }
 
+.tabbar--material{
+  box-shadow: none !important;
+
+}
+
 a {
   text-decoration: none;
 }
@@ -149,13 +154,14 @@ button:focus {
 nav {
   width: 100%;
   position: sticky;
-  top: 0px;
+  top: -47px;
   z-index: 550;
   left: 0px;
   backdrop-filter: blur(6px);
   background-color: white;
 
   transition: 0.2s ease;
+  border-bottom: solid 1px lightgray;
 }
 
 .pwa-logo-container {
@@ -495,7 +501,7 @@ details summary::-webkit-details-marker {
 .scroll-container {
   margin: auto;
   width: 92%;
-  margin-top: -77px;
+  margin-top: -60px;
   margin-bottom: 70px;
 }
 
@@ -895,20 +901,20 @@ a:active {
 
 .search-wrapper {
   display: inline-block;
-
+width: 92%;
  
 }
 
 .search-input-container > input {
-  width: 95%;
+  width: 100%;
  
   background-color: rgb(243, 243, 243);
-padding-top: 15px;
-padding-bottom: 15px;
+padding-top: 18px;
+padding-bottom: 18px;
 float: left;
 }
 
-.styled-select {margin-top: 15px !important;margin-left: 16px !important;}
+
 
 .search-input-container > input:focus {
   border-color: black;

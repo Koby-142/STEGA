@@ -161,24 +161,45 @@
         <nav id="nav">
         
 <div class="logo-container"><img src="Branding/stega full length.svg"></div>
-<i
-onclick="search()" class="material-icons search-icon">search</i>
+
             <section style="display:block" class="search" id="main-search">
               <div class="search-wrapper">
                   <div class="search-input-container"> <input autocomplete="off" 
                           class="search-input" type="search" id="mySearch" onkeyup="myFunction()" onload="myFunction()"
-                          placeholder="&emsp; Search Stega.." title="Click To Search For Jobs"></div>
+                          placeholder=" Search Stega.." title="Click To Search For Jobs"></div>
               </div>
+<div class="tabbar tabbar--top tabbar--material">
+  <label class="tabbar__item tabbar--material__item">
+    <input type="radio" name="tabbar-material-a" checked="checked">
+    <button class="tabbar__button tabbar--material__button">
+      All
+    </button>
+  </label>
+  <label class="tabbar__item tabbar--material__item">
+    <input type="radio" name="tabbar-material-a" >
+    <button class="tabbar__button tabbar--material__button">
+     Easy
+    </button>
+  </label>
 
-      
-              <select class="styled-select select-input " name="difficulty" id="difficulty">
-                <option>Difficulty</option>
-                <option>All</option>
-                <option>Easy</option>
-                <option>Medium</option>
-                <option>Hard</option>
-              </select>
-              
+  <label class="tabbar__item tabbar--material__item">
+    <input type="radio" name="tabbar-material-a">
+    <button class="tabbar__button tabbar--material__button">
+      Medium
+    </button>
+  </label>
+
+  <label class="tabbar__item tabbar--material__item">
+    <input type="radio" name="tabbar-material-a">
+    <button class="tabbar__button tabbar--material__button">
+      Hard
+    </button>
+  </label>
+
+  
+
+
+</div>
             
       </section>
      
