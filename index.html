@@ -173,6 +173,7 @@
               </div>
    <script>
 function searchStart(){
+  document.getElementById('tapclose').play();window.navigator.vibrate(20);
   var searchClear = document.getElementById('search-clear');
   searchClear.style.display="block";
   if (searchClear.value = ""){
@@ -180,6 +181,7 @@ function searchStart(){
   }
 }
 function clearSearch(){
+  document.getElementById('tapclose').play();window.navigator.vibrate(20);
  document.getElementById('mySearch').value = "";
  myFunction();
  document.getElementById('search-clear').style.display='none';
