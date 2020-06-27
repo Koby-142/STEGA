@@ -1298,7 +1298,7 @@ margin-top: 22px;
 
 .text-input-container {margin-left: 15px;padding-top: 15px;}
 
-.text-input-container > input {width: 94%;padding-bottom: 12px;}
+.text-input-container > input {width: 94%;padding-bottom: 12px;font-weight: normal;}
 
 .form-label {font-size: 35px;margin:0px;font-weight: normal;margin-left: 4.5%;margin-bottom: 10px;padding-top: 20px;}
 

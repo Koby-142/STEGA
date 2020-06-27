@@ -578,8 +578,8 @@ function clearSearch(){
       
       <div class="popup-container " id="popup3">
         <button class="close-pop-btn" onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper').classList.add('flipOutY');setTimeout(closePopup, 500);document.getElementById('tapclose').play();document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');"></button>
-        <div class="popin " id="popin-go">
-          <div class="popin-wrapper vivify flipInY duration-500" id="popup-wrapper">
+        <div class="popin " id="popin-go3">
+          <div class="popin-wrapper vivify flipInY duration-500" id="popup-wrapper3">
           <button onclick="closePopup()"class="close-btn" >Close</button>
          
           <h3 class="form-label">Signup</h3>
@@ -592,7 +592,7 @@ function clearSearch(){
       
       
           <div class="wide-button">
-            <button onclick="setTimeout(startTheGame, 3500);document.getElementById('loader').style.display='block';document.getElementById('pop-image').classList.add('gameStarting');document.getElementById('popin-go').style.maxWidth= 'none'; document.getElementById('popin-go').style.width = '100%';document.getElementById('tapstart').play();document.getElementById('pop-text').style.marginTop = '-202px';window.navigator.vibrate(40);">START</button>
+            <button onclick=" document.getElementById('tapstart').play();;window.navigator.vibrate(40);">SIGNUP</button>
       
             <script>
               function startTheGame(){
@@ -603,7 +603,7 @@ function clearSearch(){
           </div>
         
           <div class="wide-button invert">
-            <button onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper').classList.add('flipOutY');setTimeout(closePopup, 500);document.getElementById('tapclose').play();window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');">CLOSE</button>
+            <button onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper3').classList.add('flipOutY');setTimeout(closePopup3, 500);document.getElementById('tapclose').play();window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');">CLOSE</button>
             <audio src="sound effects/tapclose.mp3" id="tapclose"></audio>
           </div>
         </div>
@@ -612,7 +612,15 @@ function clearSearch(){
       
       
 
+<script>
+    function popup3(){
+document.getElementById("popup3").style.display="block"
+  }
 
+  function closePopup3(){
+document.getElementById("popup3").style.display="none"
+  }
+</script>
 
 <!-------------------------------------Stega Plus--------------------------------------->
 
