@@ -82,41 +82,29 @@
     </ul>
    </script>
 
-
-
-</script>
-
    <script type="text/javascript">
     $(document).ready(function () {
-        $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/deck/all', function (data) {
-            var template = Handlebars.compile($('#item-template9').html())
-            $('#search').html(template(data.all))
+        $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/deck/collections', function (data) {
+            var template = Handlebars.compile($('#item-template2').html())
+            $('#collection').html(template(data.collections))
         })
     })
 </script>
 
-<script id="item-template9" type="text/x-handlebars-template">
-  <div class="mini-u"></div>
+<script id="item-template2" type="text/x-handlebars-template">
+
+
     {{#each this}}
-<li class="">
-  <a onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
-  document.getElementById('imgview').src ='{{image}}'; document.getElementById('time').src = 'timing.js';startCountDown();
-  document.getElementById('cntd').style.display = 'block';tutorial();" href="#chd" class="search-result-container">
-    <img src="{{image}}">
-    <div class="search-text">
-      <h3>{{name}}</h3>
-      
- 
+    <div class="collection-item" onclick="document.getElementById('mySearch').value='Gaming';myFunction();window.navigator.vibrate(20);self.location.href = '#';document.getElementById('collection-overlay').style.display='block';document.getElementById('tap').play();document.getElementById('items').style.marginTop = '0px';document.getElementById('items').classList.add('fadeIn');document.getElementById('collection').style.display='none';document.getElementById('main-search').style.display='none';document.getElementById('collection-indicator').innerHTML='GAMING';">
+      <img src="{{image}}">
+      <p>Collection</p>
+      <h3>GAMING</h3>
     </div>
 
-
-
-  </a>
-</li>
 {{/each}}
 
 </script>
- 
+
     </head>
     <h3 id="gyro" style="position: fixed; left: 70px; top:-3px;z-index: 9000;color: white;background-color: black;padding-left: 7px ;padding-right: 7px; border-radius: 5px;transition: 0.2s ease;padding-top: 4px;display: none;">Null</h3>
     <body class="dark-html" style="background-color:white;display: block;
@@ -238,26 +226,8 @@ function clearSearch(){
           </script>
 
 <div id="collection" class="collection-container">
-  <div class="collection-item" onclick="document.getElementById('mySearch').value='Gaming';myFunction();window.navigator.vibrate(20);self.location.href = '#';document.getElementById('collection-overlay').style.display='block';document.getElementById('tap').play();document.getElementById('items').style.marginTop = '0px';document.getElementById('items').classList.add('fadeIn');document.getElementById('collection').style.display='none';document.getElementById('main-search').style.display='none';document.getElementById('collection-indicator').innerHTML='GAMING';">
-    <img src="/Images/Fortnite_BR_Key_Art_w_Logo_ENG.0.jpg">
-    <p>Collection</p>
-    <h3>GAMING</h3>
-  </div>
-  <div class="collection-item">
-    <img src="/Images/Fortnite_BR_Key_Art_w_Logo_ENG.0.jpg">
-    <p>Collection</p>
-    <h3>GAMING</h3>
-  </div>
-  <div class="collection-item">
-    <img src="/Images/Fortnite_BR_Key_Art_w_Logo_ENG.0.jpg">
-    <p>Collection</p>
-    <h3>GAMING</h3>
-  </div>
-  <div class="collection-item">
-    <img src="/Images/Fortnite_BR_Key_Art_w_Logo_ENG.0.jpg">
-    <p>Collection</p>
-    <h3>GAMING</h3>
-  </div>
+
+
 </div>
 
           <div style="" id="items" class="scroll-container vivify">
