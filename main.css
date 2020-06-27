@@ -1192,7 +1192,8 @@ label > img:active {
   border: solid 1px lightgray;
   width: 100%;
   margin-top: 13px;
-  border-radius: 5px;
+  border-radius: 10px;
+
 }
 
 .music-item > i {
@@ -1235,7 +1236,7 @@ margin-top: 22px;
 }
 
 .music-container {
-  width: 320px;
+  width: 94%;
   margin-left: 10px;
 }
 
@@ -1266,7 +1267,7 @@ margin-top: 22px;
   float: left;
   margin-left: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 7px;
   padding-left: 14px;
   padding-right: 14px;
 }
