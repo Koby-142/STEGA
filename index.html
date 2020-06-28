@@ -229,41 +229,6 @@ function clearSearch(){
 
 
 </div>
-<h1 style="margin-bottom: 150px;">Spotify Connect Beta Test</h1>
-
-
-<script src="https://sdk.scdn.co/spotify-player.js"></script>
-<script>
-  window.onSpotifyWebPlaybackSDKReady = () => {
-    const token = 'BQAIBW3Alej90IryzQ4rq8flp0x7SRbFCIVN-9Awc5VvMWsTWsfmV73R_vUjbcHdBUQJ45v3qiSZhH924prcyPpCki6bHoY1phAEVmJS1_jKVryqFKsQYfpnMDYVJW448eEg7YpjdpyaNjz-dIAH1KICUoFZ4vhCYSZV6udWcOvSl_243RFoWqY';
-    const player = new Spotify.Player({
-      name: 'Stega Play',
-      getOAuthToken: cb => { cb(token); }
-    });
-
-    // Error handling
-    player.addListener('initialization_error', ({ message }) => { console.error(message); });
-    player.addListener('authentication_error', ({ message }) => { console.error(message); });
-    player.addListener('account_error', ({ message }) => { console.error(message); });
-    player.addListener('playback_error', ({ message }) => { console.error(message); });
-
-    // Playback status updates
-    player.addListener('player_state_changed', state => { console.log(state); });
-
-    // Ready
-    player.addListener('ready', ({ device_id }) => {
-      console.log('Ready with Device ID', device_id);
-    });
-
-    // Not Ready
-    player.addListener('not_ready', ({ device_id }) => {
-      console.log('Device ID has gone offline', device_id);
-    });
-
-    // Connect to the player!
-    player.connect();
-  };
-</script>
           <div style="" id="items" class="scroll-container vivify">
 
             <div class="loading-container " >
@@ -577,6 +542,22 @@ function clearSearch(){
           </div>
           <label class="radio-button radio-button--material">
             <input id="Saturn" onclick="document.getElementById('gamemusic').src='Sound Effects/Saturn.mp3';localStorage.setItem('currentMusic', 'Sound Effects/Saturn.mp3');document.getElementById('tapclose').play();window.navigator.vibrate(20);localStorage.setItem('musicState', 'Saturn');" type="radio" class="radio-button__input radio-button--material__input" name="r" >
+            <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+            
+          </label>
+        </div>
+
+        <div class="music-item">
+          <i class="material-icons musicIcon" onclick="document.getElementById('music4').play();document.getElementById('music4pause').style.display='inline-block';document.getElementById('music4play').style.display='none'" id="music4play" style="background-color: #f92626;;">play_arrow</i>
+          <i class="material-icons musicIcon" onclick="document.getElementById('music4').pause();document.getElementById('music4pause').style.display='none';document.getElementById('music4play').style.display='inline-block'" style="display: none;background-color: #f92626;" id="music4pause">pause</i>
+          <audio id="music4" src="sound effects/Vibrancy.mp3"></audio>
+          <div class="music-text">
+            <h2>Vibrancy</h2>
+            <p>By 
+              Oscar Owl</p>
+          </div>
+          <label class="radio-button radio-button--material">
+            <input id="Vibrancy" onclick="document.getElementById('gamemusic').src='Sound Effects/Vibracy.mp3';localStorage.setItem('currentMusic', 'Sound Effects/Vibrancy.mp3');document.getElementById('tapclose').play();window.navigator.vibrate(20);localStorage.setItem('musicState', 'Vibrancy');" type="radio" class="radio-button__input radio-button--material__input" name="r" >
             <div class="radio-button__checkmark radio-button--material__checkmark"></div>
             
           </label>
