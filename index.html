@@ -229,7 +229,41 @@ function clearSearch(){
 
 
 </div>
+<h1 style="margin-bottom: 150px;">Spotify Connect Beta Test</h1>
 
+
+<script src="https://sdk.scdn.co/spotify-player.js"></script>
+<script>
+  window.onSpotifyWebPlaybackSDKReady = () => {
+    const token = 'BQAIBW3Alej90IryzQ4rq8flp0x7SRbFCIVN-9Awc5VvMWsTWsfmV73R_vUjbcHdBUQJ45v3qiSZhH924prcyPpCki6bHoY1phAEVmJS1_jKVryqFKsQYfpnMDYVJW448eEg7YpjdpyaNjz-dIAH1KICUoFZ4vhCYSZV6udWcOvSl_243RFoWqY';
+    const player = new Spotify.Player({
+      name: 'Stega Play',
+      getOAuthToken: cb => { cb(token); }
+    });
+
+    // Error handling
+    player.addListener('initialization_error', ({ message }) => { console.error(message); });
+    player.addListener('authentication_error', ({ message }) => { console.error(message); });
+    player.addListener('account_error', ({ message }) => { console.error(message); });
+    player.addListener('playback_error', ({ message }) => { console.error(message); });
+
+    // Playback status updates
+    player.addListener('player_state_changed', state => { console.log(state); });
+
+    // Ready
+    player.addListener('ready', ({ device_id }) => {
+      console.log('Ready with Device ID', device_id);
+    });
+
+    // Not Ready
+    player.addListener('not_ready', ({ device_id }) => {
+      console.log('Device ID has gone offline', device_id);
+    });
+
+    // Connect to the player!
+    player.connect();
+  };
+</script>
           <div style="" id="items" class="scroll-container vivify">
 
             <div class="loading-container " >
@@ -583,16 +617,16 @@ function clearSearch(){
           <button onclick="closePopup()"class="close-btn" >Close</button>
          
           <h3 class="form-label">Signup</h3>
-
+<form id="signup-form">
           <div class="text-input-container"><input class="text-input text-input--material" placeholder="Username" type="text" required></div>
         <br />
-          <div class="text-input-container"><input class="text-input text-input--material" placeholder="Email" type="text" required></div>
+          <div class="text-input-container"><input class="text-input text-input--material" id="signup-email" placeholder="Email" type="text" required></div>
         <br />
-        <div class="text-input-container"><input class="text-input text-input--material" placeholder="Password" type="password" required></div>
+        <div class="text-input-container"><input class="text-input text-input--material" id="signup-password" placeholder="Password" type="password" required></div>
       
       
           <div class="wide-button">
-            <button onclick=" document.getElementById('tapstart').play();;window.navigator.vibrate(40);">SIGNUP</button>
+            <button type="submit" onclick=" document.getElementById('tapstart').play();;window.navigator.vibrate(40);">SIGNUP</button>
       
             <script>
               function startTheGame(){
@@ -601,7 +635,7 @@ function clearSearch(){
               }
             </script>
           </div>
-        
+        </form>
           <div class="wide-button invert">
             <button onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper3').classList.add('flipOutY');setTimeout(closePopup3, 500);document.getElementById('tapclose').play();window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');">CLOSE</button>
             <audio src="sound effects/tapclose.mp3" id="tapclose"></audio>
@@ -802,4 +836,38 @@ document.getElementById("popup").style.display="none"
 
     <audio src="sound effects/start.mp3" id="tapstart"></audio>
     <script src="/localStorage.js"></script>
+
+    <!-----------------Fire Base-------------------------->
+
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-storage.js"></script>
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDSDOo-a8AKZ9E0Afg3yamvnq1dhXYfiYE",
+    authDomain: "stega-6e2a6.firebaseapp.com",
+    databaseURL: "https://stega-6e2a6.firebaseio.com",
+    projectId: "stega-6e2a6",
+    storageBucket: "stega-6e2a6.appspot.com",
+    messagingSenderId: "974418952308",
+    appId: "1:974418952308:web:6dfa464305a728a00cd121",
+    measurementId: "G-X4LL9R4HWQ"
+  };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  
+  
+    // Make auth and firestore references
+  
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+  
+
+  </script>
+    <!-- Compiled and minified JavaScript -->
+
+    <script src="auth.js"></script>
+    <script src="index.js"></script>
 </html>
