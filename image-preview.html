@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Loader</title>
+</head>
+<body>
+    <button onclick="reload()">
+        Reload
+      </button>
+      
+      
+      <button onclick="add()">
+        Add
+      </button>
+      
+      
+      <div id="change">
+      
+      </div>
+      
+      <iframe>
+      
+      </iframe>
+      
+      <script>
+        function reload() {
+      
+          document.getElementById('change').innerHTML = `<img src="https://source.unsplash.com/600x360/?nature">`;
+          document.location.href = document.location.href;
+        }
+      
+        function add() {
+      
+          document.getElementById('change').innerHTML = `<img src="https://source.unsplash.com/600x360/?gaming">`;
+      
+        }
+      
+      </script>
+      
+</body>
+</html>

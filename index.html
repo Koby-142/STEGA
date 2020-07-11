@@ -643,12 +643,12 @@ document.getElementById("popup3").style.display="none"
     <h2>CREATE</h2>
   </div>
   <div class="create-menu-buttons">
-    <button onclick="document.getElementById('creator').style.display='block'">Create Deck <i class="material-icons">add </i></button>
+    <button onclick="document.getElementById('creator').style.display='block';document.getElementById('nav').style.display='none';">Create Deck <i class="material-icons">add </i></button>
     <button class="create-button-secondary">Edit Deck <i class="material-icons">edit</i></button>
   </div>
 </div>
 
-<div id="creator" style="display: block;">
+<div id="creator" style="display: none;">
 
       <div class="creator-container">
 
@@ -665,9 +665,10 @@ document.getElementById("popup3").style.display="none"
   <li>
     <a>
     <div class="deck-scroll vivify fadeIn">
-      <div style="display: none;" class="image-button-up">
+      <div style="display: block;" class="image-button-up">
         <button>Add Image</button>
       </div>
+
      <img loading="lazy" alt="Loading Deck..." src="https://source.unsplash.com/1600x900/?gaming">
      <h2>TITLE</h2>
      <div class="difficutly-text-container">
@@ -675,7 +676,12 @@ document.getElementById("popup3").style.display="none"
 <span style="display: none;">{{description}}</span>
      </div>
      
-   
+     <script>
+      function reload(){
+      var iframe = document.getElementById('iframe');
+      iframe.src = iframe.src;
+      }
+      </script>
      <div class="deck-btn-container">
      </div>
    </div>
@@ -689,10 +695,38 @@ document.getElementById("popup3").style.display="none"
 
         <form>
         
+          <div class="add-image-overlay">
+            
+            <div class="image-overlay-wrapper">
+              <div class="section-page-indicator ">
+                <h2>ADD IMAGE</h2>
+              </div>
+              
+              <div class="collection-button ">
+                <button style="margin-top: -78px;" onclick="clearSearch();document.getElementById('collection-overlay').style.display='none';document.getElementById('items').style.marginTop = '-153px';self.location.href = '#';document.getElementById('items').classList.remove('fadeIn');document.getElementById('collection').style.display='block';document.getElementById('main-search').style.display='block';"><i class="material-icons">close</i></button>
+              </div>
 
+             
+                <div class="search-input-container" style="margin-left:-1px"> <input placeholder="Enter ANY keyword" class="searchInput search-input"/>
+                </div>
+                
+           
+              
+            <div class="loading">Loading...</div>
+            <div class="wrapper image-results"></div>
+            </div>
+           
+      
+          </div>
           <div>
           
               <div class="center-container">
+
+             
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
+
+                <script src="/images.js"></script>
 
                 <div  class="title">
                   <div class="create-form-text" >
@@ -767,24 +801,24 @@ function live(){
           <label for="nav-btn2"><img  src="Assets/Create.svg" alt="Home"></label>
       </a>
       </div>
-      <div class="bottom-nav-button" onclick="document.getElementById('account').style.display = 'block';">
+      <div class="bottom-nav-button" onclick="document.getElementById('account').style.display = 'block';document.getElementById('creator').style.display='none';">
          
           <input id="nav-btn3" type="radio" name="bottom-nav" >
           <label for="nav-btn3"><img src="/Assets/Profile.svg" alt="Account"></label>
   
       </div>
-      <div class="bottom-nav-button " onclick="self.location.href = '#';document.getElementById('nav').style.display='block';">
+      <div class="bottom-nav-button " onclick="self.location.href = '#';document.getElementById('nav').style.display='block';document.getElementById('creator').style.display='none';">
         <input  id="nav-btn1" type="radio" name="bottom-nav"  checked>
         <label for="nav-btn1" ><img  src="/Assets/Play.svg" alt="Search"></label>
     </div>
-      <div class="bottom-nav-button" onclick="self.location.href = '#settings';document.getElementById('nav').style.display='none';">
+      <div class="bottom-nav-button" onclick="self.location.href = '#settings';document.getElementById('nav').style.display='none';document.getElementById('creator').style.display='none';">
          
         <input id="nav-btn4" type="radio" name="bottom-nav" >
         <label for="nav-btn4"><img src="/Assets/Settings.svg" alt="Account"></label>
 
     </div>
 
-    <div class="bottom-nav-button" onclick="document.getElementById('account').style.display = 'block';">
+    <div class="bottom-nav-button" onclick="document.getElementById('account').style.display = 'block';document.getElementById('creator').style.display='none';">
          
       <input id="nav-btn5" type="radio" name="bottom-nav" >
       <label for="nav-btn5"><img src="/Assets/Explore.svg" alt="Account"></label>
