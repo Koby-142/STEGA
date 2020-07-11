@@ -685,7 +685,7 @@ document.getElementById("popup3").style.display="none"
      <img id="preview-image" loading="lazy" alt="Loading Deck..." src="https://source.unsplash.com/1600x900/?gaming">
      <h2 id="titleOutput">TITLE</h2>
      <div class="difficutly-text-container">
-<p class="{{difficulty}}">DIFFICULTY</p>
+<p class="" id="difficultyOutput">DIFFICULTY</p>
 <span style="display: none;">{{description}}</span>
      </div>
      
@@ -759,7 +759,7 @@ document.getElementById("popup3").style.display="none"
                     <h3 >Difficulty</h3>
                   
                   </div>
-                <select name="difficulty" id="difficulty" class="ddown-input">
+                <select name="difficulty" onchange=" document.getElementById('difficultyOutput').classList.remove('EASY'); document.getElementById('difficultyOutput').classList.remove('MEDIUM'); document.getElementById('difficultyOutput').classList.remove('HARD');;difficultyData()" id="difficulty" class="ddown-input">
                     <option value="EASY">EASY</option>
                     <option value="MEDIUM">MEDIUM</option>
                     <option value="HARD">HARD</option>
@@ -785,6 +785,11 @@ document.getElementById("popup3").style.display="none"
 
          function titleData(){
            document.getElementById('titleOutput').innerHTML = titleInput.value
+         }
+
+         function difficultyData(){
+          document.getElementById('difficultyOutput').innerHTML= document.getElementById('difficulty').value;
+          document.getElementById('difficultyOutput').classList.add(document.getElementById('difficulty').value);
          }
        </script>
        
