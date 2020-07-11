@@ -666,7 +666,7 @@ document.getElementById("popup3").style.display="none"
     <a>
     <div class="deck-scroll vivify fadeIn">
       <div style="display: block;" class="image-button-up">
-        <button>Add Image</button>
+        <button onclick="document.getElementById('addImage').style.display='block'">Add Image</button>
       </div>
 
      <img loading="lazy" alt="Loading Deck..." src="https://source.unsplash.com/1600x900/?gaming">
@@ -695,15 +695,19 @@ document.getElementById("popup3").style.display="none"
 
         <form>
         
-          <div class="add-image-overlay">
+          <div class="add-image-overlay" id="addImage">
             
             <div class="image-overlay-wrapper">
               <div class="section-page-indicator ">
-                <h2>ADD IMAGE</h2>
+                <h2 style="width: auto;">ADD IMAGE</h2>
               </div>
               
               <div class="collection-button ">
-                <button style="margin-top: -78px;" onclick="clearSearch();document.getElementById('collection-overlay').style.display='none';document.getElementById('items').style.marginTop = '-153px';self.location.href = '#';document.getElementById('items').classList.remove('fadeIn');document.getElementById('collection').style.display='block';document.getElementById('main-search').style.display='block';"><i class="material-icons">close</i></button>
+                <button  style="position: fixed;
+                z-index: 5000;
+                right: 0px;
+                top: 80px;
+            }" onclick="document.getElementById('addImage').style.display='none'"><i class="material-icons">close</i></button>
               </div>
 
              

@@ -1012,7 +1012,11 @@ border-radius: 50px;
 
 .image-overlay-wrapper {margin: auto; width: 93%;}
 
-.overlay-image {width: 100%;margin-top: 15px;border-radius: 10px;background-size: cover;}
+.overlay-image {width: 100%;margin-top: 15px;border-radius: 10px;background-size: cover !important;}
+
+.hidden {display: none;}
+
+#addImage {display: none;}
 
 .create-menu-buttons {margin-left: 3%;}
 
