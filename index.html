@@ -665,6 +665,12 @@ document.getElementById("popup3").style.display="none"
       }" onclick="document.getElementById('creator').style.display='none';document.getElementById('tapclose').play();"><i class="material-icons">close</i></button>
         </div>
 
+
+
+<!-----------------------------------------Creator Preview---------------------------->
+
+
+
 <div class="creator-preview" id="creator-preview">
   <ul  class="result-list vivify fadeIn creator-list"
   style="padding-left-start {0px;}" >
@@ -677,7 +683,7 @@ document.getElementById("popup3").style.display="none"
       </div>
 
      <img id="preview-image" loading="lazy" alt="Loading Deck..." src="https://source.unsplash.com/1600x900/?gaming">
-     <h2>TITLE</h2>
+     <h2 id="titleOutput">TITLE</h2>
      <div class="difficutly-text-container">
 <p class="{{difficulty}}">DIFFICULTY</p>
 <span style="display: none;">{{description}}</span>
@@ -700,7 +706,7 @@ document.getElementById("popup3").style.display="none"
 
 
 
-        <form>
+        
         
           <div class="add-image-overlay" id="addImage">
             
@@ -733,7 +739,7 @@ document.getElementById("popup3").style.display="none"
           
               <div class="center-container vivify fadeIn">
 
-             
+                <form>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
 
@@ -746,7 +752,7 @@ document.getElementById("popup3").style.display="none"
                     <p>This is shown before the game starts</p>
                   </div>
                   </div>
-                  <input id="title-input" type="text" class="gen-input" placeholder="Title">
+                  <input id="title-input" type="text" class="gen-input" placeholder="Title" oninput="titleData()">
 
           
                   <div class="create-form-text" style="">
@@ -774,7 +780,13 @@ document.getElementById("popup3").style.display="none"
             <input class="gen-input half" placeholder="Item 1" type="text">
           </div>
         
-       
+       <script>
+         var titleInput = document.getElementById('title-input');
+
+         function titleData(){
+           document.getElementById('titleOutput').innerHTML = titleInput.value
+         }
+       </script>
        
         </form>
         </div>

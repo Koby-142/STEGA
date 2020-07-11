@@ -588,6 +588,7 @@ details summary::-webkit-details-marker {
   font-weight: 500;
   padding-top: 6px;
   border-radius: 0px;
+  text-transform:uppercase;
 }
 
 .deck-scroll > p {
