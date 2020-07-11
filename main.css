@@ -86,6 +86,7 @@ a {
   margin-top: 40vh;
   position: relative;
   z-index: -1;
+  text-transform:uppercase;
 }
 
 .block-container {
