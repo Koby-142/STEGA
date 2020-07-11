@@ -6,7 +6,7 @@
        <link rel="stylesheet" href="main.css">
        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
-       <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+      
        <link rel="manifest" href="manifest.json">
        <link rel="stylesheet" href="vivify.min.css">
        <link rel="shortcut icon" href="Branding/decklogo512.png">
@@ -739,7 +739,7 @@ document.getElementById("popup3").style.display="none"
           
               <div class="center-container vivify fadeIn">
 
-                <form>
+             
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
 
@@ -755,7 +755,7 @@ document.getElementById("popup3").style.display="none"
                   <input id="title-input" type="text" class="gen-input" placeholder="Title" oninput="titleData()">
 
           
-                  <div class="create-form-text" style="">
+                  <div class="create-form-text">
                     <h3 >Difficulty</h3>
                   
                   </div>
@@ -766,19 +766,45 @@ document.getElementById("popup3").style.display="none"
                   </select>
 
           <div class="deck-item-input">
-            <div class="create-form-text" style="">
+            <div class="create-form-text" >
               <h3 >Deck Items</h3>
               <p>Each deck item is described while playing make sure they are representative of the title you choose before.</p>
             </div>
-            <input class="gen-input half" placeholder="Item 1" type="text">
-            <input class="gen-input half" placeholder="Item 1" type="text">
-            <input class="gen-input half" placeholder="Item 1" type="text">
-            <input class="gen-input half" placeholder="Item 1" type="text">
-            <input class="gen-input half" placeholder="Item 1" type="text">
-            <input class="gen-input half" placeholder="Item 1" type="text">
-            <input class="gen-input half" placeholder="Item 1" type="text">
-            <input class="gen-input half" placeholder="Item 1" type="text">
+            <div class="half-wrap">
+            <input oninput="itemsCheck()" class="gen-input half" placeholder="Item 1" id="item1" type="text">
+            <input oninput="itemsCheck()" class="gen-input half" placeholder="Item 2" id="item2" type="text">
+            <input oninput="itemsCheck()" class="gen-input half" placeholder="Item 3" id="item3" type="text">
+            <input oninput="itemsCheck()" class="gen-input half" placeholder="Item 4" id="item4" type="text">
+            <input oninput="itemsCheck()" class="gen-input half" placeholder="Item 5" id="item5" type="text">
+            <input oninput="itemsCheck()" class="gen-input half" placeholder="Item 6" id="item6" type="text">
+            <input oninput="itemsCheck()" class="gen-input half" placeholder="Item 7" id="item7" type="text">
+            <input oninput="itemsCheck()" class="gen-input half" placeholder="Item 8" id="item8" type="text">
           </div>
+          </div>
+
+          <script>
+            function itemsCheck(){
+              var item1 = document.getElementById('item1').value;
+            var item2 = document.getElementById('item2').value;
+            var item3 = document.getElementById('item3').value;
+            var item4 = document.getElementById('item4').value;
+            var item5 = document.getElementById('item5').value;
+            var item6 = document.getElementById('item6').value;
+            var item7 = document.getElementById('item7').value;
+            var item8 = document.getElementById('item8').value;
+         
+            }
+     
+          </script>
+
+          <div style='width:100%;margin-top:20px;margin-bottom:70px' class='wide-button '> <button id='add-btn' onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
+            document.getElementById('imgview').src ='{{image}}';popup4();document.getElementById('gameTitle4').innerHTML='{{name}}';document.getElementById('gameImg4').src='{{image}}';document.getElementById('gameDifficulty4').classList.add('{{difficulty}}');document.getElementById('gameDifficulty4').innerHTML = '{{difficulty}}';document.getElementById('popup-wrapper4').classList.remove('flipOutY');document.getElementById('tap').play();window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');">COMPLETE</button> </div>
+
+
+
+
+
+
         
        <script>
          var titleInput = document.getElementById('title-input');
@@ -793,7 +819,7 @@ document.getElementById("popup3").style.display="none"
          }
        </script>
        
-        </form>
+   
         </div>
         </div>
       </div>
@@ -918,6 +944,76 @@ document.getElementById("popup").style.display="none"
 }
 </script>
 
+
+
+
+
+
+
+
+
+<div class="popup-container " id="popup4">
+  <button class="close-pop-btn" onclick="document.getElementById('gameDifficulty4').classList.remove('EASY');document.getElementById('gameDifficulty4').classList.remove('MEDIUM');document.getElementById('gameDifficulty4').classList.remove('HARD');document.getElementById('popup-wrapper4').classList.add('flipOutY');setTimeout(closePopup4, 500);document.getElementById('tapclose').play();document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');"></button>
+  <div class="popin " id="popin-go4">
+    <div class="popin-wrapper vivify flipInY duration-500" id="popup-wrapper4">
+    <button onclick="closePopup4()"class="close-btn" >Close</button>
+    <div class="popin-image" id="pop-image4">
+      <img id="gameImg4" src="Assets/placeholder.png" class="pop-image gameStarting">
+    </div>
+    <div class="popin-text-container" id="pop-text4">
+      <div class="loading-container " id="loader4">
+        <img class="loading" src="https://www.drupal.org/files/issues/throbber_12.gif">
+     </div>
+      <div class="difficutly-text-container popup-difficulty">
+        <p id="gameDifficulty4">{{difficulty}}</p>
+                    </div>
+      <h2 id="gameTitle4">Null</h2>
+
+     
+    </div>
+    <div class="wide-button">
+      <button onclick="setTimeout(startTheGame, 3500);document.getElementById('loader').style.display='block';document.getElementById('pop-image4').classList.add('gameStarting');document.getElementById('popin-go4').style.maxWidth= 'none'; document.getElementById('popin-go4').style.width = '100%';document.getElementById('tapstart').play();document.getElementById('pop-text4').style.marginTop = '-202px';window.navigator.vibrate(40);">START</button>
+
+      <script>
+        function startTheGame(){
+          document.getElementById('time').src = 'timing.js';startCountDown();
+      document.getElementById('cntd').style.display = 'block';tutorial();self.location.href = '#chd';closePopup();
+        }
+      </script>
+    </div>
+  
+    <div class="wide-button invert">
+      <button onclick="document.getElementById('gameDifficulty4').classList.remove('EASY');document.getElementById('gameDifficulty4').classList.remove('MEDIUM');document.getElementById('gameDifficulty4').classList.remove('HARD');document.getElementById('popup-wrapper4').classList.add('flipOutY');setTimeout(closePopup4, 500);document.getElementById('tapclose').play();window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');">CLOSE</button>
+      <audio src="sound effects/tapclose.mp3" id="tapclose"></audio>
+    </div>
+  </div>
+  </div>
+</div>
+
+<script> 
+  
+  function popup4(){
+document.getElementById("popup4").style.display="block"
+  }
+
+  function closePopup4(){
+document.getElementById("popup4").style.display="none"
+  }
+  function openFullscreen() {
+  if (elem.requestFullscreen) {
+  elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+  elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+  elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+  elem.msRequestFullscreen();
+  }
+}
+</script>
+
+
+
     </body>
     <audio src="sound effects/tap.mp3" id="tap"></audio>
 
@@ -929,7 +1025,8 @@ document.getElementById("popup").style.display="none"
     <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-firestore.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-storage.js"></script>
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
   <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {

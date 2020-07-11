@@ -464,6 +464,8 @@ details summary::-webkit-details-marker {
 
 #popup2 {display: none;}
 
+#popup4 {display: none;}
+
 .endgame-container {position: fixed;bottom: 0px;width: 100%;left: 0px;z-index: 1000;;}
 
 .sub-end {margin: auto;width: 120px;}
@@ -1117,7 +1119,7 @@ border-radius: 50px;
 .center-container {
   margin: auto;
   width: 93%;
-  overflow-y: scroll;
+
 
 }
 
@@ -1131,10 +1133,13 @@ border-radius: 50px;
 .ddown-input {border: solid 1px lightgray;height:34px;padding-left: 10px;border-radius: 5px;margin-top: 5px;background-color: white;}
 
 .half {
-  width: 125px;
+ width: 43%;
   display: inline-block;
-  margin-top: 7px;
+  margin-top: 7px;margin-left: 10px;
+  margin-top: 12px;
 }
+
+.half-wrap {margin-left: -10px;}
 
 #image-live {
   width: 100%;
@@ -1558,6 +1563,8 @@ body.darkclass .bottom-nav-button > label > img {
 #loader {
   display: none;
 }
+
+#loader4 {display: none;}
 
 .gameStarting > img {
   left: 0px;
