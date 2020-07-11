@@ -57,7 +57,8 @@ ajaxModule.prototype = {
   
         document.getElementById("add-btn").addEventListener("click", function(){
           document.getElementById('preview-image').src=value.largeImageURL;
-          alert('Image Swap Complete')
+          alert('Image Swap Complete');
+          document.getElementById('addImage').style.display='none';
         });
 
       $(".image" + index + " .hidden").append(
