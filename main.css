@@ -1108,7 +1108,7 @@ border-radius: 50px;
   z-index: 150;
 }
 
-.ddown-input {border: solid 1px lightgray;height:34px;padding-left: 10px;border-radius: 5px;margin-top: 5px;}
+.ddown-input {border: solid 1px lightgray;height:34px;padding-left: 10px;border-radius: 5px;margin-top: 5px;background-color: white;}
 
 .half {
   width: 125px;
@@ -1476,6 +1476,7 @@ body.darkclass .bottom-nav-button > label > img {
     transition: 0.2s ease;
   }
 
+ 
 
   .bottom-navigation {display: none;}
 }
@@ -1497,6 +1498,12 @@ body.darkclass .bottom-nav-button > label > img {
   .popin-image > img {
     height: 155px;
   }
+
+  .create-ln {display: none;}
+
+  .creator-preview {display: none;}
+
+  .center-container {margin-bottom: 20px;}
 
   #collection {display: none !important}
 
