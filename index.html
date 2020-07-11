@@ -591,7 +591,7 @@ function clearSearch(){
     
         
       
-      <div class="popup-container " id="popup3">
+      <div class="popup-container " id="popup3" style="display:none !important">
         <button class="close-pop-btn" onclick="document.getElementById('popup-wrapper3').classList.add('flipOutY');setTimeout(closePopup3, 500);document.getElementById('tapclose').play();document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');"></button>
         <div class="popin " id="popin-go3">
           <div class="popin-wrapper vivify flipInY duration-500" id="popup-wrapper3">
@@ -648,54 +648,67 @@ document.getElementById("popup3").style.display="none"
   </div>
 </div>
 
-<div id="creator">
+<div id="creator" style="display: block;">
+
       <div class="creator-container">
-        <form>
-          <div id="title" class="title">
-            <div class="difficulty-container" style="">
-              <h3 class="difficulty">Title</h3>
-              <p>This is shown before the game starts</p>
-            </div>
-            <input id="title-input" type="text" class="gen-input" placeholder="Title">
-          <div class="form-btn-container"><a href="#"><p class="next-btn">Prev</p></a>  <a href="#img-upload"><p class="next-btn xor">Next</p></a></div>
-          </div>
 
-          <div id="img-upload">
-            <div class="fixed-container">
-              <div class="center-container">
-            <div class="difficulty-container" style="">
-              <h3 class="difficulty">Thumbnail Image</h3>
-              <p>This is the thumbnail image and the in-game Image</p>
-            </div>
-            <div id="image-live"></div>
-            <textarea oninput="live()" id="img-upload-input">
 
-            </textarea>
-<img  class="image-generated" src="" id="img-generate"></img>
-      
-           <div onclick="generateNew()">Generate New Image</div>
-           <script>
-function generateNew(){
-  var searchTerm = "fortnite";
-  var Generated = "https://source.unsplash.com/1600x900/?" + searchTerm;
-  var spaceGenerated = "https://source.unsplash.com/1600x900/?space";
-  document.getElementById('img-generate').src=spaceGenerated;
-  document.getElementById('img-generate').src=Generated;
-  
-}
-           </script>
-            <script async src="https://imgbb.com/upload.js" data-auto-insert="html-embed-medium"></script>
-            <div class="form-btn-container"><a href="#"><p class="next-btn">Prev</p></a>  <a href="#deck-items"><p class="next-btn xor">Next</p></a></div>
-          </div>
+        <div class="section-page-indicator">
+          <h2>CREATE</h2>
         </div>
-          </div>
 
-          <div id="deck-items">
-            <div class="fixed-container">
+
+<div class="creator-preview" >
+  <ul  class="result-list vivify fadeIn creator-list"
+  style="padding-left-start {0px;}" >
+
+  <li>
+    <a >
+    <div class="deck-scroll vivify fadeIn delay-200">
+     <img loading="lazy" alt="Loading Deck..." src="https://via.placeholder.com/150
+">
+     <h2>TITLE</h2>
+     <div class="difficutly-text-container">
+<p class="{{difficulty}}">DIFFICULTY</p>
+<span style="display: none;">{{description}}</span>
+     </div>
+     
+   
+     <div class="deck-btn-container">
+     </div>
+   </div>
+ </a>
+</li>
+</ul>
+</div>
+</div>
+
+
+
+        <form>
+        
+
+          <div>
+          
               <div class="center-container">
+
+                <div  class="title">
+                  <div class="create-form-text" >
+                    <h3>Title</h3>
+                
+                    <p>This is shown before the game starts</p>
+                  </div>
+                  </div>
+                  <input id="title-input" type="text" class="gen-input" placeholder="Title">
+
+          
+                  <div class="create-form-text" style="">
+                    <h3 >Deck Items</h3>
+                    <p>Each deck item is described while playing make sure they are representative of the title you choose before.</p>
+                  </div>
           <div class="deck-item-input">
-            <div class="difficulty-container" style="">
-              <h3 class="difficulty">Deck Items</h3>
+            <div class="create-form-text" style="">
+              <h3 >Deck Items</h3>
               <p>Each deck item is described while playing make sure they are representative of the title you choose before.</p>
             </div>
             <input class="gen-input half" placeholder="Item 1" type="text">
@@ -707,13 +720,15 @@ function generateNew(){
             <input class="gen-input half" placeholder="Item 1" type="text">
             <input class="gen-input half" placeholder="Item 1" type="text">
           </div>
-          <div class="form-btn-container"><a href="#img-upload"><p class="next-btn">Prev</p></a>  <a href="#img-upload"><p class="next-btn xor">Next</p></a></div>
-        </div>
-        </div>
-        </div>
+        
+       
+       
         </form>
+        </div>
+        </div>
       </div>
-    </div>
+
+
     <script>
 
 function live(){
