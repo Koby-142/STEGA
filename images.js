@@ -57,7 +57,7 @@ ajaxModule.prototype = {
   
         document.getElementById("add-btn").addEventListener("click", function(){
           document.getElementById('preview-image').src=value.largeImageURL;
-        
+          document.getElementById('tapstart').play();document.getElementById('creator-preview').style.display='block';
           document.getElementById('addImage').style.display='none';
         });
 

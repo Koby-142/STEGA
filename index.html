@@ -644,7 +644,7 @@ document.getElementById("popup3").style.display="none"
   </div>
   
   <div class="create-menu-buttons">
-    <button onclick="document.getElementById('creator').style.display='block';document.getElementById('nav').style.display='none';">Create Deck <i class="material-icons">add </i></button>
+    <button onclick="document.getElementById('creator').style.display='block';document.getElementById('nav').style.display='none';document.getElementById('tap').play();">Create Deck <i class="material-icons">add </i></button>
     <button class="create-button-secondary">Edit Deck <i class="material-icons">edit</i></button>
   </div>
 </div>
@@ -662,10 +662,10 @@ document.getElementById("popup3").style.display="none"
           z-index: 5000;
           right: 0px;
           top: 80px;
-      }" onclick="document.getElementById('creator').style.display='none'"><i class="material-icons">close</i></button>
+      }" onclick="document.getElementById('creator').style.display='none';document.getElementById('tapclose').play();"><i class="material-icons">close</i></button>
         </div>
 
-<div class="creator-preview" >
+<div class="creator-preview" id="creator-preview">
   <ul  class="result-list vivify fadeIn creator-list"
   style="padding-left-start {0px;}" >
 
@@ -673,7 +673,7 @@ document.getElementById("popup3").style.display="none"
     <a>
     <div class="deck-scroll vivify fadeIn">
       <div style="display: block;" class="image-button-up">
-        <button onclick="document.getElementById('addImage').style.display='block';      document.getElementById('image-search-input').focus();">Add Image</button>
+        <button onclick="document.getElementById('addImage').style.display='block';      document.getElementById('image-search-input').focus();document.getElementById('tap').play();document.getElementById('creator-preview').style.display='none';">Add Image</button>
       </div>
 
      <img id="preview-image" loading="lazy" alt="Loading Deck..." src="https://source.unsplash.com/1600x900/?gaming">
@@ -714,7 +714,7 @@ document.getElementById("popup3").style.display="none"
                 z-index: 5000;
                 right: 0px;
                 top: 80px;
-            }" onclick="document.getElementById('addImage').style.display='none'"><i class="material-icons">close</i></button>
+            }" onclick="document.getElementById('addImage').style.display='none';document.getElementById('tapclose').play();document.getElementById('creator-preview').style.display='block';"><i class="material-icons">close</i></button>
               </div>
 
              
