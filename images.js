@@ -117,6 +117,7 @@ $(".searchInput").keyup(function () {
   timeoutClear = setTimeout(function () {
     if (keyword || !keyword === "undefined") {
       newModule.init(keyword);
+      document.getElementById('image-search-input').blur();
     }
   }, 1000);
 });
