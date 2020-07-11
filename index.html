@@ -642,6 +642,7 @@ document.getElementById("popup3").style.display="none"
   <div class="section-page-indicator ">
     <h2>CREATE</h2>
   </div>
+  
   <div class="create-menu-buttons">
     <button onclick="document.getElementById('creator').style.display='block';document.getElementById('nav').style.display='none';">Create Deck <i class="material-icons">add </i></button>
     <button class="create-button-secondary">Edit Deck <i class="material-icons">edit</i></button>
@@ -654,9 +655,15 @@ document.getElementById("popup3").style.display="none"
 
 
         <div class="section-page-indicator create-ln">
-          <h2>CREATE</h2>
+          <h2>CREATOR</h2>
         </div>
-
+        <div class="collection-button ">
+          <button  style="position: fixed;
+          z-index: 5000;
+          right: 0px;
+          top: 80px;
+      }" onclick="document.getElementById('creator').style.display='none'"><i class="material-icons">close</i></button>
+        </div>
 
 <div class="creator-preview" >
   <ul  class="result-list vivify fadeIn creator-list"
@@ -669,7 +676,7 @@ document.getElementById("popup3").style.display="none"
         <button onclick="document.getElementById('addImage').style.display='block'">Add Image</button>
       </div>
 
-     <img loading="lazy" alt="Loading Deck..." src="https://source.unsplash.com/1600x900/?gaming">
+     <img id="preview-image" loading="lazy" alt="Loading Deck..." src="https://source.unsplash.com/1600x900/?gaming">
      <h2>TITLE</h2>
      <div class="difficutly-text-container">
 <p class="{{difficulty}}">DIFFICULTY</p>

@@ -20,7 +20,7 @@ ajaxModule.prototype = {
 
     var ajaxRequest = $.ajax({
       url:
-        "https://pixabay.com/api/?username=mjweaver01&key=1631539-db8210cabd2636c6df59812df&q=" +
+        "https://pixabay.com/api/?key=17434969-95165d8fff5ae491e26e60a3a&q" +
         request +
         "&image_type=photo",
       success: function (response) {
@@ -43,6 +43,8 @@ ajaxModule.prototype = {
 
     //console.log(response.hits);
     $.each(response.hits, function (index, value) {
+
+
       $(".wrapper").prepend(
         "<div class='overlay-image image" +
           index +
@@ -52,8 +54,12 @@ ajaxModule.prototype = {
           value.largeImageURL +
           ");'><a href='" +
           value.pageURL +
-          "' target='_blank'><div class='overlay'></div></a><div class='hidden'></div></div>"
+          "' target='_blank'><div class='overlay'></div></a><div class='hidden'></div></div> <a href='#"+value.largeImageURL + "' ><div style='width:100%;margin-top:20px;margin-bottom:-13px' class='wide-button invert'> <button>ADD TO GAME</button> </div></a>" 
       );
+
+
+       
+
 
       $(".image" + index + " .hidden").append(
         "<div>User: <b>" +
