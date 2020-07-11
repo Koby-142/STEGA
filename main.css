@@ -1033,6 +1033,10 @@ border-radius: 50px;
 
 .create-form-text > p {font-size: 14px;margin-top: 0px;font-weight: lighter;color: rgb(87, 87, 87);}
 
+.image-button-up {position: relative;margin-bottom: -56px;z-index: 150;float: right;padding-top: 10px;padding-right: 10px;}
+
+.image-button-up > button {padding:10px 15px 10px 15px;border-radius: 50px;border: none;background-color: white;font-weight: bold;}
+
 #creator-menu{display: none;}
 
 #creator-menu:target {display: block;}
