@@ -784,7 +784,7 @@ document.getElementById("popup3").style.display="none"
 
           <script>
             function itemsCheck(){
-              var item1 = document.getElementById('item1').value;
+            var item1 = document.getElementById('item1').value;
             var item2 = document.getElementById('item2').value;
             var item3 = document.getElementById('item3').value;
             var item4 = document.getElementById('item4').value;
@@ -798,7 +798,7 @@ document.getElementById("popup3").style.display="none"
           </script>
 
           <div style='width:100%;margin-top:20px;margin-bottom:70px' class='wide-button '> <button id='add-btn' onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
-            document.getElementById('imgview').src ='{{image}}';popup4();document.getElementById('gameTitle4').innerHTML='{{name}}';document.getElementById('gameImg4').src='{{image}}';document.getElementById('gameDifficulty4').classList.add('{{difficulty}}');document.getElementById('gameDifficulty4').innerHTML = '{{difficulty}}';document.getElementById('popup-wrapper4').classList.remove('flipOutY');document.getElementById('tap').play();window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');">COMPLETE</button> </div>
+            document.getElementById('imgview').src =document.getElementById('preview-image').src;popup4();document.getElementById('gameTitle4').innerHTML= document.getElementById('title-input').value;;document.getElementById('gameImg4').src=document.getElementById('preview-image').src;document.getElementById('gameDifficulty4').classList.add(document.getElementById('difficulty').value);document.getElementById('gameDifficulty4').innerHTML = document.getElementById('difficulty').value;document.getElementById('popup-wrapper4').classList.remove('flipOutY');document.getElementById('tap').play();window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');">COMPLETE</button> </div>
 
 
 

@@ -443,6 +443,7 @@ details summary::-webkit-details-marker {
   font-weight: normal;
   color: white;
   position: relative;
+  text-transform:uppercase;
 }
 
 .popin-text-container > p {
