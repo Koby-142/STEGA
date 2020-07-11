@@ -52,12 +52,13 @@ ajaxModule.prototype = {
           value.largeImageURL +
           ");'><a href='" +
           value.pageURL +
-          "' target='_blank'><div class='overlay'></div></a><div class='hidden'></div></div> <div style='width:100%;margin-top:20px;margin-bottom:-13px' class='wide-button invert'> <button >ADD TO GAME</button> </div>"  
+          "' target='_blank'><div class='overlay'></div></a><div class='hidden'></div></div> <div style='width:100%;margin-top:20px;margin-bottom:-13px' class='wide-button invert'> <button id='add-btn'>ADD TO GAME</button> </div>"  
       );
-
-
-       
-
+  
+        document.getElementById("add-btn").addEventListener("click", function(){
+          document.getElementById('preview-image').src=value.largeImageURL;
+          alert('Image Swap Complete')
+        });
 
       $(".image" + index + " .hidden").append(
         "<div>User: <b>" +
@@ -76,9 +77,11 @@ ajaxModule.prototype = {
       );
     });
 
+    
     clearTimeout(self.masonryTimeoutClear);
     self.masonryTimeoutClear = setTimeout(self.runMasonry, 500);
   },
+  
 
   runMasonry: function () {
     //destroy and then rebuild it
