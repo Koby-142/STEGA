@@ -1047,7 +1047,7 @@ border-radius: 50px;
 
 .create-form-text > h3 {font-size: 16px;margin-bottom: 2px;margin-top: 0px;}
 
-.create-form-text > p {font-size: 14px;margin-top: 0px;font-weight: lighter;color: rgb(87, 87, 87);font-family: sans-serif;}
+.create-form-text > p {font-size: 14px;margin-top: 0px;font-weight: normal;color: rgb(87, 87, 87);font-family: sans-serif;}
 
 .image-button-up {position: relative;margin-bottom: -56px;z-index: 150;float: right;padding-top: 10px;padding-right: 10px;}
 
