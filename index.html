@@ -638,8 +638,17 @@ document.getElementById("popup3").style.display="none"
 </script>
 
 <!-------------------------------------Stega Plus--------------------------------------->
+<div class="creater-menu tab-page" id="creator-menu">
+  <div class="section-page-indicator">
+    <h2>CREATE</h2>
+  </div>
+  <div class="create-menu-buttons">
+    <button onclick="document.getElementById('creator').style.display='block'">Create Deck <i class="material-icons">add </i></button>
+    <button class="create-button-secondary">Edit Deck <i class="material-icons">edit</i></button>
+  </div>
+</div>
 
-<div id="creator" style="display:none;">
+<div id="creator">
       <div class="creator-container">
         <form>
           <div id="title" class="title">
@@ -662,7 +671,19 @@ document.getElementById("popup3").style.display="none"
             <textarea oninput="live()" id="img-upload-input">
 
             </textarea>
-           
+<img  class="image-generated" src="" id="img-generate"></img>
+      
+           <div onclick="generateNew()">Generate New Image</div>
+           <script>
+function generateNew(){
+  var searchTerm = "fortnite";
+  var Generated = "https://source.unsplash.com/1600x900/?" + searchTerm;
+  var spaceGenerated = "https://source.unsplash.com/1600x900/?space";
+  document.getElementById('img-generate').src=spaceGenerated;
+  document.getElementById('img-generate').src=Generated;
+  
+}
+           </script>
             <script async src="https://imgbb.com/upload.js" data-auto-insert="html-embed-medium"></script>
             <div class="form-btn-container"><a href="#"><p class="next-btn">Prev</p></a>  <a href="#deck-items"><p class="next-btn xor">Next</p></a></div>
           </div>
@@ -715,7 +736,7 @@ function live(){
      
       
     
-          <div class="bottom-nav-button start " onclick="document.getElementById('account').style.display = 'none';"
+          <div class="bottom-nav-button start " onclick="self.location.href = '#creator-menu';document.getElementById('nav').style.display='none';"
         >
      
           <input id="nav-btn2" type="radio" name="bottom-nav">

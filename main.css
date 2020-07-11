@@ -1,5 +1,10 @@
 body {
   font-family: roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .charades-btn {
@@ -999,6 +1004,14 @@ border-radius: 50px;
 
 /*-------------------------------------Creator-----------------------------*/
 
+.create-menu-buttons {margin-left: 3%;}
+
+.create-menu-buttons > button {width: 97%;text-align: left;background-color: #EDEDED;border: none;padding-top: 16px;padding-bottom: 9px;padding-left: 20px;border-radius: 10px;font-size: 15px;}
+
+.create-menu-buttons > button > i {position: relative;float: right;top: -4px;margin-right: 7px;}
+
+.create-button-secondary {background-color: white !important;border: solid 1px lightgray !important;margin-top: 14px;}
+
 #creator {
   position: fixed;
   left: 0px;
@@ -1007,7 +1020,12 @@ border-radius: 50px;
   height: 100vh;
   background-color: white;
   z-index: 500;
+  display: none;
 }
+
+#creator-menu{display: none;}
+
+#creator-menu:target {display: block;}
 
 .gen-input {
   width: 265px;
@@ -1046,6 +1064,8 @@ border-radius: 50px;
   width: 170px;
   margin-top: 0px;
 }
+
+.image-generated {width: 150px;}
 
 #img-upload {
   display: none;
