@@ -1523,6 +1523,8 @@ body.darkclass .create-button-secondary {background-color: #0d0d0d !important;bo
 
 body.darkclass iframe {background-color: black;}
 
+body.darkclass .endgame {background-color: black ;color: white;}
+
 body.darkclass .darkclass {background-color: black;}
 
 body.darkclass #myMenu {background-color: black;}
