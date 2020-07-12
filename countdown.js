@@ -1,3 +1,5 @@
+
+
 function startCountDown(){
   var timeLeft =3;
   var elem = document.getElementById('countdown_div');
@@ -9,6 +11,10 @@ function startCountDown(){
   start();
   document.getElementById('cntd').style.display = "none";
   window.navigator.vibrate(600);
+
+
+
+
   }
   function countdown() {
     if (timeLeft == 0) {
@@ -17,49 +23,7 @@ function startCountDown(){
       var gameStatus = 0; 
       var globalGameStatus = 0;
 
-      function requestGyro() {
-        // feature detect
-        if (typeof DeviceMotionEvent.requestPermission === 'function') {
-          DeviceMotionEvent.requestPermission()
-            .then(permissionState => {
-              if (permissionState === 'granted') {
-                window.addEventListener('devicemotion', () => {
-                  if (event.gamma < 25  && event.gamma > -30){
-                    gameStatus = gameStatus + 1;
-                   
-                  }
-            
-                  if (gameStatus > 28){
-                    plusSlides(1, 0);status();up();window.navigator.vibrate(75);
-                 
-                  }
-                 
-                  function status(){
-                    gameStatus += 1;
-                    console.log("Game Status:" + gameStatus);
-                    gameStatus = 0;
-                    globalGameStatus += 1;
-                  }
-            
-                  if (globalGameStatus > 8){
-                    console.log("Time Complete");
-                    document.getElementById("timeUp").style.display="block";
-                    document.getElementById("end").style.display="block";
-                    document.getElementById('gamemusic').pause();
-                    document.getElementById('speedup').pause(); 
-                    document.getElementById('endgame').play(); 
-                    globalGameStatus = 0;
-                    window.navigator.vibrate(600);
-                  }
-            
-            
-                  document.getElementById("gyro").innerHTML = event.gamma;
-                });
-              }
-            })
-            .catch(console.error);
-        } else {
-          
+  
 
     window.addEventListener('deviceorientation', function(event) {
      
@@ -93,14 +57,6 @@ function startCountDown(){
 
 
       document.getElementById("gyro").innerHTML = event.gamma;
-
-        }
-      }
-
-  
-
-
-
 
     //  if (event.beta < -50){
        

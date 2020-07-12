@@ -108,6 +108,59 @@
     </head>
     <h3 id="gyro" style="position: fixed; left: 70px; top:-15px;z-index: 9000;color: white;background-color: black;padding-left: 7px ;padding-right: 7px; border-radius: 5px;transition: 0.2s ease;padding-top: 4px;display: block;">Null</h3>
     <button  id="request" onclick="requestGyro()" style="position: fixed; left: 70px; top:40px;z-index: 9000;;;">Give Access To Device Orientation</button>
+
+<script>
+
+function requestGyro() {
+    // feature detect
+    if (typeof DeviceMotionEvent.requestPermission === 'function') {
+      DeviceMotionEvent.requestPermission()
+        .then(permissionState => {
+          if (permissionState === 'granted') {
+            window.addEventListener('devicemotion', () => {
+              if (event.gamma < 25  && event.gamma > -30){
+                gameStatus = gameStatus + 1;
+               
+              }
+        
+              if (gameStatus > 28){
+                plusSlides(1, 0);status();up();window.navigator.vibrate(75);
+             
+              }
+             
+              function status(){
+                gameStatus += 1;
+                console.log("Game Status:" + gameStatus);
+                gameStatus = 0;
+                globalGameStatus += 1;
+              }
+        
+              if (globalGameStatus > 8){
+                console.log("Time Complete");
+                document.getElementById("timeUp").style.display="block";
+                document.getElementById("end").style.display="block";
+                document.getElementById('gamemusic').pause();
+                document.getElementById('speedup').pause(); 
+                document.getElementById('endgame').play(); 
+                globalGameStatus = 0;
+                window.navigator.vibrate(600);
+              }
+        
+        
+              document.getElementById("gyro").innerHTML = event.gamma;
+            });
+          }
+        })
+        .catch(console.error);
+    } else {
+      // handle regular non iOS 13+ devices
+    }
+  }
+
+
+
+</script>
+
     <body class="dark-html" style="display: block;
     height: 100%;
     overflow: auto;
@@ -323,7 +376,7 @@ function clearSearch(){
       <button class="prev charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById('I1').style.color = 'red';"></button>
     <button class="next charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);up();"></button>
    <div class="block-container vivify popIn">
-     <h1 id="m1">Game Unavailable</h1>
+     <h1 id="m1">Game Error</h1>
    </div>
     </div>
 
