@@ -494,8 +494,8 @@ function clearSearch(){
       <h2>SETTINGS</h2>
     </div>
         <p style="margin-left: 10px;" class="sub-text">Dark Mode</p>
-        <div><a onclick="launch_toast()" class="darkmode normal-button ">Enable</a></div>
-        <div><a class="normalmode normal-button filled">Disable</a></div>
+        <div onclick="document.getElementById('tapclose').play();window.navigator.vibrate(20);"><a onclick="launch_toast();" class="darkmode normal-button ">Enable</a></div>
+        <div onclick="document.getElementById('tapclose').play();window.navigator.vibrate(20);"><a class="normalmode normal-button filled">Disable</a></div>
         <div class="card-divider" style="display: block; margin-top:10px; "></div>
         <div class="spacer"></div>
         <br>
@@ -752,14 +752,14 @@ document.getElementById("popup3").style.display="none"
                     <p>This is shown before the game starts</p>
                   </div>
                   </div>
-                  <input id="title-input" type="text" class="gen-input" placeholder="Title" oninput="titleData()">
+                  <input id="title-input" type="text" class="gen-input" placeholder="Title" oninput="titleData();document.getElementById('tapclose').play();window.navigator.vibrate(20);">
 
           
                   <div class="create-form-text">
                     <h3 >Difficulty</h3>
                   
                   </div>
-                <select name="difficulty" onchange=" document.getElementById('difficultyOutput').classList.remove('EASY'); document.getElementById('difficultyOutput').classList.remove('MEDIUM'); document.getElementById('difficultyOutput').classList.remove('HARD');;difficultyData()" id="difficulty" class="ddown-input">
+                <select name="difficulty" onclick="document.getElementById('tapclose').play();window.navigator.vibrate(20);" onchange=" document.getElementById('difficultyOutput').classList.remove('EASY'); document.getElementById('difficultyOutput').classList.remove('MEDIUM'); document.getElementById('difficultyOutput').classList.remove('HARD');;difficultyData();" id="difficulty"  class="ddown-input">
                     <option value="EASY">EASY</option>
                     <option value="MEDIUM">MEDIUM</option>
                     <option value="HARD">HARD</option>
@@ -771,14 +771,14 @@ document.getElementById("popup3").style.display="none"
               <p>Each deck item is described while playing make sure they are representative of the title you choose before.</p>
             </div>
             <div class="half-wrap">
-            <input oninput="itemsCheck()" class="gen-input half" placeholder="Item 1" id="item1" type="text">
-            <input oninput="itemsCheck()" class="gen-input half" placeholder="Item 2" id="item2" type="text">
-            <input oninput="itemsCheck()" class="gen-input half" placeholder="Item 3" id="item3" type="text">
-            <input oninput="itemsCheck()" class="gen-input half" placeholder="Item 4" id="item4" type="text">
-            <input oninput="itemsCheck()" class="gen-input half" placeholder="Item 5" id="item5" type="text">
-            <input oninput="itemsCheck()" class="gen-input half" placeholder="Item 6" id="item6" type="text">
-            <input oninput="itemsCheck()" class="gen-input half" placeholder="Item 7" id="item7" type="text">
-            <input oninput="itemsCheck()" class="gen-input half" placeholder="Item 8" id="item8" type="text">
+            <input oninput="itemsCheck();document.getElementById('tapclose').play();" class="gen-input half" placeholder="Item 1" id="item1" type="text">
+            <input oninput="itemsCheck();document.getElementById('tapclose').play();" class="gen-input half" placeholder="Item 2" id="item2" type="text">
+            <input oninput="itemsCheck();document.getElementById('tapclose').play();" class="gen-input half" placeholder="Item 3" id="item3" type="text">
+            <input oninput="itemsCheck();document.getElementById('tapclose').play();" class="gen-input half" placeholder="Item 4" id="item4" type="text">
+            <input oninput="itemsCheck();document.getElementById('tapclose').play();" class="gen-input half" placeholder="Item 5" id="item5" type="text">
+            <input oninput="itemsCheck();document.getElementById('tapclose').play();" class="gen-input half" placeholder="Item 6" id="item6" type="text">
+            <input oninput="itemsCheck();document.getElementById('tapclose').play();" class="gen-input half" placeholder="Item 7" id="item7" type="text">
+            <input oninput="itemsCheck();document.getElementById('tapclose').play();" class="gen-input half" placeholder="Item 8" id="item8" type="text">
           </div>
           </div>
 
