@@ -1600,7 +1600,7 @@ body.darkclass .bottom-nav-button > label > img {
     height: 100%;
     white-space: nowrap;
     width: 100%;
-    margin-top: -80px;
+    margin-top: -80px !important;
   }
   .popin-image > img {
     height: 155px;
