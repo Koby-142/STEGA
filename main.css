@@ -1311,6 +1311,7 @@ margin-top: 22px;
   height: 100vh;
   background-color: white;
   z-index: 150;
+  transition: 0.3s ease;
 }
 
 .section-page-indicator {margin-left: 3%;position: relative;z-index: 4000;}
