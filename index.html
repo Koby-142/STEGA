@@ -458,7 +458,7 @@ function clearSearch(){
   <div class="complete-image ">  <img src="Branding/deck complete.svg"></div>
 
   <div class="left-group-btn-container">
-    <a href=""><button onclick="window.navigator.vibrate(40);document.getElementById('tapstart').play();">New Game</button></a>
+    <a href=""><button onclick="document.getElementById('tapstart').play();window.navigator.vibrate(40);">New Game</button></a>
   </div>
 
  
@@ -513,7 +513,7 @@ function clearSearch(){
             <p>By Ketsa</p>
           </div>
           <label class="radio-button radio-button--material">
-            <input id="LifeIllusion" onclick="document.getElementById('gamemusic').src='Sound Effects/LifeIllusion.mp3';localStorage.setItem('currentMusic', 'Sound Effects/LifeIllusion.mp3');document.getElementById('tapclose').play();window.navigator.vibrate(20);localStorage.setItem('musicState', 'LifeIllusion');" type="radio" class="radio-button__input radio-button--material__input" name="r" >
+            <input id="LifeIllusion" onclick="document.getElementById('gamemusic').src='Sound Effects/LifeIllusion.mp3';localStorage.setItem('currentMusic', 'Sound Effects/LifeIllusion.mp3');document.getElementById('tapclose').play();localStorage.setItem('musicState', 'LifeIllusion');window.navigator.vibrate(20);" type="radio" class="radio-button__input radio-button--material__input" name="r" >
             <div class="radio-button__checkmark radio-button--material__checkmark"></div>
             
           </label>
@@ -527,7 +527,7 @@ function clearSearch(){
             <p>By Ketsa</p>
           </div>
           <label class="radio-button radio-button--material">
-            <input id="SpecialPlace" onclick="document.getElementById('gamemusic').src='Sound Effects/SpecialPlace.mp3';localStorage.setItem('currentMusic', 'Sound Effects/SpecialPlace.mp3');document.getElementById('tapclose').play();window.navigator.vibrate(20);localStorage.setItem('musicState', 'SpecialPlace');" type="radio" class="radio-button__input radio-button--material__input" name="r">
+            <input id="SpecialPlace" onclick="document.getElementById('gamemusic').src='Sound Effects/SpecialPlace.mp3';localStorage.setItem('currentMusic', 'Sound Effects/SpecialPlace.mp3');document.getElementById('tapclose').play();localStorage.setItem('musicState', 'SpecialPlace');window.navigator.vibrate(20);" type="radio" class="radio-button__input radio-button--material__input" name="r">
             <div class="radio-button__checkmark radio-button--material__checkmark"></div>
             
           </label>
@@ -542,7 +542,7 @@ function clearSearch(){
               Oscar Owl</p>
           </div>
           <label class="radio-button radio-button--material">
-            <input id="Saturn" onclick="document.getElementById('gamemusic').src='Sound Effects/Saturn.mp3';localStorage.setItem('currentMusic', 'Sound Effects/Saturn.mp3');document.getElementById('tapclose').play();window.navigator.vibrate(20);localStorage.setItem('musicState', 'Saturn');" type="radio" class="radio-button__input radio-button--material__input" name="r" >
+            <input id="Saturn" onclick="document.getElementById('gamemusic').src='Sound Effects/Saturn.mp3';localStorage.setItem('currentMusic', 'Sound Effects/Saturn.mp3');document.getElementById('tapclose').play();localStorage.setItem('musicState', 'Saturn');window.navigator.vibrate(20);" type="radio" class="radio-button__input radio-button--material__input" name="r" >
             <div class="radio-button__checkmark radio-button--material__checkmark"></div>
             
           </label>
@@ -558,7 +558,7 @@ function clearSearch(){
               Oscar Owl</p>
           </div>
           <label class="radio-button radio-button--material">
-            <input id="Vibrancy" onclick="document.getElementById('gamemusic').src='Sound Effects/Vibracy.mp3';localStorage.setItem('currentMusic', 'Sound Effects/Vibrancy.mp3');document.getElementById('tapclose').play();window.navigator.vibrate(20);localStorage.setItem('musicState', 'Vibrancy');" type="radio" class="radio-button__input radio-button--material__input" name="r" >
+            <input id="Vibrancy" onclick="document.getElementById('gamemusic').src='Sound Effects/Vibracy.mp3';localStorage.setItem('currentMusic', 'Sound Effects/Vibrancy.mp3');document.getElementById('tapclose').play();localStorage.setItem('musicState', 'Vibrancy');window.navigator.vibrate(20);" type="radio" class="radio-button__input radio-button--material__input" name="r" >
             <div class="radio-button__checkmark radio-button--material__checkmark"></div>
             
           </label>
@@ -619,7 +619,7 @@ function clearSearch(){
           </div>
         </form>
           <div class="wide-button invert">
-            <button onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper3').classList.add('flipOutY');setTimeout(closePopup3, 500);document.getElementById('tapclose').play();window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');">CLOSE</button>
+            <button onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper3').classList.add('flipOutY');setTimeout(closePopup3, 500);document.getElementById('tapclose').play();document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');window.navigator.vibrate(20);">CLOSE</button>
             <audio src="sound effects/tapclose.mp3" id="tapclose"></audio>
           </div>
         </div>
@@ -799,7 +799,7 @@ document.getElementById("popup3").style.display="none"
           </script>
 
           <div style='width:100%;margin-top:20px;margin-bottom:70px' class='wide-button '> <button id='add-btn' onclick="document.getElementById('I1').innerHTML = item1.value; ;document.getElementById('I2').innerHTML =item2.value;document.getElementById('I3').innerHTML ='item3.value';document.getElementById('I4').innerHTML =item4.value;document.getElementById('I5').innerHTML =item5.value;document.getElementById('I6').innerHTML =item6.value;document.getElementById('I7').innerHTML ='item7.value';document.getElementById('I8').innerHTML =item8.value;document.getElementById('m1').innerHTML = item1.value;document.getElementById('m2').innerHTML =item2.value;document.getElementById('m3').innerHTML =item3.value;document.getElementById('m4').innerHTML =item4.value;document.getElementById('m5').innerHTML =item5.value;document.getElementById('m6').innerHTML =item6.value;document.getElementById('m7').innerHTML =item7.value;document.getElementById('m8').innerHTML =item8.value;
-            document.getElementById('imgview').src =document.getElementById('preview-image').src;popup4();document.getElementById('gameTitle4').innerHTML= document.getElementById('title-input').value;;document.getElementById('gameImg4').src=document.getElementById('preview-image').src;document.getElementById('gameDifficulty4').classList.add(document.getElementById('difficulty').value);document.getElementById('gameDifficulty4').innerHTML = document.getElementById('difficulty').value;document.getElementById('popup-wrapper4').classList.remove('flipOutY');document.getElementById('tap').play();window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');">COMPLETE</button> </div>
+            document.getElementById('imgview').src =document.getElementById('preview-image').src;popup4();document.getElementById('gameTitle4').innerHTML= document.getElementById('title-input').value;;document.getElementById('gameImg4').src=document.getElementById('preview-image').src;document.getElementById('gameDifficulty4').classList.add(document.getElementById('difficulty').value);document.getElementById('gameDifficulty4').innerHTML = document.getElementById('difficulty').value;document.getElementById('popup-wrapper4').classList.remove('flipOutY');document.getElementById('tap').play();document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');window.navigator.vibrate(20);">COMPLETE</button> </div>
 
 
 
@@ -916,7 +916,7 @@ function live(){
     </div>
   
     <div class="wide-button invert">
-      <button onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper').classList.add('flipOutY');setTimeout(closePopup, 500);document.getElementById('tapclose').play();window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');">CLOSE</button>
+      <button onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper').classList.add('flipOutY');setTimeout(closePopup, 500);document.getElementById('tapclose').play();document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');window.navigator.vibrate(20);">CLOSE</button>
       <audio src="sound effects/tapclose.mp3" id="tapclose"></audio>
     </div>
   </div>
@@ -984,7 +984,7 @@ document.getElementById("popup").style.display="none"
     </div>
   
     <div class="wide-button invert">
-      <button onclick="document.getElementById('gameDifficulty4').classList.remove('EASY');document.getElementById('gameDifficulty4').classList.remove('MEDIUM');document.getElementById('gameDifficulty4').classList.remove('HARD');document.getElementById('popup-wrapper4').classList.add('flipOutY');setTimeout(closePopup4, 500);document.getElementById('tapclose').play();window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');">CLOSE</button>
+      <button onclick="document.getElementById('gameDifficulty4').classList.remove('EASY');document.getElementById('gameDifficulty4').classList.remove('MEDIUM');document.getElementById('gameDifficulty4').classList.remove('HARD');document.getElementById('popup-wrapper4').classList.add('flipOutY');setTimeout(closePopup4, 500);document.getElementById('tapclose').play();document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');window.navigator.vibrate(20);">CLOSE</button>
       <audio src="sound effects/tapclose.mp3" id="tapclose"></audio>
     </div>
   </div>
