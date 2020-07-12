@@ -1229,21 +1229,10 @@ label > img:active {
   background-color: white;
 }
 
-/*-------- Orientation
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    height: 100vw;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-}
-------*/
+
+
+
 /*------------------------------------------Settings---------------------------*/
 .music-item {
   border: solid 1px lightgray;
@@ -1656,4 +1645,11 @@ body.darkclass .bottom-nav-button > label > img {
   top: 0px;
   height: 115vh;
   width: 100%;
+}
+
+@media only screen and (min-width: 660px) {
+ .result-list > li {width: 47.5%;margin-left:10px;}
+
+ .result-list {margin-left: -6px;}
+  
 }
