@@ -644,7 +644,7 @@ document.getElementById("popup3").style.display="none"
   </div>
   
   <div class="create-menu-buttons">
-    <button onclick="document.getElementById('creator').style.display='block';document.getElementById('nav').style.display='none';document.getElementById('tap').play();">Create Deck <i class="material-icons">add </i></button>
+    <button onclick="document.getElementById('creator').style.display='block';document.getElementById('nav').style.display='none';document.getElementById('tap').play();document.getElementById('tapclose').play();">Create Deck <i class="material-icons">add </i></button>
     <button class="create-button-secondary">Edit Deck <i class="material-icons">edit</i></button>
   </div>
 </div>
@@ -662,7 +662,7 @@ document.getElementById("popup3").style.display="none"
           z-index: 5000;
           right: 0px;
           top: 80px;
-      }" onclick="document.getElementById('creator').style.display='none';document.getElementById('tapclose').play();"><i class="material-icons">close</i></button>
+      }" onclick="document.getElementById('creator').style.display='none';document.getElementById('tapclose').play();window.navigator.vibrate(20);"><i class="material-icons">close</i></button>
         </div>
 
 
@@ -724,7 +724,7 @@ document.getElementById("popup3").style.display="none"
               </div>
 
              
-                <div class="search-input-container" style="margin-left:-1px;margin-bottom: 50px;"> <input oninput="window.navigator.vibrate(20);document.getElementById('tapclose').play();" id="image-search-input" placeholder="Enter Anything..." class="searchInput search-input"/>
+                <div class="search-input-container" style="margin-left:-1px;margin-bottom: 50px;"> <input oninput="document.getElementById('tapclose').play();" id="image-search-input" placeholder="Enter Anything..." class="searchInput search-input"/>
                 </div>
                 
            
