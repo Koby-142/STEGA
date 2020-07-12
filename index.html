@@ -117,6 +117,8 @@
         .then(permissionState => {
           if (permissionState === 'granted') {
             window.addEventListener('deviceorientation', () => {
+alert(evnt.gamma)
+
               if (event.gamma < 25  && event.gamma > -30){
                 gameStatus = gameStatus + 1;
                
