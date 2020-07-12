@@ -118,6 +118,8 @@ function requestGyro() {
         .then(permissionState => {
           if (permissionState === 'granted') {
             window.addEventListener('devicemotion', () => {
+alert(event.acceleration.x + ' m/s2');
+
               if (event.gamma < 25  && event.gamma > -30){
                 gameStatus = gameStatus + 1;
                
