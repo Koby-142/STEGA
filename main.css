@@ -1523,11 +1523,13 @@ body.darkclass .bottom-nav-button > label > img {
     height: 100%;
     white-space: nowrap;
     width: 100%;
-    margin-top: -90px;
+    margin-top: -80px;
   }
   .popin-image > img {
     height: 155px;
   }
+
+  #mymenu {margin-top: 0px;}
 
   .create-ln {display: none;}
 
