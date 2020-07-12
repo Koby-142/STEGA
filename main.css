@@ -1057,7 +1057,7 @@ border-radius: 50px;
 
 .create-form-text {margin-top: 25px;}
 
-.create-form-text > h3 {font-size: 16px;margin-bottom: 2px;margin-top: 0px;}
+.create-form-text > h3 {font-size: 16px;margin-bottom: 2px;margin-top: 0px;font-weight: normal;}
 
 .create-form-text > p {font-size: 14px;margin-top: 0px;font-weight: normal;color: rgb(87, 87, 87);font-family: sans-serif;}
 
@@ -1490,7 +1490,7 @@ body.darkclass .section-page-indicator {color: white;}
 
 body.darkclass .sub-text {color: white;}
 
-body.darkclass .normalmode {background-color: transparent;;}
+body.darkclass .normalmode {background-color: #0d0d0d;border: none;}
 
 body.darkclass .music-text {color: white;}
 
@@ -1502,13 +1502,21 @@ body.darkclass .collection-button > button{background-color:transparent;color: w
 
 body.darkclass .popin-wrapper {background-color: black;border: solid 1px rgb(43, 43, 43);}
 
-body.darkclass .wide-button > button {background-color: #0d0d0d;color: white;border: solid 1px lightgray;}
+body.darkclass .wide-button > button {background-color: #0d0d0d;color: white;border: none;}
 
 body.darkclass .invert > button {border: none;background-color: transparent;margin-bottom: 0px;}
 
 body.darkclass .tab-page {background-color: black;}
 
 body.darkclass .create-menu-buttons > button {background-color: #0d0d0d;color: white;;}
+
+body.darkclass .gen-input {background-color: #0d0d0d;border: none;color: white;}
+
+body.darkclass .ddown-input {background-color: #0d0d0d;color: white;border: none;}
+
+body.darkclass #creator {background-color: black;}
+
+body.darkclass .create-form-text {color: white;}
 
 body.darkclass .create-button-secondary {background-color: #0d0d0d !important;border: none !important;}
 
@@ -1518,7 +1526,17 @@ body.darkclass .darkclass {background-color: black;}
 
 body.darkclass #myMenu {background-color: black;}
 
+body.darkclass .image-button-up > button {background-color: black;color: white;}
+
 body.darkclass .items {background-color: black;}
+
+body.darkclass .add-image-overlay {background-color: black;}
+
+body.darkclass #add-btn {margin-bottom: 10px;background-color: transparent}
+
+body.darkclass .music-item {background-color: #0d0d0d;border: none;}
+
+body.darkclass .music-item > i {border: none;}
 
 body.darkclass .bottom-nav-button > label > img {
   filter: invert();
