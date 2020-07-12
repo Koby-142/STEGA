@@ -1506,6 +1506,12 @@ body.darkclass .wide-button > button {background-color: #0d0d0d;color: white;bor
 
 body.darkclass .invert > button {border: none;background-color: transparent;margin-bottom: 0px;}
 
+body.darkclass .tab-page {background-color: black;}
+
+body.darkclass .create-menu-buttons > button {background-color: #0d0d0d;color: white;;}
+
+body.darkclass .create-button-secondary {background-color: #0d0d0d !important;border: none !important;}
+
 body.darkclass iframe {background-color: black;}
 
 body.darkclass .darkclass {background-color: black;}
