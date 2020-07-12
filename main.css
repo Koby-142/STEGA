@@ -1473,9 +1473,9 @@ body.darkclass .bottom-navigation {
   background-color: black;
 }
 
-body.darkclass .search-input-container > input {background-color: #040404;}
+body.darkclass .search-input-container > input {background-color: #0d0d0d}
 
-body.darkclass .profile-container > img {background-color: #040404;}
+body.darkclass .profile-container > img {background-color: #0d0d0d}
 
 body.darkclass .bottom-nav-button > label > img {
   filter: invert();
