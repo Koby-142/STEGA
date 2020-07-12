@@ -17,7 +17,7 @@ function startCountDown(){
       var gameStatus = 0; 
       var globalGameStatus = 0;
 
-      function onClick() {
+      function requestGyro() {
         // feature detect
         if (typeof DeviceMotionEvent.requestPermission === 'function') {
           DeviceMotionEvent.requestPermission()
