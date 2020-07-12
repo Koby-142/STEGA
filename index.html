@@ -679,7 +679,7 @@ document.getElementById("popup3").style.display="none"
     <a>
     <div class="deck-scroll vivify fadeIn" style="width: 100% !important;margin-left: 0px !important;">
       <div style="display: block;" class="image-button-up">
-        <button onclick="document.getElementById('addImage').style.display='block';      document.getElementById('image-search-input').focus();document.getElementById('tap').play();document.getElementById('creator-preview').style.display='none';">Add Image</button>
+        <button onclick="document.getElementById('addImage').style.display='block';      document.getElementById('image-search-input').focus();document.getElementById('tap').play();document.getElementById('creator-preview').style.display='none';window.navigator.vibrate(20);">Add Image</button>
       </div>
 
      <img id="preview-image" loading="lazy" alt="Loading Deck..." src="https://source.unsplash.com/1600x900/?gaming">
@@ -720,11 +720,11 @@ document.getElementById("popup3").style.display="none"
                 z-index: 5000;
                 right: 0px;
                 top: 80px;
-            }" onclick="document.getElementById('addImage').style.display='none';document.getElementById('tapclose').play();document.getElementById('creator-preview').style.display='block';"><i class="material-icons">close</i></button>
+            }" onclick="document.getElementById('addImage').style.display='none';document.getElementById('tapclose').play();document.getElementById('creator-preview').style.display='block';window.navigator.vibrate(20);"><i class="material-icons">close</i></button>
               </div>
 
              
-                <div class="search-input-container" style="margin-left:-1px;margin-bottom: 50px;"> <input id="image-search-input" placeholder="Enter Anything..." class="searchInput search-input"/>
+                <div class="search-input-container" style="margin-left:-1px;margin-bottom: 50px;"> <input oninput="window.navigator.vibrate(20);document.getElementById('tapclose').play();" id="image-search-input" placeholder="Enter Anything..." class="searchInput search-input"/>
                 </div>
                 
            
