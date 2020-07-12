@@ -95,7 +95,7 @@
 
 
     {{#each this}}
-    <div class="collection-item" onclick="document.getElementById('mySearch').value='{{filter}}';myFunction();window.navigator.vibrate(20);self.location.href = '#';document.getElementById('collection-overlay').style.display='block';document.getElementById('tap').play();document.getElementById('items').style.marginTop = '0px';document.getElementById('items').classList.add('fadeIn');document.getElementById('collection').style.display='none';document.getElementById('main-search').style.display='none';document.getElementById('collection-indicator').innerHTML='{{title}}';">
+    <div class="collection-item" onclick="document.getElementById('mySearch').value='{{filter}}';myFunction();self.location.href = '#';document.getElementById('collection-overlay').style.display='block';document.getElementById('tap').play();document.getElementById('items').style.marginTop = '0px';document.getElementById('items').classList.add('fadeIn');document.getElementById('collection').style.display='none';document.getElementById('main-search').style.display='none';document.getElementById('collection-indicator').innerHTML='{{title}}';window.navigator.vibrate(20);">
       <img src="{{image}}">
       <p>Collection</p>
       <h3>{{title}}</h3>
