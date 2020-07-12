@@ -1359,8 +1359,8 @@ margin-top: 22px;
 
 .form-label {font-size: 35px;margin:0px;font-weight: normal;margin-left: 4.5%;margin-bottom: 10px;padding-top: 20px;}
 
-body.darkclass body {
-  background-color: black;
+body.darkclass .dark-html {
+  background-color: black ;
 }
 
 body.darkclass html {
@@ -1471,11 +1471,42 @@ body.darkclass .ad-container > h3 {
 
 body.darkclass .bottom-navigation {
   background-color: black;
+  border-color: #292929;
 }
 
 body.darkclass .search-input-container > input {background-color: #0d0d0d}
 
-body.darkclass .profile-container > img {background-color: #0d0d0d}
+body.darkclass .profile-container > img {background-color: #0d0d0d;}
+
+body.darkclass .profile-container {border: none;}
+
+body.darkclass nav {border: none !important;}
+
+body.darkclass .section-page-indicator {color: white;}
+
+body.darkclass .sub-text {color: white;}
+
+body.darkclass .normalmode {background-color: transparent;;}
+
+body.darkclass .music-text {color: white;}
+
+body.darkclass .collection-overlay {background-color: black;}
+
+body.darkclass .collection-text {color: white;}
+
+body.darkclass .collection-button > button{background-color:transparent;color: white;}
+
+body.darkclass .popin-wrapper {background-color: black;}
+
+body.darkclass .wide-button > button {background-color: #0d0d0d;color: white;border: solid 1px lightgray;}
+
+body.darkclass .invert > button {border: none;background-color: transparent;}
+
+body.darkclass iframe {background-color: black;}
+
+body.darkclass .darkclass {background-color: black;}
+
+body.darkclass #myMenu {background-color: black;}
 
 body.darkclass .bottom-nav-button > label > img {
   filter: invert();
