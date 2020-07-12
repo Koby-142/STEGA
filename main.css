@@ -1395,6 +1395,10 @@ body.darkclass .menu-btn > a > button {
   background-color: rgb(17, 17, 17);
 }
 
+body.darkclass .result-list > li {
+  background-color: black;
+}
+
 body.darkclass .exr {
   background-color: transparent !important;
   color: white;
@@ -1468,6 +1472,10 @@ body.darkclass .ad-container > h3 {
 body.darkclass .bottom-navigation {
   background-color: black;
 }
+
+body.darkclass .search-input-container > input {background-color: #040404;}
+
+body.darkclass .profile-container > img {background-color: #040404;}
 
 body.darkclass .bottom-nav-button > label > img {
   filter: invert();
