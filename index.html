@@ -110,16 +110,13 @@
     <button  id="request" onclick="requestGyro()" style="position: fixed; left: 70px; top:40px;z-index: 9000;;;">Give Access To Device Orientation</button>
 
 <script>
-
-function requestGyro() {
+  function onClick() {
     // feature detect
-    if (typeof DeviceMotionEvent.requestPermission === 'function') {
-      DeviceMotionEvent.requestPermission()
+    if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+      DeviceOrientationEvent.requestPermission()
         .then(permissionState => {
           if (permissionState === 'granted') {
-            window.addEventListener('devicemotion', () => {
-alert(event.acceleration.y + ' m/s2');
-
+            window.addEventListener('deviceorientation', () => {
               if (event.gamma < 25  && event.gamma > -30){
                 gameStatus = gameStatus + 1;
                
@@ -158,6 +155,11 @@ alert(event.acceleration.y + ' m/s2');
       // handle regular non iOS 13+ devices
     }
   }
+
+
+
+
+
 
 
 
