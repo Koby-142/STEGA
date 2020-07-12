@@ -1367,6 +1367,10 @@ body.darkclass html {
   background-color: black;
 }
 
+body.darkclass {
+  background-color: black;
+}
+
 body.darkclass .logo-container > img {
   filter: invert();
 }
@@ -1474,7 +1478,7 @@ body.darkclass .bottom-navigation {
   border-color: #292929;
 }
 
-body.darkclass .search-input-container > input {background-color: #0d0d0d}
+body.darkclass .search-input-container > input {background-color: #0d0d0d;color: white;}
 
 body.darkclass .profile-container > img {background-color: #0d0d0d;}
 
@@ -1496,17 +1500,19 @@ body.darkclass .collection-text {color: white;}
 
 body.darkclass .collection-button > button{background-color:transparent;color: white;}
 
-body.darkclass .popin-wrapper {background-color: black;}
+body.darkclass .popin-wrapper {background-color: black;border: solid 1px rgb(43, 43, 43);}
 
 body.darkclass .wide-button > button {background-color: #0d0d0d;color: white;border: solid 1px lightgray;}
 
-body.darkclass .invert > button {border: none;background-color: transparent;}
+body.darkclass .invert > button {border: none;background-color: transparent;margin-bottom: 0px;}
 
 body.darkclass iframe {background-color: black;}
 
 body.darkclass .darkclass {background-color: black;}
 
 body.darkclass #myMenu {background-color: black;}
+
+body.darkclass .items {background-color: black;}
 
 body.darkclass .bottom-nav-button > label > img {
   filter: invert();
