@@ -1651,5 +1651,9 @@ body.darkclass .bottom-nav-button > label > img {
  .result-list > li {width: 47.5%;margin-left:10px;}
 
  .result-list {margin-left: -6px;}
+
+ .popin {max-width: 425px;}
+
+ .pop-image {height: 318px;}
   
 }
