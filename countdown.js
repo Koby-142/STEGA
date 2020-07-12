@@ -70,7 +70,7 @@ function startCountDown(){
                alert('DeviceMotionEvent is not defined');
            }
        }
-       document.getElementById('request').onclick = requestT;
+
 
 
 
