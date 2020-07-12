@@ -154,7 +154,7 @@
             <section style="display:block" class="search" id="main-search">
               <div class="search-wrapper">
                   <div class="search-input-container"> <input autocomplete="off" 
-                          class="search-input" type="search" id="mySearch" onkeyup="myFunction();searchStart()" onclick="document.getElementById('tapclose').play();window.navigator.vibrate(20);self.location.href = '#'; document.getElementById('search-clear').style.display='block';"  onload="myFunction()"
+                          class="search-input" type="search" id="mySearch" onkeyup="myFunction();searchStart()" onclick="document.getElementById('tapclose').play();self.location.href = '#'; document.getElementById('search-clear').style.display='block';window.navigator.vibrate(20);"  onload="myFunction()"
                           placeholder=" Search Stega.." title="Click To Search For Jobs">
                             <button onclick="clearSearch()" class="clear-btn-search" id="search-clear">Cancel</button>
                         </div>
@@ -170,10 +170,11 @@ function searchStart(){
   }
 }
 function clearSearch(){
-  document.getElementById('tapclose').play();window.navigator.vibrate(20);
+  document.getElementById('tapclose').play();
  document.getElementById('mySearch').value = "";
  myFunction();
  document.getElementById('search-clear').style.display='none';
+ window.navigator.vibrate(20);
 }
    </script>
             

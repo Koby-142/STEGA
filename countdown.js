@@ -24,7 +24,7 @@ function startCountDown(){
       }
 
       if (gameStatus > 20){
-        plusSlides(1, 0);window.navigator.vibrate(75);status();up()
+        plusSlides(1, 0);status();up();window.navigator.vibrate(75);
      
       }
      
@@ -41,9 +41,9 @@ function startCountDown(){
         document.getElementById("end").style.display="block";
         document.getElementById('gamemusic').pause();
         document.getElementById('speedup').pause(); 
-        document.getElementById('endgame').play();
-        window.navigator.vibrate(600);
+        document.getElementById('endgame').play(); 
         globalGameStatus = 0;
+        window.navigator.vibrate(600);
       }
 
 
