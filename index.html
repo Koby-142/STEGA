@@ -719,6 +719,43 @@ document.getElementById("popup3").style.display="none"
     <button onclick="document.getElementById('creator').style.display='block';document.getElementById('nav').style.display='none';document.getElementById('tapclose').play();window.navigator.vibrate(20);">Create Deck <i class="material-icons">add </i></button>
     <button class="create-button-secondary">Edit Deck <i class="material-icons">edit</i></button>
   </div>
+  <div class="creations" id="creations">
+    <div class="creation-item">
+      <h3>Cartoons</h3>
+      <div class="difficulty-bubble">
+        <p>EASY</p>
+      </div>
+      <br>
+      <p>6/27/2020</p>
+      <div class="creation-play-button">
+        <button><i class="material-icons">play_arrow</i></button>
+      </div>
+  </div>
+
+  <div class="creation-item">
+    <h3>Cartoons</h3>
+    <div class="difficulty-bubble">
+      <p>EASY</p>
+    </div>
+    <br>
+    <p>6/27/2020</p>
+    <div class="creation-play-button">
+      <button><i class="material-icons">play_arrow</i></button>
+    </div>
+</div>
+
+<div class="creation-item">
+  <h3>Cartoons</h3>
+  <div class="difficulty-bubble">
+    <p>EASY</p>
+  </div>
+  <br>
+  <p>6/27/2020</p>
+  <div class="creation-play-button">
+    <button><i class="material-icons">play_arrow</i></button>
+  </div>
+</div>
+</div>
 </div>
 
 <div id="creator" style="display: none;">
@@ -870,7 +907,7 @@ document.getElementById("popup3").style.display="none"
           </script>
 
           <div style='width:100%;margin-top:20px;margin-bottom:70px' class='wide-button '> <button id='add-btn' onclick="document.getElementById('I1').innerHTML = item1.value; ;document.getElementById('I2').innerHTML =item2.value;document.getElementById('I3').innerHTML =item3.value;document.getElementById('I4').innerHTML =item4.value;document.getElementById('I5').innerHTML =item5.value;document.getElementById('I6').innerHTML =item6.value;document.getElementById('I7').innerHTML =item7.value;document.getElementById('I8').innerHTML =item8.value;document.getElementById('m1').innerHTML = item1.value;document.getElementById('m2').innerHTML =item2.value;document.getElementById('m3').innerHTML =item3.value;document.getElementById('m4').innerHTML =item4.value;document.getElementById('m5').innerHTML =item5.value;document.getElementById('m6').innerHTML =item6.value;document.getElementById('m7').innerHTML =item7.value;document.getElementById('m8').innerHTML =item8.value;
-            document.getElementById('imgview').src =document.getElementById('preview-image').src;popup4();document.getElementById('gameTitle4').innerHTML= document.getElementById('title-input').value;;document.getElementById('gameImg4').src=document.getElementById('preview-image').src;document.getElementById('gameDifficulty4').classList.add(document.getElementById('difficulty').value);document.getElementById('gameDifficulty4').innerHTML = document.getElementById('difficulty').value;document.getElementById('popup-wrapper4').classList.remove('flipOutY');document.getElementById('tap').play();document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');window.navigator.vibrate(20);">COMPLETE</button> </div>
+            document.getElementById('imgview').src =document.getElementById('preview-image').src;popup4();document.getElementById('gameTitle4').innerHTML= document.getElementById('title-input').value;;document.getElementById('gameImg4').src=document.getElementById('preview-image').src;document.getElementById('gameDifficulty4').classList.add(document.getElementById('difficulty').value);document.getElementById('gameDifficulty4').innerHTML = document.getElementById('difficulty').value;document.getElementById('popup-wrapper4').classList.remove('flipOutY');document.getElementById('tap').play();localTrigger();document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');window.navigator.vibrate(20);">COMPLETE</button> </div>
 
 
 
