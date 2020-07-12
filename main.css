@@ -1638,6 +1638,7 @@ body.darkclass .bottom-nav-button > label > img {
   left: 50%;
   transform: translate(-50%, -50%);
  filter: grayscale() saturate(1.5);
+ z-index: 500;
 }
 
 .icon-container {position: fixed; right: 15px;top: 7px;}
