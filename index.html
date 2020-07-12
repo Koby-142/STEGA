@@ -110,7 +110,7 @@
     <button  id="request" onclick="requestGyro()" style="position: fixed; left: 70px; top:40px;z-index: 9000;;;">Give Access To Device Orientation</button>
 
 <script>
-  function onClick() {
+  function requestGyro() {
     // feature detect
     if (typeof DeviceOrientationEvent.requestPermission === 'function') {
       DeviceOrientationEvent.requestPermission()
