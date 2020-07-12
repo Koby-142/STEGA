@@ -32,7 +32,7 @@ function startCountDown(){
                alert('resp'+ response);
                  if (response == 'granted') {
                    window.addEventListener('devicemotion', (e) => {
-                    if (event.gamma < 50  && event.gamma > -30){
+                    if (event.gamma < 25  && event.gamma > -30){
                       gameStatus = gameStatus + 1;
                      
                     }
