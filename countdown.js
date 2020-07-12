@@ -17,63 +17,49 @@ function startCountDown(){
       var gameStatus = 0; 
       var globalGameStatus = 0;
 
-
-
-
-      if (location.protocol != 'https:') {
-        location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-       }
-       function requestT () {
-     
-           if (typeof(DeviceMotionEvent) !== 'undefined' && typeof(DeviceMotionEvent.requestPermission) === 'function') {
-               alert('enter');
-               DeviceMotionEvent.requestPermission()
-               .then(response => {
-               alert('resp'+ response);
-                 if (response == 'granted') {
-                   window.addEventListener('devicemotion', (e) => {
-                    if (event.gamma < 25  && event.gamma > -30){
-                      gameStatus = gameStatus + 1;
-                     
-                    }
-              
-                    if (gameStatus > 28){
-                      plusSlides(1, 0);status();up();window.navigator.vibrate(75);
+      function onClick() {
+        // feature detect
+        if (typeof DeviceMotionEvent.requestPermission === 'function') {
+          DeviceMotionEvent.requestPermission()
+            .then(permissionState => {
+              if (permissionState === 'granted') {
+                window.addEventListener('devicemotion', () => {
+                  if (event.gamma < 25  && event.gamma > -30){
+                    gameStatus = gameStatus + 1;
                    
-                    }
-                   
-                    function status(){
-                      gameStatus += 1;
-                      console.log("Game Status:" + gameStatus);
-                      gameStatus = 0;
-                      globalGameStatus += 1;
-                    }
-              
-                    if (globalGameStatus > 8){
-                      console.log("Time Complete");
-                      document.getElementById("timeUp").style.display="block";
-                      document.getElementById("end").style.display="block";
-                      document.getElementById('gamemusic').pause();
-                      document.getElementById('speedup').pause(); 
-                      document.getElementById('endgame').play(); 
-                      globalGameStatus = 0;
-                      window.navigator.vibrate(600);
-                    }
-              
-              
-                    document.getElementById("gyro").innerHTML = event.gamma;
-                   })
-                 }
-               })
-           .catch(console.error)
-           }else {
-               alert('DeviceMotionEvent is not defined');
-           }
-       }
-
-
-
-
+                  }
+            
+                  if (gameStatus > 28){
+                    plusSlides(1, 0);status();up();window.navigator.vibrate(75);
+                 
+                  }
+                 
+                  function status(){
+                    gameStatus += 1;
+                    console.log("Game Status:" + gameStatus);
+                    gameStatus = 0;
+                    globalGameStatus += 1;
+                  }
+            
+                  if (globalGameStatus > 8){
+                    console.log("Time Complete");
+                    document.getElementById("timeUp").style.display="block";
+                    document.getElementById("end").style.display="block";
+                    document.getElementById('gamemusic').pause();
+                    document.getElementById('speedup').pause(); 
+                    document.getElementById('endgame').play(); 
+                    globalGameStatus = 0;
+                    window.navigator.vibrate(600);
+                  }
+            
+            
+                  document.getElementById("gyro").innerHTML = event.gamma;
+                });
+              }
+            })
+            .catch(console.error);
+        } else {
+          
 
     window.addEventListener('deviceorientation', function(event) {
      
@@ -107,6 +93,14 @@ function startCountDown(){
 
 
       document.getElementById("gyro").innerHTML = event.gamma;
+
+        }
+      }
+
+  
+
+
+
 
     //  if (event.beta < -50){
        
