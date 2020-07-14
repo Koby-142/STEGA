@@ -32,7 +32,7 @@ function startCountDown(){
        
       }
 
-      if (gameStatus > 20){
+      if (gameStatus > 30){
         plusSlides(1, 0);status();up();window.navigator.vibrate(75);
      
       }
