@@ -7,7 +7,15 @@ var musicStateE =localStorage.getItem('musicState')
 document.getElementById(musicStateE).checked = true;
 
 var GlobalGameCount = localStorage.getItem('GlobalGameCount');
-function localTrigger(){
+
+var altcount = localStorage.getItem('altcount');
+//if (altcount = 1){
+//     }else{
+//    localStorage.setItem('GlobalGameCount', 1); 
+ //   localStorage.setItem('altcount', 1); 
+//}
+function localTrigger(GlobalGameCount){
+    var ICId = GlobalGameCount + 1;
     var TheTitle = document.getElementById('title-input').value;
     var TheDifficulty = document.getElementById('difficulty').value;
     var TheImage = document.getElementById('preview-image').src;
@@ -23,6 +31,8 @@ function localTrigger(){
     localStorage.setItem('image1', TheImage);
     localStorage.setItem('date1', today)
 
+
+    localStorage.setItem('GlobalGameCount', ICId);  
     localStorage.setItem('oneitem1', item1.value);  
     localStorage.setItem('twoitem1', item2.value); 
     localStorage.setItem('threeitem1', item3.value);  
@@ -31,6 +41,7 @@ function localTrigger(){
     localStorage.setItem('sixitem1', item6.value);  
     localStorage.setItem('sevenitem1', item7.value);  
     localStorage.setItem('eightitem1', item8.value); 
+
     
     document.getElementById('creations').insertAdjacentHTML('beforeend', '<a class="creation-item" id="' + "mu3" + '"><h3>' + TheTitle + '</h3><div class="difficulty-bubble"><p class="' + TheDifficulty + '">' + TheDifficulty + '</p></div><br><p>' + today + '</p><div class="creation-play-button"><button><i class="material-icons">play_arrow</i></button></div></a>');
 
