@@ -29,6 +29,7 @@ function printStatus(status) {
           .catch((err) => {
             console.error(err);
             printStatus('failed to acquire: ' + err.message);
+            alert('An Error Occured')
           })
       }
     }
