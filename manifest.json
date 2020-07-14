@@ -7,14 +7,14 @@
           "short_name": "Play",
           "description": "Open game menu and start a game.",
           "url": "/#",
-          "icons": [{ "src": "/Assets/play.svg", "sizes": "192x192" }]
+          "icons": [{ "src": "/Assets/play.png", "sizes": "192x192" }]
         },
         {
           "name": "Create Game",
           "short_name": "Create",
           "description": "Create a game using the creator.",
           "url": "/#creator-menu",
-          "icons": [{ "src": "/Assets/create.svg", "sizes": "192x192" }]
+          "icons": [{ "src": "/Assets/create.png", "sizes": "192x192" }]
         },
         {
           "name": "Settings",
