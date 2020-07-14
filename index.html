@@ -47,24 +47,24 @@
        <link rel="apple-touch-icon" href="/Branding/deck logo.png">
 >
 
-
-    <script >
- if ("serviceWorker" in navigator) {
-                  if (navigator.serviceWorker.controller) {
-                    console.log("Service Worker Found");
-                  } else {
-                    // Register the service worker
-                    navigator.serviceWorker
-                      .register("service-wroker.js", {
-                        scope: "/"
-                      })
-                      .then(function (reg) {
-                        console.log("Service Worker Registered " + reg.scope);
-                      });
-                  }
-                }
-                
+<script >
+  if ("serviceWorker" in navigator) {
+                 if (navigator.serviceWorker.controller) {
+                   console.log("[PWA Builder] active service worker found, no need to register");
+                 } else {
+                   // Register the service worker
+                   navigator.serviceWorker
+                     .register("pwabuilder-sw.js", {
+                       scope: "index.html"
+                     })
+                     .then(function (reg) {
+                       console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+                     });
+                 }
+               }
+               
 </script>
+
 
        <script type="text/javascript">
            $(document).ready(function () {
@@ -1183,22 +1183,6 @@ document.getElementById("popup4").style.display="none"
     <script src="auth.js"></script>
     <script src="index.js"></script>
 
-    <script >
-      if ("serviceWorker" in navigator) {
-                     if (navigator.serviceWorker.controller) {
-                       console.log("[PWA Builder] active service worker found, no need to register");
-                     } else {
-                       // Register the service worker
-                       navigator.serviceWorker
-                         .register("pwabuilder-sw.js", {
-                           scope: "index.html"
-                         })
-                         .then(function (reg) {
-                           console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
-                         });
-                     }
-                   }
-                   
-   </script>
+
     
 </html>
