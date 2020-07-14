@@ -1032,7 +1032,7 @@ function live(){
      
     </div>
     <div class="wide-button">
-      <button onclick="setTimeout(startTheGame, 3500);document.getElementById('loader').style.display='block';document.getElementById('pop-image').classList.add('gameStarting');document.getElementById('popin-go').style.maxWidth= 'none'; document.getElementById('popin-go').style.width = '100%';document.getElementById('tapstart').play();document.getElementById('pop-text').style.marginTop = '-202px';requestGyro();window.navigator.vibrate(40);">START</button>
+      <button onclick="setTimeout(startTheGame, 3500);document.getElementById('loader').style.display='block';document.getElementById('pop-image').classList.add('gameStarting');document.getElementById('popin-go').style.maxWidth= 'none'; document.getElementById('popin-go').style.width = '100%';document.getElementById('tapstart').play();document.getElementById('pop-text').style.marginTop = '-202px';openFullscreen();requestGyro();window.navigator.vibrate(40);">START</button>
 
       <script>
         function startTheGame(){
@@ -1060,15 +1060,19 @@ document.getElementById("popup").style.display="block"
   function closePopup(){
 document.getElementById("popup").style.display="none"
   }
-  function openFullscreen() {
+
+var elem = document.documentElement;
+
+
+function openFullscreen() {
   if (elem.requestFullscreen) {
-  elem.requestFullscreen();
+    elem.requestFullscreen();
   } else if (elem.mozRequestFullScreen) { /* Firefox */
-  elem.mozRequestFullScreen();
-  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-  elem.webkitRequestFullscreen();
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+    elem.webkitRequestFullscreen();
   } else if (elem.msRequestFullscreen) { /* IE/Edge */
-  elem.msRequestFullscreen();
+    elem.msRequestFullscreen();
   }
 }
 </script>
