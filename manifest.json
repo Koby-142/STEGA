@@ -1,28 +1,28 @@
 {
     "short_name": "Stega",
     "name": "Stega",
-    "shortcuts": [
-        {
-          "name": "Play Game",
-          "short_name": "Play",
-          "description": "Open game menu and start a game.",
-          "url": "index.html/#",
-          "icons": [{ "src": "/Assets/play.png", "sizes": "192x192" }]
+    "shortcuts": [ {
+          "name": "Settings",
+          "short_name": "Settings",
+          "description": "View the settings menu.",
+          "url": "index.html/#settings",
+          "icons": [{ "src": "/Assets/settings.png", "sizes": "192x192" }]
         },
+       
         {
           "name": "Create Game",
           "short_name": "Create",
           "description": "Create a game using the creator.",
           "url": "index.html/#creator-menu",
           "icons": [{ "src": "/Assets/create.png", "sizes": "192x192" }]
-        },
-        {
-          "name": "Settings",
-          "short_name": "Settings",
-          "description": "View the settings menu.",
-          "url": "index.html/#settings",
-          "icons": [{ "src": "/Assets/settings.png", "sizes": "192x192" }]
-        }
+        }, {
+            "name": "Play Game",
+            "short_name": "Play",
+            "description": "Open game menu and start a game.",
+            "url": "index.html/#",
+            "icons": [{ "src": "/Assets/play.png", "sizes": "192x192" }]
+          }
+       
       ],
     "icons": [
         {
