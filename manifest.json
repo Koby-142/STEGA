@@ -1,6 +1,29 @@
 {
     "short_name": "Stega",
     "name": "Stega",
+    "shortcuts": [
+        {
+          "name": "Play Game",
+          "short_name": "Play",
+          "description": "Open game menu and start a game.",
+          "url": "/#",
+          "icons": [{ "src": "/Assets/play.svg", "sizes": "192x192" }]
+        },
+        {
+          "name": "Create Game",
+          "short_name": "Create",
+          "description": "Create a game using the creator.",
+          "url": "/#creator-menu",
+          "icons": [{ "src": "/Assets/create.svg", "sizes": "192x192" }]
+        },
+        {
+          "name": "Settings",
+          "short_name": "Settings",
+          "description": "View the settings menu.",
+          "url": "/subscriptions?utm_source=homescreen",
+          "icons": [{ "src": "/Assets/settings.png", "sizes": "192x192" }]
+        }
+      ],
     "icons": [
         {
             "src": "Branding/decklogo192px.png",
