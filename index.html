@@ -1067,7 +1067,7 @@ document.getElementById("popup").style.display="none"
 
 var elem = document.documentElement;
 
-
+setTimeout(
 function openFullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
@@ -1078,7 +1078,7 @@ function openFullscreen() {
   } else if (elem.msRequestFullscreen) { /* IE/Edge */
     elem.msRequestFullscreen();
   }
-}
+}, 5000)
 </script>
 
 <script src="wakelock.js"></script>
@@ -1136,17 +1136,7 @@ document.getElementById("popup4").style.display="block"
   function closePopup4(){
 document.getElementById("popup4").style.display="none"
   }
-  function openFullscreen() {
-  if (elem.requestFullscreen) {
-  elem.requestFullscreen();
-  } else if (elem.mozRequestFullScreen) { /* Firefox */
-  elem.mozRequestFullScreen();
-  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-  elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE/Edge */
-  elem.msRequestFullscreen();
-  }
-}
+
 </script>
 
 
