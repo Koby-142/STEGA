@@ -45,8 +45,27 @@
       <meta name="language" content="English">
 
        <link rel="apple-touch-icon" href="/Branding/deck logo.png">
-  
- 
+>
+
+
+    <script >
+ if ("serviceWorker" in navigator) {
+                  if (navigator.serviceWorker.controller) {
+                    console.log("Service Worker Found");
+                  } else {
+                    // Register the service worker
+                    navigator.serviceWorker
+                      .register("service-wroker.js", {
+                        scope: "index.html"
+                      })
+                      .then(function (reg) {
+                        console.log("Service Worker Registered " + reg.scope);
+                      });
+                  }
+                }
+                
+</script>
+
        <script type="text/javascript">
            $(document).ready(function () {
                $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/deck/easy', function (data) {
@@ -1163,4 +1182,5 @@ document.getElementById("popup4").style.display="none"
 
     <script src="auth.js"></script>
     <script src="index.js"></script>
+  
 </html>
