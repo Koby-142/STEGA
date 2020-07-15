@@ -17,7 +17,7 @@ function startCountDown(){
 
 function gyroGoStart(){
   window.addEventListener('deviceorientation', function(event) {
-     alert('gyro start');
+    
     if (event.gamma < 50  && event.gamma > -30){
       gameStatus = gameStatus + 1;
      
