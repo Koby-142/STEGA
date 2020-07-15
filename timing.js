@@ -1,5 +1,5 @@
 function start(){
-  var timeLeft = 1050;
+  var timeLeft = 10;
   var elem = document.getElementById('time_div');
   
   var timerId = setInterval(countdown, 1000);
@@ -25,6 +25,7 @@ function start(){
     if (timeLeft == 0) {
       clearTimeout(timerId);
       doSomething();
+      document.getElementById('countdownScript').src="j";
     } else {
       elem.innerHTML = timeLeft + ' Seconds';
       timeLeft--;
