@@ -1015,7 +1015,7 @@ border-radius: 50px;
 
 /*-------------------------------------Creator-----------------------------*/
 
-.creation-item > h3 {font-weight: normal;font-size: 19px;text-transform: uppercase;font-weight: 500;margin: 0px;float: left;}
+.creation-item > h3 {font-weight: normal;font-size: 19px;text-transform: uppercase;font-weight: 500;margin: 0px;float: left;margin-top: 15px;}
 
 .creation-item {padding-bottom: 15px;border-bottom: solid 1px lightgray;margin-top: 15px;}
 
@@ -1031,7 +1031,7 @@ border-radius: 50px;
 
 .difficulty-bubble > p {width:fit-content;margin: 0px;padding-left: 7px;padding-right: 7px;padding-top: 1px;padding-bottom: 1px;border-radius: 50px;color: white;float: left;margin-left: 5px;font-size: 13px;}
 
-.difficulty-bubble {width:inherit;padding-top: 2px;}
+.difficulty-bubble {width:inherit;padding-top: 17px;}
 
 .image-results {margin-top: 141px;margin-bottom: 150px;}
 

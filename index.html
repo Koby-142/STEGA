@@ -739,41 +739,8 @@ document.getElementById("popup3").style.display="none"
     <button class="create-button-secondary">Edit Deck <i class="material-icons">edit</i></button>
   </div>
   <div class="creations" id="creations">
-    <div class="creation-item">
-      <h3>Cartoons</h3>
-      <div class="difficulty-bubble">
-        <p>EASY</p>
-      </div>
-      <br>
-      <p>6/27/2020</p>
-      <div class="creation-play-button">
-        <button><i class="material-icons">play_arrow</i></button>
-      </div>
-  </div>
 
-  <div class="creation-item">
-    <h3>Cartoons</h3>
-    <div class="difficulty-bubble">
-      <p>EASY</p>
-    </div>
-    <br>
-    <p>6/27/2020</p>
-    <div class="creation-play-button">
-      <button><i class="material-icons">play_arrow</i></button>
-    </div>
-</div>
 
-<div class="creation-item">
-  <h3>Cartoons</h3>
-  <div class="difficulty-bubble">
-    <p>EASY</p>
-  </div>
-  <br>
-  <p>6/27/2020</p>
-  <div class="creation-play-button">
-    <button><i class="material-icons">play_arrow</i></button>
-  </div>
-</div>
 </div>
 </div>
 
@@ -1032,7 +999,7 @@ function live(){
      
     </div>
     <div class="wide-button">
-      <button onclick="setTimeout(startTheGame, 3500);document.getElementById('loader').style.display='block';document.getElementById('pop-image').classList.add('gameStarting');document.getElementById('popin-go').style.maxWidth= 'none'; document.getElementById('popin-go').style.width = '100%';document.getElementById('tapstart').play();document.getElementById('pop-text').style.marginTop = '-202px';openFullscreen();toggle();requestGyro();window.navigator.vibrate(40);">START</button>
+      <button onclick="setTimeout(startTheGame, 3500);document.getElementById('loader').style.display='block';document.getElementById('pop-image').classList.add('gameStarting');document.getElementById('popin-go').style.maxWidth= 'none'; document.getElementById('popin-go').style.width = '100%';document.getElementById('tapstart').play();document.getElementById('pop-text').style.marginTop = '-202px';setTimeout(openFullscreen, 500);toggle();requestGyro();window.navigator.vibrate(40);">START</button>
 
       <p>Wake Lock status: <b id="status">unknown</b>.</p>
       <p>Supported API: <b id="api">none</b>.</p>
@@ -1067,7 +1034,7 @@ document.getElementById("popup").style.display="none"
 
 var elem = document.documentElement;
 
-setTimeout(
+
 function openFullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
@@ -1078,7 +1045,7 @@ function openFullscreen() {
   } else if (elem.msRequestFullscreen) { /* IE/Edge */
     elem.msRequestFullscreen();
   }
-}, 10000)
+}
 </script>
 
 <script src="wakelock.js"></script>
