@@ -23,21 +23,7 @@ function startCountDown(){
       var gameStatus = 0; 
       var globalGameStatus = 0;
 
-      if (globalGameStatus > 8){
-        console.log("Time Complete");
-        document.getElementById("timeUp").style.display="block";
-        document.getElementById("end").style.display="block";
-        document.getElementById('gamemusic').pause();
-        document.getElementById('speedup').pause(); 
-        document.getElementById('endgame').play(); 
-        globalGameStatus = 0;
-        window.navigator.vibrate(600);
-        metaGame = 10000000000000000000000000000;
-        globalGameStatus = 0;
-      }
-
-      
-      var metaGame = 30;
+   
 
     window.addEventListener('deviceorientation', function(event) {
      
