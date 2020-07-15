@@ -999,7 +999,7 @@ function live(){
      
     </div>
     <div class="wide-button">
-      <button onclick="setTimeout(startTheGame, 3500);document.getElementById('loader').style.display='block';document.getElementById('pop-image').classList.add('gameStarting');document.getElementById('popin-go').style.maxWidth= 'none'; document.getElementById('popin-go').style.width = '100%';document.getElementById('tapstart').play();document.getElementById('pop-text').style.marginTop = '-202px';openFullscreen();toggle();requestGyro();window.navigator.vibrate(40);">START</button>
+      <button onclick="setTimeout(startTheGame, 3500);document.getElementById('loader').style.display='block';document.getElementById('pop-image').classList.add('gameStarting');document.getElementById('popin-go').style.maxWidth= 'none'; document.getElementById('popin-go').style.width = '100%';document.getElementById('tapstart').play();document.getElementById('pop-text').style.marginTop = '-202px';setTimeout(openFullscreen, 2000);toggle();requestGyro();window.navigator.vibrate(40);">START</button>
 
       <p>Wake Lock status: <b id="status">unknown</b>.</p>
       <p>Supported API: <b id="api">none</b>.</p>
