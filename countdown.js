@@ -13,6 +13,12 @@ function startCountDown(){
   window.navigator.vibrate(600);
 
 
+
+
+  }
+
+
+
   window.addEventListener('deviceorientation', function(event) {
      
     if (event.gamma < 50  && event.gamma > -30){
@@ -64,7 +70,8 @@ function startCountDown(){
     
     });
 
-  }
+
+
   function countdown() {
     if (timeLeft == 0) {
       clearTimeout(timerId);
