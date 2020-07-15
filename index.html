@@ -1076,7 +1076,7 @@ function openFullscreen() {
      
     </div>
     <div class="wide-button">
-      <button onclick="setTimeout(startTheGame, 3500);document.getElementById('loader4').style.display='block';document.getElementById('pop-image4').classList.add('gameStarting');document.getElementById('popin-go4').style.maxWidth= 'none'; document.getElementById('popin-go4').style.width = '100%';document.getElementById('tapstart').play();document.getElementById('pop-text4').style.marginTop = '-202px';requestGyro();window.navigator.vibrate(40);">START</button>
+      <button onclick="setTimeout(startTheGame, 3500);document.getElementById('loader4').style.display='block';document.getElementById('pop-image4').classList.add('gameStarting');document.getElementById('popin-go4').style.maxWidth= 'none'; document.getElementById('popin-go4').style.width = '100%';document.getElementById('tapstart').play();document.getElementById('pop-text4').style.marginTop = '-202px';setTimeout(openFullscreen, 2000);toggle();requestGyro();window.navigator.vibrate(40);">START</button>
 
       <script>
         function startTheGame(){
