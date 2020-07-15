@@ -538,6 +538,7 @@ details summary::-webkit-details-marker {
   width: 92%;
   margin-top: -153px;
   margin-bottom: 70px;
+  max-width: 810px;
 }
 
 .group-btns {
@@ -577,6 +578,7 @@ details summary::-webkit-details-marker {
   border: none;
   border-radius: 10px;
   filter: brightness(0.62);
+
 }
 
 .deck-scroll > h2 {
@@ -1595,38 +1597,6 @@ body.darkclass .bottom-nav-button > label > img {
   .bottom-navigation {display: none;}
 }
 
-@media screen and (orientation: landscape) {
-  .deck-scroll {
-    width: 230px;
-    display: inline-block;
-    margin-left: 10px;
-    margin-top: 25px;
-  }
-  .scroll-container {
-    overflow: scroll;
-    height: 100%;
-    white-space: nowrap;
-    width: 100%;
-    margin-top: -80px !important;
-  }
-  .popin-image > img {
-    height: 155px;
-  }
-
-  #mymenu {margin-top: 0px;}
-
-  .create-ln {display: none;}
-
-  .creator-preview {display: none;}
-
-  .center-container {margin-bottom: 20px;}
-
-  #collection {display: none !important}
-
-  .loading-container {
-    margin-bottom: 30px;
-  }
-}
 
 .loading-container {
   width: 150px;
@@ -1673,5 +1643,7 @@ body.darkclass .bottom-nav-button > label > img {
  .popin {max-width: 425px;}
 
  .pop-image {height: 318px;}
+
+ .bottom-navigation{display: block;}
   
 }
