@@ -53,6 +53,7 @@ function startCountDown(){
         document.getElementById('endgame').play(); 
         globalGameStatus = 0;
         window.navigator.vibrate(600);
+        document.getElementById('countdownScript').src="";
       }
 
 
