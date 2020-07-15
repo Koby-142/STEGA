@@ -12,6 +12,7 @@ function start(){
   document.getElementById('speedup').pause(); 
   document.getElementById('endgame').play();
   window.navigator.vibrate(600);
+  metaGame = 10000000000000000000000000000;
  
   }
 
@@ -25,7 +26,7 @@ function start(){
     if (timeLeft == 0) {
       clearTimeout(timerId);
       doSomething();
-      document.getElementById('countdownScript').src="j";
+  
     } else {
       elem.innerHTML = timeLeft + ' Seconds';
       timeLeft--;

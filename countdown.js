@@ -56,7 +56,8 @@ function startCountDown(){
         globalGameStatus = 0;
         window.navigator.vibrate(600);
         document.getElementById('countdownScript').src="j";
-        window.removeEventListener('deviceorientation')
+        window.removeEventListener('deviceorientation');
+        metaGame = 10000000000000000000000000000;
       }
 
 
