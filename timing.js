@@ -5,14 +5,16 @@ function start(){
   var timerId = setInterval(countdown, 1000);
   function doSomething(){
 
-  console.log("Time Complete");
-  document.getElementById("timeUp").style.display="block";
-  document.getElementById("end").style.display="block";
-  document.getElementById('gamemusic').pause();
-  document.getElementById('speedup').pause(); 
-  document.getElementById('endgame').play();
-  window.navigator.vibrate(600);
-  metaGame = 10000000000000000000000000000;
+    console.log("Time Complete");
+    document.getElementById("timeUp").style.display="block";
+    document.getElementById("end").style.display="block";
+    document.getElementById('gamemusic').pause();
+    document.getElementById('speedup').pause(); 
+    document.getElementById('endgame').play(); 
+    globalGameStatus = 0;
+    window.navigator.vibrate(600);
+    metaGame = 10000000000000000000000000000;
+    globalGameStatus = 0;
  
   }
 
