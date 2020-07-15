@@ -54,7 +54,6 @@ function startCountDown(){
           document.getElementById('gamemusic').pause();
           document.getElementById('speedup').pause(); 
           document.getElementById('endgame').play(); 
-          globalGameStatus = 0;
           window.navigator.vibrate(600);
           metaGame = -10000000000000000000000000000;
           globalGameStatus = 0;
@@ -66,7 +65,7 @@ function startCountDown(){
           document.getElementById('m3').style.display="none";
           document.getElementById('m2').style.display="none";
           document.getElementById('m1').style.display="none";
-        }
+          document.getElementById('countdownScript').src="null"  ;      }
     
     
         document.getElementById("gyro").innerHTML = event.gamma;
