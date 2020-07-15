@@ -999,7 +999,7 @@ function live(){
      
     </div>
     <div class="wide-button">
-      <button onclick="setTimeout(startTheGame, 3500);document.getElementById('loader').style.display='block';document.getElementById('pop-image').classList.add('gameStarting');document.getElementById('popin-go').style.maxWidth= 'none'; document.getElementById('popin-go').style.width = '100%';document.getElementById('tapstart').play();document.getElementById('pop-text').style.marginTop = '-202px';setTimeout(openFullscreen, 500);toggle();requestGyro();window.navigator.vibrate(40);">START</button>
+      <button onclick="setTimeout(startTheGame, 3500);document.getElementById('loader').style.display='block';document.getElementById('pop-image').classList.add('gameStarting');document.getElementById('popin-go').style.maxWidth= 'none'; document.getElementById('popin-go').style.width = '100%';document.getElementById('tapstart').play();document.getElementById('pop-text').style.marginTop = '-202px';openFullscreen();toggle();requestGyro();window.navigator.vibrate(40);">START</button>
 
       <p>Wake Lock status: <b id="status">unknown</b>.</p>
       <p>Supported API: <b id="api">none</b>.</p>
@@ -1014,7 +1014,7 @@ function live(){
     </div>
   
     <div class="wide-button invert">
-      <button onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper').classList.add('flipOutY');setTimeout(closePopup, 1200);document.getElementById('tapclose').play();document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');window.navigator.vibrate(20);">CLOSE</button>
+      <button onclick="document.getElementById('gameDifficulty').classList.remove('EASY');document.getElementById('gameDifficulty').classList.remove('MEDIUM');document.getElementById('gameDifficulty').classList.remove('HARD');document.getElementById('popup-wrapper').classList.add('flipOutY');setTimeout(closePopup, 500);document.getElementById('tapclose').play();document.querySelector('meta[name=theme-color]').setAttribute('content', '#ffffff');window.navigator.vibrate(20);">CLOSE</button>
       <audio src="sound effects/tapclose.mp3" id="tapclose"></audio>
     </div>
   </div>
