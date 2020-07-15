@@ -36,6 +36,8 @@ function startCountDown(){
         globalGameStatus = 0;
       }
 
+      
+      var metaGame = 30;
 
     window.addEventListener('deviceorientation', function(event) {
      
@@ -44,7 +46,6 @@ function startCountDown(){
        
       }
 
-      var metaGame = 30;
 
       if (gameStatus > metaGame){
         plusSlides(1, 0);status();up();window.navigator.vibrate(75);
@@ -67,7 +68,7 @@ function startCountDown(){
         document.getElementById('endgame').play(); 
         globalGameStatus = 0;
         window.navigator.vibrate(600);
-        metaGame = 10000000000000000000000000000;
+        metaGame = -10000000000000000000000000000;
         globalGameStatus = 0;
       }
 
