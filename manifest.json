@@ -1,46 +1,53 @@
 {
-    "short_name": "Stega",
-    "name": "Stega",
-    "shortcuts": [ {
-          "name": "Settings",
-          "short_name": "Settings",
-          "description": "View the settings menu.",
-          "url": "index.html/#settings",
-          "icons": [{ "src": "/Assets/settings.png", "sizes": "192x192" }]
-        },
-       
-        {
-          "name": "Create Game",
-          "short_name": "Create",
-          "description": "Create a game using the creator.",
-          "url": "index.html/#creator-menu",
-          "icons": [{ "src": "/Assets/create.png", "sizes": "192x192" }]
-        }, {
-            "name": "Play Game",
-            "short_name": "Play",
-            "description": "Open game menu and start a game.",
-            "url": "index.html/#",
-            "icons": [{ "src": "/Assets/play.png", "sizes": "192x192" }]
-          }
-       
-      ],
-    "icons": [
-        {
-            "src": "Branding/decklogo192px.png",
-            "type": "image/png",
-            "sizes": "192x192",
-            "purpose": "maskable"
-    }
-        , {
-            "src": "Branding/decklogo512.png",
-            "type": "image/png",
-            "sizes": "512x512",
-            "purpose": "maskable"
+  "short_name": "Stega",
+  "name": "Stega",
+  "shortcuts": [
+    {
+      "name": "Settings",
+      "short_name": "Settings",
+      "description": "View the settings menu.",
+      "url": "index.html/#settings",
+      "icons": [{ "src": "/Assets/settings.png", "sizes": "192x192" }]
+    },
+
+    {
+      "name": "Create Game",
+      "short_name": "Create",
+      "description": "Create a game using the creator.",
+      "url": "index.html/#creator-menu",
+      "icons": [{ "src": "/Assets/create.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Play Game",
+      "short_name": "Play",
+      "description": "Open game menu and start a game.",
+      "url": "index.html/#",
+      "icons": [{ "src": "/Assets/play.png", "sizes": "192x192" }]
     }
   ],
-    "start_url": "index.html",
-    "background_color": "#ffffff",
-    "display": "standalone",
-    "scope": "index.html",
-    "theme_color": "#ffffff"
+  "icons": [
+    {
+      "src": "Branding/144.png",
+      "type": "image/png",
+      "sizes": "144x144",
+      "purpose": "maskable"
+    },
+    {
+      "src": "Branding/decklogo192px.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "Branding/decklogo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "index.html",
+  "theme_color": "#ffffff"
 }
