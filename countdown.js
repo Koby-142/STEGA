@@ -56,6 +56,14 @@ function startCountDown(){
         window.navigator.vibrate(600);
         metaGame = -10000000000000000000000000000;
         globalGameStatus = 0;
+        document.getElementById('m8').style.display="none";
+        document.getElementById('m7').style.display="none";
+        document.getElementById('m6').style.display="none";
+        document.getElementById('m5').style.display="none";
+        document.getElementById('m4').style.display="none";
+        document.getElementById('m3').style.display="none";
+        document.getElementById('m2').style.display="none";
+        document.getElementById('m1').style.display="none";
       }
 
 
