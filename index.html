@@ -407,58 +407,79 @@ function clearSearch(){
     <div class="myDeck">
       <button class="prev charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById('I1').style.color = 'red';"></button>
     <button class="next charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);up();"></button>
-   <div class="block-container vivify popIn">
-     <h1 id="m1">Game Error</h1>
-   </div>
+    <div class="block-container-wrapper">
+      <div class="block-container vivify popIn">
+        <h1 id="m1">Game Error</h1>
+      </div>
+    </div>
+  
     </div>
 
     <div class="myDeck">
       <button class="prev charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById('I2').style.color = 'red';"></button>
     <button class="next charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);up();"></button>
-   <div class="block-container vivify popIn">
-     <h1 id="m2">{{d2}}</h1>
-   </div>
+    <div class="block-container-wrapper">
+      <div class="block-container vivify popIn">
+        <h1 id="m2">{{d2}}</h1>
+      </div>
+    </div>
+
     </div>
 
     <div class="myDeck">
       <button class="prev charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById('I3').style.color = 'red';"></button>
     <button class="next charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);up();"></button>
-   <div class="block-container vivify popIn">
-     <h1 id="m3">{{d3}}</h1>
-   </div>
+    <div class="block-container-wrapper">
+      <div class="block-container vivify popIn">
+        <h1 id="m3">{{d3}}</h1>
+      </div>
+    </div>
+   
     </div>
 
     <div class="myDeck">
       <button class="prev charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById('I4').style.color = 'red';"></button>
     <button class="next charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);up();"></button>
-   <div class="block-container vivify popIn">
-     <h1 id="m4">IRONMAN</h1>
-   </div>
+    <div class="block-container-wrapper">
+      <div class="block-container vivify popIn">
+        <h1 id="m4">IRONMAN</h1>
+      </div>
+    </div>
+   
     </div>
 
     <div class="myDeck">
       <button class="prev charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById('I5').style.color = 'red';"></button>
     <button class="next charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);up();"></button>
-   <div class="block-container vivify popIn">
-     <h1 id="m5">IRONMAN</h1>
-   </div>
+    <div class="block-container-wrapper">
+      <div class="block-container vivify popIn">
+        <h1 id="m5">IRONMAN</h1>
+      </div>
+    </div>
+ 
     </div>
 
 
     <div class="myDeck">
       <button class="prev charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById('I6').style.color = 'red';"></button>
     <button class="next charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);up();"></button>
-   <div class="block-container vivify popIn">
-     <h1 id="m6">IRONMAN</h1>
-   </div>
+    <div class="block-container-wrapper">
+      <div class="block-container vivify popIn">
+        <h1 id="m6">IRONMAN</h1>
+      </div>
+    </div>
+
     </div>
 
     <div class="myDeck">
       <button class="prev charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById('I7').style.color = 'red';"></button>
     <button class="next charades-btn" ondblclick="plusSlides(1, 0);window.navigator.vibrate(50);up();"></button>
-   <div class="block-container vivify popIn">
-     <h1 id="m7">IRONMAN</h1>
-   </div>
+    <div class="block-container-wrapper">
+      <div class="block-container vivify popIn">
+        <h1 id="m7">IRONMAN</h1>
+      </div>
+    </div>
+   
     </div>
 
     <div class="myDeck" style="padding-bottom: 50px;">
@@ -472,9 +493,12 @@ function clearSearch(){
     document.getElementById('timeUp').style.display='block';
     document.getElementById('end').style.display='block';
     document.getElementById('gamemusic').pause()"></button>
-   <div class="block-container vivify popIn">
-     <h1 id="m8">IRONMAN</h1>
-   </div>
+    <div class="block-container-wrapper">
+      <div class="block-container vivify popIn">
+        <h1 id="m8">IRONMAN</h1>
+      </div>
+    </div>
+
     </div>
     <div class="rotate-notice">
       <img src="/Assets/NOTICE.svg">
@@ -571,10 +595,14 @@ function clearSearch(){
         </div>
       </div>
       <div class="countdown" id="cntd">
-        <h1 id="countdown_div" class="vivify popIn delay-1000"></h1>
-        <div class="rotate-notice vivify pulsate infinite">
-          <img src="/Assets/NOTICE.svg">
+        <div class="countdown-wrapper">
+          <div class="countdown-subtext">
+            <h1 id="countdown_div" class="vivify popIn delay-1000"></h1>
+          </div>
+         
         </div>
+    
+      
       </div>
 
       <div id="settings" class="dark-mode tab-page">
