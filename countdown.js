@@ -11,12 +11,13 @@ function startCountDown(){
   start();
   document.getElementById('cntd').style.display = "none";
   window.navigator.vibrate(600);
-  gyroGoStart();
+  
   }
+  gyroGoStart();
 
 function gyroGoStart(){
   window.addEventListener('deviceorientation', function(event) {
-     
+     alert('gyro start');
     if (event.gamma < 50  && event.gamma > -30){
       gameStatus = gameStatus + 1;
      
