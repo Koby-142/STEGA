@@ -54,6 +54,7 @@ function startCountDown(){
         globalGameStatus = 0;
         window.navigator.vibrate(600);
         document.getElementById('countdownScript').src="j";
+        window.removeEventListener('deviceorientation')
       }
 
 
