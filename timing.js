@@ -1,5 +1,10 @@
+
+function disableOrientation(){
+  window.removeEventListener('deviceorientation', deviceOrientation);  
+}
+
 function start(){
-  var timeLeft = 50;
+  var timeLeft = 10;
   var elem = document.getElementById('time_div');
   
   var timerId = setInterval(countdown, 1000);
@@ -24,7 +29,7 @@ function start(){
     document.getElementById('m2').style.display="none";
     document.getElementById('m1').style.display="none";
     document.getElementById('countdownScript').src="null"  ;
-    window.removeEventListener('deviceorientation', deviceOrientation);  
+  disableOrientation();
   }
 
   function warning(){
