@@ -90,7 +90,7 @@
            <a >
            <div  onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
            document.getElementById('imgview').src ='{{image}}';popup();document.getElementById('gameTitle').innerHTML='{{name}}';document.getElementById('gameImg').src='{{image}}';document.getElementById('gameDifficulty').classList.add('{{difficulty}}');document.getElementById('gameDifficulty').innerHTML = '{{difficulty}}';document.getElementById('popup-wrapper').classList.remove('flipOutY');document.getElementById('tap').play();document.getElementById('endgame-overlay').src='{{image}}';window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');" class="deck-scroll vivify fadeIn delay-{{id}}00">
-            <img loading="lazy" alt="Loading Deck..." src="{{image}}">
+            <img class="deck-scroll-image" loading="lazy" alt="Loading Deck..." src="{{image}}">
             <h2>{{name}}</h2>
             <div class="difficutly-text-container">
 <p class="{{difficulty}}">{{difficulty}}</p>
@@ -254,6 +254,21 @@ function searchStart(){
   if (searchClear.value = ""){
     searchClear.style.display="none";
   }
+  document.getElementById('collection').style.display='none';
+  document.getElementById('myMenu').style.marginTop='142px';
+
+  let myElements = document.querySelectorAll(".deck-scroll-image");
+
+for (let i = 0; i < myElements.length; i++) {
+	myElements[i].style.height = "146px";
+}
+
+let deckScroll = document.querySelectorAll(".deck-scroll");
+
+
+for (let i = 0; i < deckScroll.length; i++) {
+	deckScroll[i].style.marginTop = "-48px";
+}
 }
 function clearSearch(){
   document.getElementById('tapclose').play();
@@ -261,6 +276,22 @@ function clearSearch(){
  myFunction();
  document.getElementById('search-clear').style.display='none';
  window.navigator.vibrate(20);
+ document.getElementById('collection').style.display='block';
+
+ document.getElementById('myMenu').style.marginTop='0px';
+
+ let myElements = document.querySelectorAll(".deck-scroll-image");
+
+ for (let i = 0; i < myElements.length; i++) {
+	myElements[i].style.height = "211px";
+}
+
+let deckScroll = document.querySelectorAll(".deck-scroll");
+
+
+for (let i = 0; i < deckScroll.length; i++) {
+	deckScroll[i].style.marginTop = "17";
+}
 }
    </script>
             
