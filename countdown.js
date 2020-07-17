@@ -1,7 +1,7 @@
 
 
 function startCountDown(){
-  var timeLeft =50
+  var timeLeft =5
   var elem = document.getElementById('countdown_div');
   
   var timerId = setInterval(countdown, 1000);
