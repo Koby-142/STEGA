@@ -11,7 +11,7 @@ function startCountDown(){
   start();
   document.getElementById('cntd').style.display = "none";
   window.navigator.vibrate(600);
-  window.removeEventListener('deviceorientation', deviceOrientation);
+
   }
 
 

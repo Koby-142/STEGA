@@ -23,7 +23,8 @@ function start(){
     document.getElementById('m3').style.display="none";
     document.getElementById('m2').style.display="none";
     document.getElementById('m1').style.display="none";
-    document.getElementById('countdownScript').src="null"  ;  
+    document.getElementById('countdownScript').src="null"  ;
+    window.removeEventListener('deviceorientation', deviceOrientation);  
   }
 
   function warning(){
