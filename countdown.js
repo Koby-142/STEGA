@@ -26,7 +26,7 @@ function startCountDown(){
       var gameStatus = 0; 
       var globalGameStatus = 0;
 
-      window.addEventListener('deviceorientation', function(event) {
+      function deviceOrientation(event) {
     
         if (event.gamma < 50  && event.gamma > -30){
           gameStatus = gameStatus + 1;
@@ -56,6 +56,7 @@ function startCountDown(){
           document.getElementById('endgame').play(); 
           window.navigator.vibrate(600);
           metaGame = -10000000000000000000000000000;
+          globalGameStatus = 0;
           document.getElementById('m8').style.display="none";
           document.getElementById('m7').style.display="none";
           document.getElementById('m6').style.display="none";
@@ -74,11 +75,14 @@ function startCountDown(){
     //      plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById//('I1').style.color = 'red';
        // }
         
-        });
+        };
 
     } else {
       elem.innerHTML = timeLeft;
       timeLeft--;
     }
   }
+
+
+  window.addEventListener('deviceorientation', deviceOrientation);
 }

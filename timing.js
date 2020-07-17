@@ -1,7 +1,5 @@
 
-function disableOrientation(){
-  window.removeEventListener('deviceorientation', deviceOrientation);  
-}
+
 
 function start(){
   var timeLeft = 10;
