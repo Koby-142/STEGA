@@ -1,7 +1,7 @@
 
 
 function startCountDown(){
-  var timeLeft =3
+  var timeLeft =50
   var elem = document.getElementById('countdown_div');
   
   var timerId = setInterval(countdown, 1000);
@@ -11,7 +11,7 @@ function startCountDown(){
   start();
   document.getElementById('cntd').style.display = "none";
   window.navigator.vibrate(600);
-  
+  window.removeEventListener('deviceorientation', deviceOrientation);
   }
 
 
@@ -66,7 +66,7 @@ function startCountDown(){
           document.getElementById('m2').style.display="none";
           document.getElementById('m1').style.display="none";
           document.getElementById('countdownScript').src="null"  ;      }
-          window.removeEventListener('deviceorientation', deviceOrientation);
+          
     
         document.getElementById("gyro").innerHTML = event.gamma;
     
