@@ -25,7 +25,9 @@ function startCountDown(){
       doSomething();
       var gameStatus = 0; 
       var globalGameStatus = 0;
-
+while (timeLeft > 0){
+  deviceOrientation()
+}
       function deviceOrientation(event) {
     
         if (event.gamma < 50  && event.gamma > -30){
