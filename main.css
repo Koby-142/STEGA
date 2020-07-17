@@ -1402,9 +1402,13 @@ margin-top: 22px;
 
 .form-label {font-size: 35px;margin:0px;font-weight: normal;margin-left: 4.5%;margin-bottom: 10px;padding-top: 20px;}
 
+.api-status {color: white;}
+
 body.darkclass .dark-html {
   background-color: black ;
 }
+
+body.darkclass .ch-view-image {filter: brightness(0.5);}
 
 body.darkclass html {
   background-color: black;
