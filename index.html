@@ -89,8 +89,9 @@
            <li>
            <a >
            <div  onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
-           document.getElementById('imgview').src ='/GameImages/{{image}}';popup();document.getElementById('gameTitle').innerHTML='{{name}}';document.getElementById('gameImg').src='/GameImages/{{image}}';document.getElementById('gameDifficulty').classList.add('{{difficulty}}');document.getElementById('gameDifficulty').innerHTML = '{{difficulty}}';document.getElementById('popup-wrapper').classList.remove('flipOutY');document.getElementById('tap').play();document.getElementById('endgame-overlay').src='/GameImages/{{image}}';window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');" class="deck-scroll vivify fadeIn delay-{{id}}00">
-            <img class="deck-scroll-image" loading="lazy" alt="Loading Deck..." src="/GameImages/{{image}}">
+           document.getElementById('imgview').src ='/GameImages/{{image}}';popup();document.getElementById('gameTitle').innerHTML='{{name}}';document.getElementById('gameImg').style.backgroundImage='url(/GameImages/{{image}})';document.getElementById('gameDifficulty').classList.add('{{difficulty}}');document.getElementById('gameDifficulty').innerHTML = '{{difficulty}}';document.getElementById('popup-wrapper').classList.remove('flipOutY');document.getElementById('tap').play();document.getElementById('endgame-overlay').src='/GameImages/{{image}}';window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');" class="deck-scroll vivify fadeIn delay-{{id}}00">
+
+   <img class="deck-scroll-image" loading="lazy" alt="Loading Deck..." src="/GameImages/{{image}}">
             <h2>{{name}}</h2>
             <div class="difficutly-text-container">
 <p class="{{difficulty}}">{{difficulty}}</p>
@@ -1023,7 +1024,10 @@ function live(){
     <div class="popin-wrapper vivify flipInY duration-500" id="popup-wrapper">
     <button onclick="closePopup()"class="close-btn" >Close</button>
     <div class="popin-image" id="pop-image">
-      <img id="gameImg" src="Assets/placeholder.png" class="pop-image gameStarting">
+      
+<div class="wrapper-image-deck"><div class="image-deck" id="gameImg"></div></div>
+<!-- <img id="gameImg" src="Assets/placeholder.png" class="pop-image gameStarting">-->
+     
     </div>
     <div class="popin-text-container" id="pop-text">
       <div class="loading-container " id="loader">
