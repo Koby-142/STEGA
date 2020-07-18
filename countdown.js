@@ -65,7 +65,7 @@ function startCountDown(){
           document.getElementById('m1').style.display="none";
           document.getElementById('countdownScript').remove();
           document.getElementById('time').remove() ;
-          window.removeEventListener('deviceorientation', deviceOrientation); 
+           
           
         }
      
@@ -83,5 +83,6 @@ function startCountDown(){
       elem.innerHTML = timeLeft;
       timeLeft--;
     }
+    window.removeEventListener('deviceorientation', deviceOrientation);
   }
 }
