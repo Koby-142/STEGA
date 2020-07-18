@@ -36,9 +36,7 @@ function startCountDown(){
         }
        
         function status(){
-          gameStatus += 1;
-          console.log("Game Status:" + gameStatus);
-          gameStatus = 0;
+ 
           globalGameStatus += 1;
         }
     
