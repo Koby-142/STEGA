@@ -6,6 +6,12 @@ function start(){
   var elem = document.getElementById('time_div');
   
   var timerId = setInterval(countdown, 1000);
+
+function disableOrientation(){
+  window.removeEventListener('deviceorientation', deviceOrientation); 
+        
+}
+
   function doSomething(){
 
     console.log("Time Complete");
@@ -27,7 +33,9 @@ function start(){
     document.getElementById('m2').style.display="none";
     document.getElementById('m1').style.display="none";
     document.getElementById('countdownScript').src="null"  ;
+    document.getElementById('time').src="null"  ;
   disableOrientation();
+  
   }
 
   function warning(){
