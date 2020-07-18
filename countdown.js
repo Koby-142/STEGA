@@ -21,6 +21,32 @@ function startCountDown(){
       var gameStatus = 0; 
       var globalGameStatus = 0;
 
+      
+      if (globalGameStatus > 8){
+        console.log("Time Complete");
+        document.getElementById("timeUp").style.display="block";
+        document.getElementById("end").style.display="block";
+        document.getElementById('gamemusic').pause();
+        document.getElementById('speedup').pause(); 
+        document.getElementById('endgame').play(); 
+        window.navigator.vibrate(600);
+        metaGame = 10000000;
+        gameStatus = 0;
+        globalGameStatus = 0
+        document.getElementById('m8').style.display="none";
+        document.getElementById('m7').style.display="none";
+        document.getElementById('m6').style.display="none";
+        document.getElementById('m5').style.display="none";
+        document.getElementById('m4').style.display="none";
+        document.getElementById('m3').style.display="none";
+        document.getElementById('m2').style.display="none";
+        document.getElementById('m1').style.display="none";
+        document.getElementById('countdownScript').remove();
+        document.getElementById('time').remove() ;
+        window.removeEventListener('deviceorientation', deviceOrientation); 
+        
+      }
+
       window.addEventListener('deviceorientation', function(event) {
     
         if (event.gamma < 50  && event.gamma > -30){
@@ -61,29 +87,5 @@ function startCountDown(){
     }
 
     
-    if (globalGameStatus > 8){
-      console.log("Time Complete");
-      document.getElementById("timeUp").style.display="block";
-      document.getElementById("end").style.display="block";
-      document.getElementById('gamemusic').pause();
-      document.getElementById('speedup').pause(); 
-      document.getElementById('endgame').play(); 
-      window.navigator.vibrate(600);
-      metaGame = 10000000;
-      gameStatus = 0;
-      globalGameStatus = 0
-      document.getElementById('m8').style.display="none";
-      document.getElementById('m7').style.display="none";
-      document.getElementById('m6').style.display="none";
-      document.getElementById('m5').style.display="none";
-      document.getElementById('m4').style.display="none";
-      document.getElementById('m3').style.display="none";
-      document.getElementById('m2').style.display="none";
-      document.getElementById('m1').style.display="none";
-      document.getElementById('countdownScript').remove();
-      document.getElementById('time').remove() ;
-      window.removeEventListener('deviceorientation', deviceOrientation); 
-      
-    }
   }
 }
