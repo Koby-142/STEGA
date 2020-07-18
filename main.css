@@ -1142,7 +1142,7 @@ border-radius: 50px;
   height: 260px;;
   position: relative;
   border-radius: 5px;
- 
+ background-size: cover;
   overflow: hidden;filter: brightness(0.5);
   border-radius: 10px 10px 0px 0px;
 }
@@ -1696,7 +1696,7 @@ body.darkclass .bottom-nav-button > label > img {
   left: 50%;
   transform: translate(-50%, -50%);
  filter: grayscale() saturate(1.5);
- z-index: 500;
+ z-index: 1000;
 }
 
 .icon-container {position: fixed; right: 15px;top: 7px;}
@@ -1709,7 +1709,7 @@ body.darkclass .bottom-nav-button > label > img {
 
 #loader4 {display: none;}
 
-.gameStarting > img {
+.gameStarting{
   left: 0px;
   top: 0px;
   height: 115vh;

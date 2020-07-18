@@ -1025,7 +1025,7 @@ function live(){
     <button onclick="closePopup()"class="close-btn" >Close</button>
     <div class="popin-image" id="pop-image">
       
-<div class="wrapper-image-deck"><div class="image-deck" id="gameImg"></div></div>
+<div class="wrapper-image-deck" id="gameImgWrapper"><div class="image-deck" id="gameImg"></div></div>
 <!-- <img id="gameImg" src="Assets/placeholder.png" class="pop-image gameStarting">-->
      
     </div>
@@ -1041,7 +1041,7 @@ function live(){
      
     </div>
     <div class="wide-button">
-      <button onclick="setTimeout(startTheGame, 3500);document.getElementById('loader').style.display='block';document.getElementById('pop-image').classList.add('gameStarting');document.getElementById('popin-go').style.maxWidth= 'none'; document.getElementById('popin-go').style.width = '100%';document.getElementById('tapstart').play();document.getElementById('pop-text').style.marginTop = '-202px';setTimeout(openFullscreen, 2000);toggle();requestGyro();window.navigator.vibrate(40);">START</button>
+      <button onclick="setTimeout(startTheGame, 3500);document.getElementById('loader').style.display='block';document.getElementById('pop-image').classList.add('gameStarting');document.getElementById('gameImgWrapper').classList.add('gameStarting');document.getElementById('popin-go').style.maxWidth= 'none'; document.getElementById('popin-go').style.width = '100%';document.getElementById('tapstart').play();document.getElementById('pop-text').style.marginTop = '-202px';setTimeout(openFullscreen, 2000);toggle();requestGyro();window.navigator.vibrate(40);">START</button>
 
    
       
