@@ -5,7 +5,7 @@ function startCountDown(){
   var elem = document.getElementById('countdown_div');
   
   var timerId = setInterval(countdown, 1000);
-  function doSomething(){
+  function gameComplete(){
   console.log("CountDown Complete");
   document.getElementById('gamemusic').play();
   start();
@@ -17,7 +17,7 @@ function startCountDown(){
   function countdown() {
     if (timeLeft == 0) {
       clearTimeout(timerId);
-      doSomething();
+      gameComplete();
       var gameStatus = 0; 
       var globalGameStatus = 0;
 
