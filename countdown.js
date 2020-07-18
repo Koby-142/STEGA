@@ -36,7 +36,9 @@ function startCountDown(){
         }
        
         function status(){
- 
+          gameStatus += 1;
+          console.log("Game Status:" + gameStatus);
+          gameStatus = 0;
           globalGameStatus += 1;
         }
     
@@ -49,8 +51,7 @@ function startCountDown(){
           document.getElementById('endgame').play(); 
           window.navigator.vibrate(600);
           metaGame = 10000000000000000000000000000;
-          gameStatus = 0;
-          globalGameStatus = 0;
+          let gameStatus = 0;
           document.getElementById('m8').style.display="none";
           document.getElementById('m7').style.display="none";
           document.getElementById('m6').style.display="none";
