@@ -25,10 +25,8 @@ function startCountDown(){
       doSomething();
       var gameStatus = 0; 
       var globalGameStatus = 0;
-while (timeLeft > 0){
-  deviceOrientation()
-}
-      function deviceOrientation(event) {
+
+      window.addEventListener('deviceorientation', function(event) {
     
         if (event.gamma < 50  && event.gamma > -30){
           gameStatus = gameStatus + 1;
@@ -77,14 +75,11 @@ while (timeLeft > 0){
     //      plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById//('I1').style.color = 'red';
        // }
         
-        };
+        });
 
     } else {
       elem.innerHTML = timeLeft;
       timeLeft--;
     }
   }
-
-
-  window.addEventListener('deviceorientation', deviceOrientation);
 }
