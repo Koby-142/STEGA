@@ -41,8 +41,6 @@ function startCountDown(){
           gameStatus = 0;
           globalGameStatus += 1;
         }
-
-    
     
         if (globalGameStatus > 8){
           console.log("Time Complete");
@@ -63,8 +61,9 @@ function startCountDown(){
           document.getElementById('m2').style.display="none";
           document.getElementById('m1').style.display="none";
           document.getElementById('countdownScript').src="null"; 
-          document.getElementById('time').src="null";  
-          break;
+          document.getElementById('time').src="null"; 
+          window.removeEventListener('deviceorientation', deviceOrientation); 
+        
         }
      
     
@@ -75,7 +74,7 @@ function startCountDown(){
     //      plusSlides(1, 0);window.navigator.vibrate(50);down();document.getElementById//('I1').style.color = 'red';
        // }
         
-      });
+        });
 
     } else {
       elem.innerHTML = timeLeft;
