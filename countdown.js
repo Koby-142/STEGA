@@ -23,7 +23,7 @@ function startCountDown(){
 
       window.addEventListener('deviceorientation', function(event) {
     
-        if(globalGameStatus < 9){
+        if(globalGameStatus < 8){
           if (event.gamma < 50  && event.gamma > -30){
             gameStatus = gameStatus + 1;
            
@@ -47,7 +47,7 @@ function startCountDown(){
 
 
     
-        if (globalGameStatus > 8){
+        if (globalGameStatus > 7){
           console.log("Time Complete");
           document.getElementById("timeUp").style.display="block";
           document.getElementById("end").style.display="block";
