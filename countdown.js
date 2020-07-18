@@ -41,6 +41,8 @@ function startCountDown(){
           gameStatus = 0;
           globalGameStatus += 1;
         }
+
+        cut()
     
         if (globalGameStatus > 8){
           console.log("Time Complete");
