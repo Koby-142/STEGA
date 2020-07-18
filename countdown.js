@@ -63,9 +63,10 @@ function startCountDown(){
           document.getElementById('m3').style.display="none";
           document.getElementById('m2').style.display="none";
           document.getElementById('m1').style.display="none";
+     
+          window.removeEventListener('deviceorientation', deviceOrientation); 
           document.getElementById('countdownScript').remove();
           document.getElementById('time').remove() ;
-          window.removeEventListener('deviceorientation', deviceOrientation); 
         
         }
      
