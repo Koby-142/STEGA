@@ -14,11 +14,6 @@ function startCountDown(){
 
   }
 
-
-
- 
-
-  
   function countdown() {
     if (timeLeft == 0) {
       clearTimeout(timerId);
