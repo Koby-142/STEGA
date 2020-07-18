@@ -50,8 +50,7 @@ function startCountDown(){
           document.getElementById('speedup').pause(); 
           document.getElementById('endgame').play(); 
           window.navigator.vibrate(600);
-          metaGame = 10000000000000000000000000000;
-          let gameStatus = 0;
+          metaGame = 10000000;
           document.getElementById('m8').style.display="none";
           document.getElementById('m7').style.display="none";
           document.getElementById('m6').style.display="none";
