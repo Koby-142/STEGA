@@ -33,7 +33,7 @@ function startCountDown(){
         if(globalGameStatus < 8){
           if (event.gamma < -40  && event.gamma > -25){
             gameStatus = gameStatus + 1;
-           
+           window.navigator.vibrate(59)
           }
         }
      
