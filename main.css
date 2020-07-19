@@ -1579,6 +1579,10 @@ body.darkclass #countdown_div {
   color: white;
 }
 
+body.darkclass .end-screen {background-color: black;}
+
+body.darkclass .imgview-container {background-color: black;}
+
 body.darkclass .dark-mode > div > a {
   color: white;
 }
