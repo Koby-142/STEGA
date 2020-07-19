@@ -66,13 +66,22 @@
 </script>
 
 
-       <script type="text/javascript">
+   
+
+       <script>
+  
            $(document).ready(function () {
                $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/deck/easy', function (data) {
                    var template = Handlebars.compile($('#item-template').html())
                    $('#items').html(template(data.easy))
                })
-           })
+   
+    $(".lazy").lazy({
+        effect: "fadeIn",
+        effectTime: 5000,
+        threshold: 0
+    });
+});
        </script>
    
        <script id="item-template" type="text/x-handlebars-template">
@@ -1202,7 +1211,7 @@ document.getElementById("popup4").style.display="none"
 
     <script src="auth.js"></script>
     <script src="index.js"></script>
-
+<script src="/jquery.lazy.js"></script>
 <script>
   if(window.location.href == 'https://stega.app/#creator-menu'){
     document.getElementById('nav').style.display='none';
