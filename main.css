@@ -142,7 +142,7 @@ transform: rotate(90deg);
   transform: translate( -50%);
   width: 280px;
   transform: rotate(90deg);
-  z-index: 15;
+  z-index:100;
 
 }
 
@@ -1174,6 +1174,7 @@ background-size:cover;
 border-radius:0px;
   transition: 0.2s ease;
  background-color: white;
+ z-index: -1;
 }
 
 .imgview {
