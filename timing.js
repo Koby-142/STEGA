@@ -13,6 +13,7 @@ function disableOrientation(){
 }
 
   function doSomething(){
+
     console.log("Time Complete");
     document.getElementById("timeUp").style.display="block";
     document.getElementById("end").style.display="block";
@@ -40,7 +41,7 @@ function disableOrientation(){
   function warning(){
     document.getElementById('gamemusic').pause(); 
     document.getElementById('speedup').play(); 
-   // document.getElementById("time_div").style.fontSize = "70px";
+//document.getElementById("time_div").style.fontSize = "70px";
   }
 
   function countdown() {
