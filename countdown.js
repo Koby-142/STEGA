@@ -24,7 +24,7 @@ function startCountDown(){
       window.addEventListener('deviceorientation', function(event) {
     
         if(globalGameStatus < 8){
-          if (event.gamma < 90  && event.gamma > 9){
+          if (event.gamma < 40  && event.gamma > 9){
             gameStatus = gameStatus + 1;
            
           }
