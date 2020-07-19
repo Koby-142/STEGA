@@ -49,7 +49,6 @@ function startCountDown(){
     
         if (globalGameStatus == 8){
           console.log("Time Complete");
-          document.getElementById("timeUp").style.display="block";
           document.getElementById("end").style.display="block";
           document.getElementById('gamemusic').pause();
           document.getElementById('speedup').pause(); 
