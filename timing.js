@@ -2,7 +2,7 @@
 
 
 function start(){
-  var timeLeft = 10;
+  var timeLeft = 50;
   var elem = document.getElementById('time_div');
   
   var timerId = setInterval(countdown, 1000);

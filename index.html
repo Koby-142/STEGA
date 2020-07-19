@@ -98,7 +98,7 @@
            <li>
            <a >
            <div  onclick="document.getElementById('I1').innerHTML ='{{d1}}';document.getElementById('I2').innerHTML ='{{d2}}';document.getElementById('I3').innerHTML ='{{d3}}';document.getElementById('I4').innerHTML ='{{d4}}';document.getElementById('I5').innerHTML ='{{d5}}';document.getElementById('I6').innerHTML ='{{d6}}';document.getElementById('I7').innerHTML ='{{d7}}';document.getElementById('I8').innerHTML ='{{d8}}';document.getElementById('m1').innerHTML ='{{d1}}';document.getElementById('m2').innerHTML ='{{d2}}';document.getElementById('m3').innerHTML ='{{d3}}';document.getElementById('m4').innerHTML ='{{d4}}';document.getElementById('m5').innerHTML ='{{d5}}';document.getElementById('m6').innerHTML ='{{d6}}';document.getElementById('m7').innerHTML ='{{d7}}';document.getElementById('m8').innerHTML ='{{d8}}';
-           document.getElementById('imgview').src ='/GameImages/{{image}}';popup();document.getElementById('gameTitle').innerHTML='{{name}}';document.getElementById('gameImg').style.backgroundImage='url(/GameImages/{{image}})';document.getElementById('gameDifficulty').classList.add('{{difficulty}}');document.getElementById('gameDifficulty').innerHTML = '{{difficulty}}';document.getElementById('popup-wrapper').classList.remove('flipOutY');document.getElementById('tap').play();document.getElementById('endgame-overlay').src='/GameImages/{{image}}';window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');" class="deck-scroll vivify fadeIn delay-{{id}}00">
+           document.getElementById('imgview').style.backgroundImage ='url(/GameImages/{{image}})';popup();document.getElementById('gameTitle').innerHTML='{{name}}';document.getElementById('gameImg').style.backgroundImage='url(/GameImages/{{image}})';document.getElementById('gameDifficulty').classList.add('{{difficulty}}');document.getElementById('gameDifficulty').innerHTML = '{{difficulty}}';document.getElementById('popup-wrapper').classList.remove('flipOutY');document.getElementById('tap').play();document.getElementById('endgame-overlay').src='/GameImages/{{image}}';window.navigator.vibrate(20);document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');" class="deck-scroll vivify fadeIn delay-{{id}}00">
 
    <img class="deck-scroll-image" loading="lazy" alt="Loading Deck..." src="/GameImages/{{image}}">
             <h2>{{name}}</h2>
@@ -419,7 +419,10 @@ function clearSearch(){
          
          
             <div class="slideshow-container">
-                <img id="imgview" class="ch-view-image" src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-652ovhkibhg82kh6on274ihkn1-20171208011414.Medi.jpeg">
+              <div class="imgview-container">
+                <div id="imgview" class="imgview"></div>
+              </div>
+  
 
              
 
@@ -950,7 +953,7 @@ document.getElementById("popup3").style.display="none"
           </script>
 
           <div style='width:100%;margin-top:20px;margin-bottom:70px' class='wide-button '> <button id='add-btn' onclick="document.getElementById('I1').innerHTML = item1.value; ;document.getElementById('I2').innerHTML =item2.value;document.getElementById('I3').innerHTML =item3.value;document.getElementById('I4').innerHTML =item4.value;document.getElementById('I5').innerHTML =item5.value;document.getElementById('I6').innerHTML =item6.value;document.getElementById('I7').innerHTML =item7.value;document.getElementById('I8').innerHTML =item8.value;document.getElementById('m1').innerHTML = item1.value;document.getElementById('m2').innerHTML =item2.value;document.getElementById('m3').innerHTML =item3.value;document.getElementById('m4').innerHTML =item4.value;document.getElementById('m5').innerHTML =item5.value;document.getElementById('m6').innerHTML =item6.value;document.getElementById('m7').innerHTML =item7.value;document.getElementById('m8').innerHTML =item8.value;
-            document.getElementById('imgview').src =document.getElementById('preview-image').src;popup4();document.getElementById('gameTitle4').innerHTML= document.getElementById('title-input').value;;document.getElementById('gameImg4').src=document.getElementById('preview-image').src;document.getElementById('gameDifficulty4').classList.add(document.getElementById('difficulty').value);document.getElementById('gameDifficulty4').innerHTML = document.getElementById('difficulty').value;document.getElementById('popup-wrapper4').classList.remove('flipOutY');document.getElementById('tap').play();localTrigger();document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');window.navigator.vibrate(20);">COMPLETE</button> </div>
+            document.getElementById('imgview').backgroundImage =url(document.getElementById('preview-image').src);popup4();document.getElementById('gameTitle4').innerHTML= document.getElementById('title-input').value;;document.getElementById('gameImg4').src=document.getElementById('preview-image').src;document.getElementById('gameDifficulty4').classList.add(document.getElementById('difficulty').value);document.getElementById('gameDifficulty4').innerHTML = document.getElementById('difficulty').value;document.getElementById('popup-wrapper4').classList.remove('flipOutY');document.getElementById('tap').play();localTrigger();document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000');window.navigator.vibrate(20);">COMPLETE</button> </div>
 
 
 
@@ -1049,7 +1052,7 @@ function live(){
     </div>
     <div class="popin-text-container" id="pop-text">
       <div class="loading-container " id="loader">
-        <img style="display: block !important" class="loading" src="https://www.drupal.org/files/issues/throbber_12.gif">
+        <img style="display: block" class="loading" src="https://www.drupal.org/files/issues/throbber_12.gif">
      </div>
       <div class="difficutly-text-container popup-difficulty">
         <p id="gameDifficulty">{{difficulty}}</p>
