@@ -23,7 +23,7 @@ function startCountDown(){
 
       window.addEventListener('deviceorientation', function(event) {
     
-        if(globalGameStatus == 4){
+        if(globalGameStatus > 8){
           if (event.gamma < 50  && event.gamma > -30){
             gameStatus = gameStatus + 1;
            
@@ -47,7 +47,7 @@ function startCountDown(){
 
 
     
-        if (globalGameStatus > 8){
+        if (globalGameStatus == 8){
           console.log("Time Complete");
           document.getElementById("timeUp").style.display="block";
           document.getElementById("end").style.display="block";
@@ -57,7 +57,7 @@ function startCountDown(){
           window.navigator.vibrate(600);
           metaGame = 10000000;
           gameStatus = 0;
-          globalGameStatus = 4
+
           document.getElementById('m8').style.display="none";
           document.getElementById('m7').style.display="none";
           document.getElementById('m6').style.display="none";

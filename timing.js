@@ -20,7 +20,7 @@ function disableOrientation(){
     document.getElementById('gamemusic').pause();
     document.getElementById('speedup').pause(); 
     document.getElementById('endgame').play(); 
-    globalGameStatus = 0;
+
     window.navigator.vibrate(600);
     metaGame = 10000000;
  
