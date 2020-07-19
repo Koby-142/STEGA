@@ -142,6 +142,7 @@ transform: rotate(90deg);
   transform: translate( -50%);
   width: 280px;
   transform: rotate(90deg);
+  z-index: 15;
 
 }
 
