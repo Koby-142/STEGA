@@ -38,7 +38,7 @@ function startCountDown(){
         }
      
     
-        var metaGame = 10;
+        var metaGame = 50;
     
         if (gameStatus > metaGame){
           plusSlides(1, 0);status();up();window.navigator.vibrate(75);
